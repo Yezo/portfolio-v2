@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function InfoBox() {
   return (
-    <div className="my-4 flex gap-2 rounded bg-[#2b2b2b] p-5 text-white shadow-sm ring-1 ring-black/10">
+    <div className="my-6 flex gap-2 rounded bg-[#2b2b2b] p-5 text-white shadow-sm ring-1 ring-black/10">
       <div className="pt-[2px]">
         <Info strokeWidth="2.5" size="20" />
       </div>
