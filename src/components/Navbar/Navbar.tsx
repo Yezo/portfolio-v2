@@ -19,8 +19,8 @@ export default function Navbar() {
       <ul className="space-y-3 font-kaisei tracking-tight">
         <NavbarLink url="/" title="home" />
         <NavbarLink url="/works" title="works" />
-        <NavbarLink url="/" title="profile" />
-        <NavbarLink url="/" title="contact" />
+        <NavbarLink url="/profile" title="profile" />
+        <NavbarLink url="/contact" title="contact" />
       </ul>
     </>
   )
