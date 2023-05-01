@@ -1,0 +1,7 @@
+export default function TitleH3({ children }: { children: React.ReactNode }) {
+  return (
+    <h3 className="scroll-m-20 font-faustina text-2xl font-semibold tracking-tight text-[#2b2b2b]">
+      {children}
+    </h3>
+  )
+}

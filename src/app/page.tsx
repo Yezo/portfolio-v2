@@ -1,91 +1,44 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import InfoBox from "@/components/InfoBox/InfoBox"
+import Paragraph from "@/components/Typography/Paragraph"
+import TitleH1 from "@/components/Typography/TitleH1"
+import TitleH2 from "@/components/Typography/TitleH2"
+import TitleH3 from "@/components/Typography/TitleH3"
+import Image from "next/image"
+import arkoko from "../../public/arkoko.webp"
+import aniflux from "../../public/aniflux.webp"
+import snippits from "../../public/snippits.webp"
+import ProjectBox from "@/components/Projects/ProjectBox"
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <main className="max-w-[555px] flex-auto py-1">
+      <TitleH1>{`Kevin Vo \u00A0 / \u00A0 Design-focused Engineer`}</TitleH1>
+      <Paragraph>{`My passion thrives in front-end web positions where creative design meets software development. I'm most comfortable with the Javascript ecosystem where I use React on a daily basis to craft modern web experiences. Recently, I've been gaining more interest in web design fundamentals including UI/UX, Typography, and Brand Identity.`}</Paragraph>
+      <InfoBox />
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
+      <TitleH2>Selected works</TitleH2>
 
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <ProjectBox
+        imageURL={arkoko}
+        imageALT="Picture of Arkoko's brand logo"
+        title="Arkoko"
+        description="Helping players minimize daily micro-decisions through data-driven analysis"
+        caseLink="/works/arkoko"
+      />
+      <ProjectBox
+        imageURL={aniflux}
+        imageALT="Picture of AniFlux's brand logo"
+        title="AniFlux"
+        description="Exploring a modern design to the anime and manga experience"
+        caseLink="/works/aniflux"
+      />
+      <ProjectBox
+        imageURL={snippits}
+        imageALT="Picture of Snippit's brand logo"
+        title="Snippits"
+        description="Code snippet repository built for programmers with the memory of a goldfish "
+        caseLink="/works/snippits"
+      />
     </main>
   )
 }
