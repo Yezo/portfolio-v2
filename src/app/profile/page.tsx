@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Profile",
+  description: "Profile page for Kevin Vo's Portfolio",
+}
+
 import Paragraph from "@/components/Typography/Paragraph"
 import TitleH1 from "@/components/Typography/TitleH1"
 import TitleH2 from "@/components/Typography/TitleH2"

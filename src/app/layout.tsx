@@ -3,6 +3,22 @@ import "../styles/globals.css"
 import { Inter, Kaisei_Tokumin, Faustina } from "next/font/google"
 import Navbar from "@/components/Navbar/Navbar"
 
+export const metadata = {
+  title: {
+    default: "Kevin Vo",
+    template: "%s | Kevin Vo",
+  },
+  description: "Kevin Vo - Software Developer",
+  openGraph: {
+    title: "Kevin Vo",
+    description: "Kevin Vo - Software Developer",
+    url: "https://kvo.vercel.app/",
+    siteName: "Kevin Vo",
+    locale: "en-US",
+    type: "website",
+  },
+}
+
 const kaisei = Kaisei_Tokumin({
   variable: "--font-kaisei",
   weight: ["400", "500", "700", "800"],
@@ -19,11 +35,6 @@ const faustina = Faustina({
   display: "swap",
   subsets: ["latin"],
 })
-
-export const metadata = {
-  title: "Kevin Vo",
-  description: "Kevin Vo - Software Developer Portfolio Website",
-}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
