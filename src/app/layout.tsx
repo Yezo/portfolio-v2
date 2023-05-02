@@ -40,10 +40,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable} ${kaisei.variable} ${faustina.variable}`}>
       <body className="mx-4 mb-40 mt-8 flex max-w-4xl flex-col bg-background font-inter antialiased md:mt-20 md:flex-row lg:mx-auto lg:mt-24">
-        <aside className="w-[140px] space-y-8">
-          <Logo />
-          <Navbar />
-        </aside>
+        <Navbar />
+
         {children}
       </body>
     </html>
