@@ -20,8 +20,7 @@ module.exports = {
     extend: {
       fontFamily: {
         faustina: ["var(--font-faustina)"],
-        kaisei: ["var(--font-kaisei)"],
-        inter: ["var(--font-inter)"],
+        mplus: ["var(--font-mplus)"],
       },
       colors: {
         border: "hsl(var(--border))",

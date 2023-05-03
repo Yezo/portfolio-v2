@@ -1,6 +1,6 @@
 import Logo from "@/components/Typography/Logo"
 import "../styles/globals.css"
-import { Inter, Kaisei_Tokumin, Faustina } from "next/font/google"
+import { Faustina, M_PLUS_1 } from "next/font/google"
 import Navbar from "@/components/Navbar/Navbar"
 
 export const metadata = {
@@ -19,17 +19,13 @@ export const metadata = {
   },
 }
 
-const kaisei = Kaisei_Tokumin({
-  variable: "--font-kaisei",
+const mplus = M_PLUS_1({
+  variable: "--font-mplus",
   weight: ["400", "500", "700", "800"],
-  display: "swap",
-  subsets: ["cyrillic"],
-})
-const inter = Inter({
-  variable: "--font-inter",
   display: "swap",
   subsets: ["latin"],
 })
+
 const faustina = Faustina({
   variable: "--font-faustina",
   display: "swap",
@@ -38,8 +34,8 @@ const faustina = Faustina({
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${kaisei.variable} ${faustina.variable}`}>
-      <body className="mx-4 mb-40 mt-8 flex max-w-4xl flex-col bg-background font-inter antialiased md:mt-20 md:flex-row lg:mx-auto lg:mt-24">
+    <html lang="en" className={`${mplus.variable} ${faustina.variable}`}>
+      <body className="mx-4 mb-40 mt-8 flex max-w-4xl flex-col bg-background font-mplus antialiased md:mt-20 md:flex-row lg:mx-auto lg:mt-24">
         <Navbar />
 
         {children}
