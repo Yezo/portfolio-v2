@@ -34,7 +34,7 @@ export default function Navbar() {
           </div>
 
           <nav
-            className="relative flex scroll-pr-6 flex-row items-start md:relative md:flex-col md:overflow-auto"
+            className="relative flex scroll-pr-6 flex-row items-start tracking-wider md:relative md:flex-col md:overflow-auto"
             id="nav"
           >
             <ul className="mb-2 mt-2 flex flex-row gap-4 space-x-0 md:mt-0 md:flex-col">
