@@ -12,15 +12,15 @@ export default function InfoBox() {
           Currently looking for opportunities
         </div>
         <div className="text-sm leading-6">
-          <div> {"I'd love to join a team of fellow creative developers."}</div>
+          <div> {"I'd love to join a team of creative designers and developers."}</div>
           <span>
-            {`Shoot an email my way or say hello, that's fine too. Let's`}{" "}
+            {`Send an email my way saying`}{" "}
             <span>
               <Link
                 href="mailto:kvo.codes@gmail.com"
-                className={`relative inline-block max-w-fit select-none text-sm italic tracking-tight outline-none before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-accent before:transition hover:before:scale-100`}
+                className={`relative inline-block max-w-fit select-none text-sm font-bold tracking-tight outline-none before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-accent before:transition hover:before:scale-100`}
               >
-                {"connect!"}
+                {"hello! 👋"}
               </Link>
             </span>
           </span>
