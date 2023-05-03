@@ -35,7 +35,7 @@ const faustina = Faustina({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${mplus.variable} ${faustina.variable}`}>
-      <body className="mx-4 mb-40 mt-8 flex max-w-4xl flex-col bg-background font-mplus antialiased md:mt-20 md:flex-row lg:mx-auto lg:mt-24">
+      <body className="mx-4 mb-40 mt-8 flex max-w-4xl flex-col bg-background  antialiased md:mt-20 md:flex-row lg:mx-auto lg:mt-24">
         <Navbar />
 
         {children}

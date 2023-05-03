@@ -33,14 +33,14 @@ export default function Home() {
           imageURL={arkoko}
           imageALT="Picture of Arkoko's brand logo"
           title="Arkoko"
-          description="Helping players minimize daily micro-decisions through data-driven analysis"
+          description="Helping gamers minimize daily micro-decisions through data-driven analysis"
           caseLink="/works/arkoko"
         />
         <ProjectBox
           imageURL={aniflux}
           imageALT="Picture of AniFlux's brand logo"
           title="AniFlux"
-          description="Exploring a modern design to the anime and manga experience"
+          description="Exploring a modern re-design to the anime and manga database experience"
           caseLink="/works/aniflux"
         />
         <ProjectBox

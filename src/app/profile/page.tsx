@@ -25,10 +25,10 @@ export default function ProfilePage() {
       </div>
 
       <Paragraph>
-        {`Before deciding to become a software engineer, I studied Psychology at York University. I found that path was not for me and I ended up trying web development instead. `}
+        {`Before deciding to become a software engineer, I studied Psychology at York University. I learned that path was not for me and I ended up trying web development instead. It was a difficult journey self-teaching myself how to program but it's definitely worth the hard work when I see others being able to interact with my websites on the browser. `}
       </Paragraph>
-      <Paragraph>{`Entering such a technical field without proper guidance and self-teaching myself how to program was an arduous journey. Ultimately, it ended up being rather rewarding seeing my hard work translate into something people could interact with on the browser.`}</Paragraph>
-      <Paragraph>{`Video games have been a large part of my life and I contribute it in part to a game developer's ability to fully immerse a player into the experience. As much as players love the atmosphere, the environment, and the interactions within a game, I hope to replicate those moments for others through an enriching and powerful web experience.`}</Paragraph>
+
+      <Paragraph>{`Video games have been a large part of my life and I contribute that to a game developer's ability to fully immerse a player into the experience. As much as players love the atmosphere, the environment, and the interactions within a game, I hope to replicate those moments for others through an enriching and powerful web experience.`}</Paragraph>
 
       <section className="mt-6">
         <TitleH2>Contact</TitleH2>
@@ -60,6 +60,24 @@ export default function ProfilePage() {
 
       <section className="mt-6">
         <TitleH2>Skillset</TitleH2>
+
+        <div className="mt-6">
+          <TitleH3>My Stack</TitleH3>
+          <div className="my-2">
+            <Paragraph>
+              I specialize in crafting mobile-first responsive web applications using the Javascript
+              ecosystem. To achieve this, I use React as my Javascript framework for building out
+              user interfaces. After working with Next.js for some projects, I have high hopes of
+              transitioning to Next.js as my main framework of choice in the near future.
+            </Paragraph>
+            <Paragraph>
+              As a design-focused engineer, my go-to tool of choice is without a doubt TailwindCSS
+              as it offers a fast and intuitive developer experience. I tend to create my own
+              reusable components but when the task at hand is out of my scope, I rely on RadixUI
+              for accessible and customizable UI components.
+            </Paragraph>
+          </div>
+        </div>
 
         <div className="mt-6">
           <TitleH3>Fundamentals</TitleH3>

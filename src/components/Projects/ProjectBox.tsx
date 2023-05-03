@@ -27,13 +27,15 @@ export default function ProjectBox({
         className="max-h-[200px] w-[300px] basis-3/5 rounded object-cover"
       />
       <div className="basis-2/5">
-        <TitleH3>{title}</TitleH3>
-        <div className="space-y-6">
-          <p className="mt-2 text-sm leading-6 text-[#2b2b2b]">{description}</p>
-          <div>
-            <Link href={caseLink} className="text-[0.9rem] tracking-wide text-[#2b2b2b]">
-              {"Read more → "}
-            </Link>
+        <div className="flex min-h-full flex-col justify-center">
+          <TitleH3>{title}</TitleH3>
+          <div className="space-y-6">
+            <p className="mt-2 text-sm leading-6 text-[#2b2b2b]">{description}</p>
+            <div>
+              <Link href={caseLink} className="text-[0.9rem] tracking-wide text-[#2b2b2b]">
+                {"Read more → "}
+              </Link>
+            </div>
           </div>
         </div>
       </div>
