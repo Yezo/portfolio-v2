@@ -8,27 +8,23 @@ type Props = {
   title: string
   description: string
   caseLink: string
-  externalLink?: string
 }
-export default function ProjectBox({
-  imageURL,
-  imageALT,
-  title,
-  description,
-  caseLink,
-  externalLink,
-}: Props) {
+export default function ProjectBox({ imageURL, imageALT, title, description, caseLink }: Props) {
   return (
     <div className="my-4 flex gap-4">
-      <Image
-        src={imageURL}
-        alt={imageALT}
-        placeholder="blur"
-        className="max-h-[200px] w-[300px] basis-3/5 rounded object-cover"
-      />
+      <Link href={caseLink}>
+        <Image
+          src={imageURL}
+          alt={imageALT}
+          placeholder="blur"
+          className="max-h-[185px] w-[300px] basis-3/5 rounded object-cover"
+        />
+      </Link>
       <div className="basis-2/5">
         <div className="flex min-h-full flex-col justify-center">
-          <TitleH3>{title}</TitleH3>
+          <Link href={caseLink}>
+            <TitleH3>{title}</TitleH3>
+          </Link>
           <div className="space-y-6">
             <p className="mt-2 text-sm leading-6 text-[#2b2b2b]">{description}</p>
             <div>
