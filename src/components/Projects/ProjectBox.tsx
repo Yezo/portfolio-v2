@@ -24,7 +24,7 @@ export default function ProjectBox({
         src={imageURL}
         alt={imageALT}
         placeholder="blur"
-        className="max-h-[183px] w-[300px] basis-3/5 rounded object-cover"
+        className="max-h-[200px] w-[300px] basis-3/5 rounded object-cover"
       />
       <div className="basis-2/5">
         <TitleH3>{title}</TitleH3>
