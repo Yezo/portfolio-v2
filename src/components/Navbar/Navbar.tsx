@@ -14,9 +14,6 @@ const navItems = {
   "/profile": {
     name: "profile",
   },
-  "/contact": {
-    name: "contact",
-  },
 }
 
 export default function Navbar() {
