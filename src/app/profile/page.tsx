@@ -13,6 +13,7 @@ import Link from "next/link"
 import { ExternalLinkIcon } from "lucide-react"
 import ContactButton from "@/components/Contact/ContactButton"
 import { GithubIcon, MailIcon, AtSignIcon, CopyIcon, ScrollIcon } from "lucide-react"
+import ListItem from "@/components/Typography/ListItem"
 
 export default function ProfilePage() {
   const fundamentals = SKILLS.filter(({ category }) => category === "fundamental")
@@ -21,12 +22,10 @@ export default function ProfilePage() {
   return (
     <main className="max-w-[555px] flex-auto py-1">
       <div className="border-b border-[#2b2b2b]/20 pb-2">
-        <TitleH1>{`About Me`}</TitleH1>
+        <TitleH1>{`Hey, call me Kev 👋`}</TitleH1>
       </div>
 
-      <Paragraph>
-        {`Before deciding to become a software engineer, I studied Psychology at York University. I learned that path was not for me and I ended up trying web development instead. It was a difficult journey self-teaching myself how to program but it's definitely worth the hard work when I see others being able to interact with my websites on the browser. `}
-      </Paragraph>
+      <Paragraph>{`As a design-focused Software Engineer, I am most experienced with the Javascript ecosystem (React, TS, Next.js, Redux, Node). I currently specialize in crafting responsive web applications with a mobile-first approach. My passion thrives in front-end web positions where creative design meets web development.  `}</Paragraph>
 
       <Paragraph>{`Video games have been a large part of my life and I contribute that to a game developer's ability to fully immerse a player into the experience. As much as players love the atmosphere, the environment, and the interactions within a game, I hope to replicate those moments for others through an enriching and powerful web experience.`}</Paragraph>
 
@@ -34,7 +33,7 @@ export default function ProfilePage() {
         <TitleH2>Contact</TitleH2>
 
         <div className="mt-6">
-          <div className="my-2 grid grid-cols-2 gap-[5px] md:grid-cols-3">
+          <div className="my-2 flex flex-col gap-[5px] md:grid md:grid-cols-3">
             <ContactButton url="/resume.pdf" type="download">
               <ScrollIcon size="20" />
               Resume
@@ -61,67 +60,18 @@ export default function ProfilePage() {
       <section className="mt-6">
         <TitleH2>Skillset</TitleH2>
 
-        <div className="mt-6">
-          <TitleH3>My Stack</TitleH3>
-          <div className="my-2">
-            <Paragraph>
-              I specialize in crafting mobile-first responsive web applications using the Javascript
-              ecosystem. To achieve this, I use React as my Javascript framework for building out
-              user interfaces. After working with Next.js for some projects, I have high hopes of
-              transitioning to Next.js as my main framework of choice in the near future.
-            </Paragraph>
-            <Paragraph>
-              As a design-focused engineer, my go-to tool of choice is without a doubt TailwindCSS
-              as it offers a fast and intuitive developer experience. I tend to create my own
-              reusable components but when the task at hand is out of my scope, I rely on RadixUI
-              for accessible and customizable UI components.
-            </Paragraph>
-          </div>
-        </div>
-
-        <div className="mt-6">
-          <TitleH3>Fundamentals</TitleH3>
-          <div className="my-2 grid grid-cols-2 gap-[5px]">
-            {fundamentals.map((item, index) => (
-              <div
-                key={index}
-                className="flex select-none items-center gap-4 rounded bg-transparent/[.02] px-6 py-4 text-sm ring-1 ring-black/70"
-              >
-                <Image src={item.icon} alt={item.name} width={24} height={24} />
-                {item.name}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-4">
-          <TitleH3>Experience</TitleH3>
-          <div className="my-2 flex flex-wrap gap-[4px]">
-            {familiarity.map((item, index) => (
-              <div
-                key={index}
-                className="flex min-w-[273.5px] select-none items-center gap-4 rounded  bg-transparent/[.02] px-6 py-4 text-sm ring-1 ring-black/70"
-              >
-                <Image src={item.icon} alt={item.name} width={20} height={20} />
-                {item.name}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-4">
-          <TitleH3>Beginner</TitleH3>
-          <div className="my-2 flex flex-wrap gap-[4px]">
-            {beginner.map((item, index) => (
-              <div
-                key={index}
-                className="flex min-w-[273.5px] select-none items-center gap-4 rounded  bg-transparent/[.02] px-6 py-4 text-sm ring-1 ring-black/70"
-              >
-                <Image src={item.icon} alt={item.name} width={20} height={20} />
-                {item.name}
-              </div>
-            ))}
-          </div>
+        <div className="mt-6 grid grid-cols-4 gap-[1px] font-faustina text-3xl md:grid-cols-6">
+          {SKILLS.map((item) => (
+            <div key={item.name} className="flex min-h-[91px] items-center justify-center bg-black">
+              {item.url && item.url ? (
+                <Link href={item.url}>
+                  <Image src={item.icon} alt={item.name} width={35} height={35} />
+                </Link>
+              ) : (
+                <Image src={item.icon} alt={item.name} width={35} height={35} />
+              )}
+            </div>
+          ))}
         </div>
       </section>
     </main>

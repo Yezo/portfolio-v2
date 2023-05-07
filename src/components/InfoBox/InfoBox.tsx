@@ -8,10 +8,10 @@ export default function InfoBox() {
         <Info strokeWidth="2.5" size="20" />
       </div>
       <div className="space-y-3">
-        <div className="font-faustina font-semibold tracking-wide">
+        <div className="font-alegreya font-semibold tracking-wide">
           Currently looking for opportunities
         </div>
-        <div className="text-sm leading-6">
+        <div className="font-rubik text-sm font-light leading-6">
           <div> {"I'd love to join a team of creative designers and developers."}</div>
           <span>
             {`Send an email my way saying`}{" "}

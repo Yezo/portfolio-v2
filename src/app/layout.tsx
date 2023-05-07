@@ -1,6 +1,6 @@
 import Logo from "@/components/Typography/Logo"
 import "../styles/globals.css"
-import { Faustina, M_PLUS_1 } from "next/font/google"
+import { Faustina, M_PLUS_1, Rubik, Alegreya } from "next/font/google"
 import Navbar from "@/components/Navbar/Navbar"
 
 export const metadata = {
@@ -19,23 +19,30 @@ export const metadata = {
   },
 }
 
-const mplus = M_PLUS_1({
-  variable: "--font-mplus",
-  weight: ["400", "500", "700", "800"],
-  display: "swap",
-  subsets: ["latin"],
-})
-
 const faustina = Faustina({
   variable: "--font-faustina",
   display: "swap",
   subsets: ["latin"],
 })
 
+const rubik = Rubik({
+  variable: "--font-rubik",
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+  subsets: ["latin"],
+})
+
+const alegreya = Alegreya({
+  variable: "--font-alegreya",
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
+  subsets: ["latin"],
+})
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${mplus.variable} ${faustina.variable}`}>
-      <body className="mx-4 mb-40 mt-8 flex max-w-4xl flex-col bg-background  antialiased md:mt-20 md:flex-row lg:mx-auto lg:mt-24">
+    <html lang="en" className={`${faustina.variable} ${rubik.variable} ${alegreya.variable}`}>
+      <body className="mx-4 mb-40 mt-8 flex max-w-4xl flex-col bg-background antialiased md:mt-20 md:flex-row lg:mx-auto lg:mt-24">
         <Navbar />
 
         {children}

@@ -12,9 +12,9 @@ export default function ContactButton({ url, children, type }: Props) {
     <Link
       href={url}
       target="_blank"
-      className="flex w-full select-none items-center justify-between rounded border border-neutral-500 bg-black  p-4 text-white transition-colors hover:bg-[#262626]"
+      className="flex w-full select-none items-center justify-between rounded border border-neutral-500 bg-black p-4 font-rubik font-medium text-white transition-colors hover:bg-[#262626]"
     >
-      <div className="flex items-center gap-2 text-[0.8rem] font-semibold">{children}</div>
+      <div className="flex items-center gap-2 text-[0.8rem]">{children}</div>
       <div>
         {type === "link" && <ExternalLinkIcon size="18" />}{" "}
         {type === "download" && <DownloadIcon size="18" />}

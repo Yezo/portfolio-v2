@@ -8,8 +8,9 @@ import arkoko from "../../public/arkoko.webp"
 import aniflux from "../../public/aniflux.webp"
 import snippits from "../../public/snippits.webp"
 import ProjectBox from "@/components/Projects/ProjectBox"
-
 import avatar from "../../public/avatar.webp"
+import ListItem from "@/components/Typography/ListItem"
+
 export default function Home() {
   return (
     <main className="max-w-[555px] flex-auto py-1">
@@ -23,9 +24,16 @@ export default function Home() {
           placeholder="blur"
           className="rounded object-cover shadow-sm ring-1 ring-black "
         ></Image>{" "}
-        <TitleH1>{`Kevin Vo \u00A0 / \u00A0 Software Engineer`}</TitleH1>
+        <TitleH1>{`Kevin Vo `}</TitleH1>
       </div>
-      <Paragraph>{`My passion thrives in front-end web positions where creative design meets software development. I'm most comfortable with the Javascript ecosystem where I use React on a daily basis to craft modern web experiences. Recently, I've been gaining more interest in web design fundamentals including UI/UX, Typography, and Brand Identity.`}</Paragraph>
+      <section className="mt-4">
+        <ListItem>💎 Design-focused Software Engineer based in Barrie, ON</ListItem>
+        <ListItem>
+          💎 Experienced with the Javascript ecosystem (React, TS, Next.js, Redux, Node)
+        </ListItem>
+        <ListItem>💎 Specializing in crafting mobile-first responsive web applications</ListItem>
+        <ListItem>💎 Looking to join a team of other creative designers and developers </ListItem>
+      </section>
       <InfoBox />
       <TitleH2>Selected works</TitleH2>
       <div className="mt-6">

@@ -26,7 +26,9 @@ export default function ProjectBox({ imageURL, imageALT, title, description, cas
             <TitleH3>{title}</TitleH3>
           </Link>
           <div className="space-y-6">
-            <p className="mt-2 text-sm leading-6 text-[#2b2b2b]">{description}</p>
+            <p className="mt-2 font-rubik text-sm font-light leading-6 text-[#2b2b2b]">
+              {description}
+            </p>
             <div>
               <Link href={caseLink} className="text-[0.9rem] tracking-wide text-[#2b2b2b]">
                 {"Read more → "}

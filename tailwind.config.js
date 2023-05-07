@@ -20,7 +20,8 @@ module.exports = {
     extend: {
       fontFamily: {
         faustina: ["var(--font-faustina)"],
-        mplus: ["var(--font-mplus)"],
+        rubik: ["var(--font-rubik)"],
+        alegreya: ["var(--font-alegreya)"],
       },
       colors: {
         border: "hsl(var(--border))",
