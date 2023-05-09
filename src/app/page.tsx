@@ -2,14 +2,12 @@ import InfoBox from "@/components/InfoBox/InfoBox"
 import Paragraph from "@/components/Typography/Paragraph"
 import TitleH1 from "@/components/Typography/TitleH1"
 import TitleH2 from "@/components/Typography/TitleH2"
-import TitleH3 from "@/components/Typography/TitleH3"
 import Image from "next/image"
 import arkoko from "../../public/arkoko.webp"
 import aniflux from "../../public/aniflux.webp"
 import snippits from "../../public/snippits.webp"
 import ProjectBox from "@/components/Projects/ProjectBox"
 import avatar from "../../public/avatar.webp"
-import ListItem from "@/components/Typography/ListItem"
 
 export default function Home() {
   return (
@@ -23,15 +21,11 @@ export default function Home() {
           priority
           placeholder="blur"
           className="rounded object-cover shadow-sm ring-1 ring-black "
-        ></Image>{" "}
+        ></Image>
         <TitleH1>{`Kevin Vo `}</TitleH1>
       </div>
       <section className="mt-4">
-        <ListItem>💎 Design-focused Software Engineer based in Barrie, ON</ListItem>
-        <ListItem>
-          💎 Experienced with the Javascript ecosystem (React, TS, Next.js, Redux, Node)
-        </ListItem>
-        <ListItem>💎 Specializing in crafting mobile-first responsive web applications</ListItem>
+        <Paragraph>{`I'm a design-focused Software Developer that specializes in crafting user-centered digital experiences through creativity and strategic design.`}</Paragraph>
       </section>
       <InfoBox />
       <TitleH2>Selected works</TitleH2>

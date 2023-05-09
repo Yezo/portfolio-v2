@@ -14,13 +14,13 @@ export default function InfoBox() {
         <div className="font-rubik text-sm font-light leading-6">
           <div> {"I'd love to join a team of creative designers and developers."}</div>
           <span>
-            {`Send an email my way saying`}{" "}
+            {`Reach out and`}{" "}
             <span>
               <Link
                 href="mailto:kvo.codes@gmail.com"
                 className={`relative inline-block max-w-fit select-none text-sm font-bold tracking-tight outline-none before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-accent before:transition hover:before:scale-100`}
               >
-                {"hello! 👋"}
+                {"say hello! 👋"}
               </Link>
             </span>
           </span>
