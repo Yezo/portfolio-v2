@@ -16,7 +16,7 @@ export default function WorksProjectHeader({ title, subtitle, technologies }: Pr
         <TitleH1>{title}</TitleH1>
       </div>
       <Subtitle>{subtitle}</Subtitle>
-      <div className="mt-8 flex flex-wrap gap-2 font-rubik text-xs tracking-widest">
+      <div className="mt-8 flex select-none flex-wrap gap-2 font-rubik text-xs tracking-widest">
         {technologies.map((item, index) => (
           <Badge key={index}>{item}</Badge>
         ))}
