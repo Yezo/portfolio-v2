@@ -84,11 +84,11 @@ export default function ArkokoPage() {
       </section>
 
       <WorksEndNavigation
-        demoURL="/"
+        demoURL="https://arkoko.vercel.app/"
         demoTitle="Arkoko"
-        previousURL="/"
+        previousURL="/works/trackr"
         previousTitle="Trackr"
-        nextURL="/"
+        nextURL="/works/aniflux"
         nextTitle="AniFlux"
       ></WorksEndNavigation>
     </main>
