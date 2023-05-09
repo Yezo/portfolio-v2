@@ -32,7 +32,6 @@ export default function Home() {
           💎 Experienced with the Javascript ecosystem (React, TS, Next.js, Redux, Node)
         </ListItem>
         <ListItem>💎 Specializing in crafting mobile-first responsive web applications</ListItem>
-        <ListItem>💎 Looking to join a team of other creative designers and developers </ListItem>
       </section>
       <InfoBox />
       <TitleH2>Selected works</TitleH2>
