@@ -7,8 +7,8 @@ import TitleH2 from "@/components/Typography/TitleH2"
 import WorksEndNavigation from "@/components/Works/WorksEndNavigation"
 
 export const metadata = {
-  title: "RiskThinking",
-  description: "RiskThinking page for Kevin Vo's Portfolio",
+  title: "Snippits",
+  description: "Snippits page for Kevin Vo's Portfolio",
 }
 
 export default function KorePage() {
@@ -17,31 +17,21 @@ export default function KorePage() {
       <figure>
         <Image
           src={kore}
-          alt="RiskThinking"
+          alt="Kore"
           priority
           className="mb-1 max-h-[250px] min-w-full rounded object-cover"
         />
       </figure>
 
       <WorksExternalLinks
-        githubURL="https://github.com/Yezo/riskthinking"
-        demoURL="https://riskthinking.vercel.app/"
+        githubURL="https://github.com/Yezo/learn-korean"
+        demoURL="https://kore-beta.vercel.app/"
       />
 
       <WorksProjectHeader
-        title="riskthinking"
-        subtitle="Apr. 2023"
-        technologies={[
-          "Next.js",
-          "React",
-          "Jotai",
-          "TypeScript",
-          "Tailwind",
-          "Chart.js",
-          "React-Leaflet",
-          "PrimeReact",
-          "Jest",
-        ]}
+        title="kore"
+        subtitle="Mar. 2023"
+        technologies={["React", "TypeScript", "Tailwind", "Vite"]}
       />
 
       <section className="mt-8 space-y-6">
@@ -67,8 +57,8 @@ export default function KorePage() {
       </section>
 
       <WorksEndNavigation
-        demoURL="https://riskthinking.vercel.app/"
-        demoTitle="RiskThinking"
+        demoURL="https://snippits.vercel.app/"
+        demoTitle="Snippits"
         previousURL="/works/"
         previousTitle="Arkoko"
         nextURL="/works/riskthinking"
