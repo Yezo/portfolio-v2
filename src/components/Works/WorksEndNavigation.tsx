@@ -30,7 +30,6 @@ export default function WorksEndNavigation({
       {previousURL && (
         <Link
           href={previousURL}
-          target="_blank"
           className="flex w-full select-none items-center justify-between rounded border border-neutral-500 bg-black p-4 font-rubik text-[0.8rem] font-light text-white transition-colors hover:bg-[#262626]"
         >
           <ArrowLeftIcon />
@@ -43,7 +42,6 @@ export default function WorksEndNavigation({
       {nextURL && (
         <Link
           href={nextURL}
-          target="_blank"
           className="flex w-full select-none items-center justify-between rounded border border-neutral-500 bg-black p-4 font-rubik text-[0.8rem] font-light text-white transition-colors hover:bg-[#262626]"
         >
           <div className="flex gap-1">
