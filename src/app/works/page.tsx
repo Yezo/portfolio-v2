@@ -34,6 +34,13 @@ export default function WorksPage() {
           caseLink="/works/aniflux"
         />
         <ProjectBox
+          imageURL={kore}
+          imageALT="Picture of riskthinking's brand logo"
+          title="RiskThinking"
+          description="Work sample for riskthinking.ai visualizing climate risk datasets"
+          caseLink="/works/riskthinking"
+        />
+        <ProjectBox
           imageURL={snippits}
           imageALT="Picture of Snippit's brand logo"
           title="Snippits"
