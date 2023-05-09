@@ -1,5 +1,4 @@
 import ProjectBox from "@/components/Projects/ProjectBox"
-import TitleH2 from "@/components/Typography/TitleH2"
 import arkoko from "../../../public/arkoko.webp"
 import aniflux from "../../../public/aniflux.webp"
 import snippits from "../../../public/snippits.webp"
@@ -39,6 +38,13 @@ export default function WorksPage() {
           title="RiskThinking"
           description="Work sample for riskthinking.ai visualizing climate risk datasets"
           caseLink="/works/riskthinking"
+        />
+        <ProjectBox
+          imageURL={kore}
+          imageALT="Picture of Kevin Vo's brand logo"
+          title="My Portfolio"
+          description="A deep dive on a junior developer/designer's perspective to self-branding"
+          caseLink="/works/portfolio"
         />
         <ProjectBox
           imageURL={snippits}
