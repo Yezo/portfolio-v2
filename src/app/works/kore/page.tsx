@@ -7,8 +7,8 @@ import TitleH2 from "@/components/Typography/TitleH2"
 import WorksEndNavigation from "@/components/Works/WorksEndNavigation"
 
 export const metadata = {
-  title: "Snippits",
-  description: "Snippits page for Kevin Vo's Portfolio",
+  title: "Kore",
+  description: "Kore page for Kevin Vo's Portfolio",
 }
 
 export default function KorePage() {
