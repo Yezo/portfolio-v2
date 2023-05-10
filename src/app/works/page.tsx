@@ -4,6 +4,8 @@ import aniflux from "../../../public/aniflux.webp"
 import snippits from "../../../public/snippits.webp"
 import trackr from "../../../public/trackr.png"
 import kore from "../../../public/kore.png"
+import riskthinking from "../../../public/riskthinking.png"
+import kv from "../../../public/kv.png"
 import TitleH1 from "@/components/Typography/TitleH1"
 
 export const metadata = {
@@ -33,17 +35,17 @@ export default function WorksPage() {
           caseLink="/works/aniflux"
         />
         <ProjectBox
-          imageURL={kore}
+          imageURL={riskthinking}
           imageALT="Picture of riskthinking's brand logo"
           title="RiskThinking"
           description="Work sample for riskthinking.ai visualizing climate risk datasets"
           caseLink="/works/riskthinking"
         />
         <ProjectBox
-          imageURL={kore}
+          imageURL={kv}
           imageALT="Picture of Kevin Vo's brand logo"
           title="My Portfolio"
-          description="A deep dive on a junior developer/designer's perspective to self-branding"
+          description="A deep dive on a junior developer perspective to self-branding"
           caseLink="/works/portfolio"
         />
         <ProjectBox

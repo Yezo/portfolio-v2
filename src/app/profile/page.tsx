@@ -74,6 +74,12 @@ export default function ProfilePage() {
           ))}
         </div>
       </section>
+
+      <section className="mt-6">
+        <TitleH2>Hobbies & Interests</TitleH2>
+
+        <Paragraph>{`In my spare time, you'll find me often playing video games.`}</Paragraph>
+      </section>
     </main>
   )
 }

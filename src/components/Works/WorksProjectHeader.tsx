@@ -11,7 +11,7 @@ type Props = {
 
 export default function WorksProjectHeader({ title, subtitle, technologies }: Props) {
   return (
-    <section className="mt-1 rounded bg-black p-4 text-white">
+    <section className="mt-1 rounded bg-black p-4 text-white shadow-sm">
       <div className="text-white">
         <TitleH1>{title}</TitleH1>
       </div>

@@ -1,10 +1,13 @@
 import Image from "next/image"
-import snippits from "../../../../public/snippits.webp"
+import kv from "../../../../public/kv.png"
 import WorksProjectHeader from "@/components/Works/WorksProjectHeader"
 import WorksExternalLinks from "@/components/Works/WorksExternalLinks"
 import Paragraph from "@/components/Typography/Paragraph"
 import TitleH2 from "@/components/Typography/TitleH2"
 import WorksEndNavigation from "@/components/Works/WorksEndNavigation"
+import Subtitle from "@/components/Typography/Subtitle"
+import TitleH1 from "@/components/Typography/TitleH1"
+import Badge from "@/components/Works/Badge"
 
 export const metadata = {
   title: "Portfolio",
@@ -16,7 +19,7 @@ export default function PortfolioPage() {
     <main className="max-w-[555px] flex-auto py-1">
       <figure>
         <Image
-          src={snippits}
+          src={kv}
           alt="Portfolio"
           priority
           className="mb-1 max-h-[250px] min-w-full rounded object-cover"

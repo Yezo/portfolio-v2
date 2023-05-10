@@ -1,5 +1,5 @@
 import Image from "next/image"
-import kore from "../../../../public/kore.png"
+import riskthinking from "../../../../public/riskthinking.png"
 import WorksProjectHeader from "@/components/Works/WorksProjectHeader"
 import WorksExternalLinks from "@/components/Works/WorksExternalLinks"
 import Paragraph from "@/components/Typography/Paragraph"
@@ -16,7 +16,7 @@ export default function KorePage() {
     <main className="max-w-[555px] flex-auto py-1">
       <figure>
         <Image
-          src={kore}
+          src={riskthinking}
           alt="RiskThinking"
           priority
           className="mb-1 max-h-[250px] min-w-full rounded object-cover"
