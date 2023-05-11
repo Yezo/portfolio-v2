@@ -1,12 +1,5 @@
 import Link from "next/link"
-import React from "react"
-import {
-  GithubIcon,
-  RocketIcon,
-  ExternalLinkIcon,
-  ArrowLeftIcon,
-  ArrowRightIcon,
-} from "lucide-react"
+import { ExternalLinkIcon, ArrowLeftIcon, ArrowRightIcon } from "lucide-react"
 
 type Props = {
   demoURL: string

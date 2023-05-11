@@ -1,6 +1,6 @@
 import arkoko from "../../public/arkoko.webp"
 import aniflux from "../../public/aniflux.webp"
-import snippits from "../../public/snippits.webp"
+import riskthinking from "../../public/riskthinking.png"
 import avatar from "../../public/avatar.webp"
 
 import dynamic from "next/dynamic"
@@ -48,11 +48,11 @@ export default function Home() {
           caseLink="/works/aniflux"
         />
         <ProjectBox
-          imageURL={snippits}
-          imageALT="Picture of Snippit's brand logo"
-          title="Snippits"
-          description="Code snippet repository built for programmers with the memory of a goldfish "
-          caseLink="/works/snippits"
+          imageURL={riskthinking}
+          imageALT="Picture of riskthinking's brand logo"
+          title="RiskThinking"
+          description="Work sample for riskthinking.ai visualizing climate risk datasets"
+          caseLink="/works/riskthinking"
         />
       </div>
     </main>

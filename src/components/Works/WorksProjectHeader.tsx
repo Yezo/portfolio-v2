@@ -1,7 +1,8 @@
-import Subtitle from "@/components/Typography/Subtitle"
-import TitleH1 from "@/components/Typography/TitleH1"
-import Badge from "@/components/Works/Badge"
-import React from "react"
+import dynamic from "next/dynamic"
+
+const TitleH1 = dynamic(() => import("@/components/Typography/TitleH1"))
+const Badge = dynamic(() => import("@/components/Works/Badge"))
+const Subtitle = dynamic(() => import("@/components/Typography/Subtitle"))
 
 type Props = {
   title: string

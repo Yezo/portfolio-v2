@@ -1,6 +1,6 @@
-import React from "react"
 import { ExternalLinkIcon, DownloadIcon } from "lucide-react"
 import Link from "next/link"
+
 type Props = {
   url: string
   children: React.ReactNode

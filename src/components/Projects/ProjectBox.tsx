@@ -1,6 +1,8 @@
-import TitleH3 from "@/components/Typography/TitleH3"
 import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
+import dynamic from "next/dynamic"
+
+const TitleH3 = dynamic(() => import("@/components/Typography/TitleH3"))
 
 type Props = {
   imageURL: StaticImageData
