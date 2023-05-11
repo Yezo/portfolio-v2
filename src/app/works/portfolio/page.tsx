@@ -1,13 +1,13 @@
-import Image from "next/image"
 import kv from "../../../../public/kv.png"
-import WorksProjectHeader from "@/components/Works/WorksProjectHeader"
-import WorksExternalLinks from "@/components/Works/WorksExternalLinks"
-import Paragraph from "@/components/Typography/Paragraph"
-import TitleH2 from "@/components/Typography/TitleH2"
-import WorksEndNavigation from "@/components/Works/WorksEndNavigation"
-import Subtitle from "@/components/Typography/Subtitle"
-import TitleH1 from "@/components/Typography/TitleH1"
-import Badge from "@/components/Works/Badge"
+
+import dynamic from "next/dynamic"
+import Image from "next/image"
+
+const TitleH2 = dynamic(() => import("@/components/Typography/TitleH2"))
+const Paragraph = dynamic(() => import("@/components/Typography/Paragraph"))
+const WorksProjectHeader = dynamic(() => import("@/components/Works/WorksProjectHeader"))
+const WorksExternalLinks = dynamic(() => import("@/components/Works/WorksExternalLinks"))
+const WorksEndNavigation = dynamic(() => import("@/components/Works/WorksEndNavigation"))
 
 export const metadata = {
   title: "Portfolio",

@@ -1,13 +1,16 @@
-import InfoBox from "@/components/InfoBox/InfoBox"
-import Paragraph from "@/components/Typography/Paragraph"
-import TitleH1 from "@/components/Typography/TitleH1"
-import TitleH2 from "@/components/Typography/TitleH2"
-import Image from "next/image"
 import arkoko from "../../public/arkoko.webp"
 import aniflux from "../../public/aniflux.webp"
 import snippits from "../../public/snippits.webp"
-import ProjectBox from "@/components/Projects/ProjectBox"
 import avatar from "../../public/avatar.webp"
+
+import dynamic from "next/dynamic"
+import Image from "next/image"
+
+const InfoBox = dynamic(() => import("@/components/InfoBox/InfoBox"))
+const TitleH1 = dynamic(() => import("@/components/Typography/TitleH1"))
+const TitleH2 = dynamic(() => import("@/components/Typography/TitleH2"))
+const Paragraph = dynamic(() => import("@/components/Typography/Paragraph"))
+const ProjectBox = dynamic(() => import("@/components/Projects/ProjectBox"))
 
 export default function Home() {
   return (

@@ -1,4 +1,3 @@
-import ProjectBox from "@/components/Projects/ProjectBox"
 import arkoko from "../../../public/arkoko.webp"
 import aniflux from "../../../public/aniflux.webp"
 import snippits from "../../../public/snippits.webp"
@@ -6,7 +5,11 @@ import trackr from "../../../public/trackr.png"
 import kore from "../../../public/kore.png"
 import riskthinking from "../../../public/riskthinking.png"
 import kv from "../../../public/kv.png"
-import TitleH1 from "@/components/Typography/TitleH1"
+
+import dynamic from "next/dynamic"
+
+const TitleH1 = dynamic(() => import("@/components/Typography/TitleH1"))
+const ProjectBox = dynamic(() => import("@/components/Projects/ProjectBox"))
 
 export const metadata = {
   title: "Works",

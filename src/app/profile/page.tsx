@@ -1,24 +1,21 @@
+import { SKILLS } from "@/lib/icons"
+import { GithubIcon, AtSignIcon, ScrollIcon } from "lucide-react"
+
+import dynamic from "next/dynamic"
+import Image from "next/image"
+import Link from "next/link"
+
+const TitleH1 = dynamic(() => import("@/components/Typography/TitleH1"))
+const TitleH2 = dynamic(() => import("@/components/Typography/TitleH2"))
+const Paragraph = dynamic(() => import("@/components/Typography/Paragraph"))
+const ContactButton = dynamic(() => import("@/components/Contact/ContactButton"))
+
 export const metadata = {
   title: "Profile",
   description: "Profile page for Kevin Vo's Portfolio",
 }
 
-import Paragraph from "@/components/Typography/Paragraph"
-import TitleH1 from "@/components/Typography/TitleH1"
-import TitleH2 from "@/components/Typography/TitleH2"
-import TitleH3 from "@/components/Typography/TitleH3"
-import { SKILLS } from "@/lib/icons"
-import Image from "next/image"
-import Link from "next/link"
-import { ExternalLinkIcon } from "lucide-react"
-import ContactButton from "@/components/Contact/ContactButton"
-import { GithubIcon, MailIcon, AtSignIcon, CopyIcon, ScrollIcon } from "lucide-react"
-import ListItem from "@/components/Typography/ListItem"
-
 export default function ProfilePage() {
-  const fundamentals = SKILLS.filter(({ category }) => category === "fundamental")
-  const familiarity = SKILLS.filter(({ category }) => category === "familiarity")
-  const beginner = SKILLS.filter(({ category }) => category === "beginner")
   return (
     <main className="max-w-[555px] flex-auto py-1">
       <div className="border-b border-[#2b2b2b]/20 pb-2">
@@ -73,12 +70,6 @@ export default function ProfilePage() {
             </div>
           ))}
         </div>
-      </section>
-
-      <section className="mt-6">
-        <TitleH2>Hobbies & Interests</TitleH2>
-
-        <Paragraph>{`In my spare time, you'll find me often playing video games.`}</Paragraph>
       </section>
     </main>
   )
