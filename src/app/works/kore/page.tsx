@@ -36,23 +36,18 @@ export default function KorePage() {
 
       <section className="mt-8 space-y-6">
         <div>
-          <TitleH2>The Problem</TitleH2>
-          <Paragraph>{`???`}</Paragraph>
-        </div>
-
-        <div>
-          <TitleH2>The Solution</TitleH2>
-          <Paragraph>{`???`}</Paragraph>
+          <TitleH2>The Objective</TitleH2>
+          <Paragraph>{`I have been studying and self-teaching myself the Korean language since high school. A lot of people that hear this usually praise me for my dedication to the Korean culture and often say they would also love to learn a language someday. To their surprise, the Korean alphabet is one of the easier languages to learn. Kore is a mini-application/game that helps users be more acquainted with the Korean lettering system and help in their memorization journey. `}</Paragraph>
         </div>
 
         <div>
           <TitleH2>Challenges</TitleH2>
-          <Paragraph>{`???`}</Paragraph>
+          <Paragraph>{`It was suprisingly difficult when implementing the game logic at first. There were a lot of edge cases that needed to be covered when users were navigating between letters. For example, if the user is the in the middle of the alphabet and chooses to memorize a letter, the letter should be removed from the array of letters, the count of remaining letters should update accordingly, and the current displayed item should display the previous or next item since it can't display an item that has just been removed. `}</Paragraph>
         </div>
 
         <div>
           <TitleH2>Areas of improvement</TitleH2>
-          <Paragraph>{`???`}</Paragraph>
+          <Paragraph>{`While this was just a small project to help myself learn more about array manipulation, I hope to expand this project into something bigger than just a mini-game. These type of things can be transferred to learning words and sentences. Ultimately, I'd love to create a web application with multiple learning resources for people to learn more about South Korea's culture and their language.`}</Paragraph>
         </div>
       </section>
 
