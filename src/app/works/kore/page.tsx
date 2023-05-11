@@ -57,12 +57,12 @@ export default function KorePage() {
       </section>
 
       <WorksEndNavigation
-        demoURL="https://snippits.vercel.app/"
-        demoTitle="Snippits"
-        previousURL="/works/"
-        previousTitle="Arkoko"
-        nextURL="/works/riskthinking"
-        nextTitle="RiskThinking"
+        demoURL="https://kore-beta.vercel.app/"
+        demoTitle="Kore"
+        previousURL="/works/snippits"
+        previousTitle="Snippits"
+        nextURL="/works/trackr"
+        nextTitle="Trackr"
       ></WorksEndNavigation>
     </main>
   )

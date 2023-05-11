@@ -57,12 +57,12 @@ export default function TrackrPage() {
       </section>
 
       <WorksEndNavigation
-        demoURL="https://snippits.vercel.app/"
-        demoTitle="Snippits"
-        previousURL="/works/"
-        previousTitle="Arkoko"
-        nextURL="/works/riskthinking"
-        nextTitle="RiskThinking"
+        demoURL="https://trackr-beta.vercel.app/"
+        demoTitle="Trackr"
+        previousURL="/works/kore"
+        previousTitle="Kore"
+        nextURL="/works/arkoko"
+        nextTitle="Arkoko"
       ></WorksEndNavigation>
     </main>
   )

@@ -69,10 +69,10 @@ export default function KorePage() {
       <WorksEndNavigation
         demoURL="https://riskthinking.vercel.app/"
         demoTitle="RiskThinking"
-        previousURL="/works/"
-        previousTitle="Arkoko"
-        nextURL="/works/riskthinking"
-        nextTitle="RiskThinking"
+        previousURL="/works/aniflux"
+        previousTitle="AniFlux"
+        nextURL="/works/portfolio"
+        nextTitle="My Portfolio"
       ></WorksEndNavigation>
     </main>
   )
