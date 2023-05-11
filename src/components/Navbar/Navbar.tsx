@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation"
 import Logo from "@/components/Typography/Logo"
 import NavbarLink from "@/components/Navbar/NavbarLink"
+import Link from "next/link"
 
 const navItems = {
   "/": {
@@ -38,6 +39,11 @@ export default function Navbar() {
               {Object.entries(navItems).map(([path, { name }]) => {
                 return <NavbarLink path={path} pathname={pathname} name={name} key={path} />
               })}
+              <li>
+                <Link href="/resume.pdf" target="_blank">
+                  resume
+                </Link>
+              </li>
             </ul>
           </nav>
         </div>
