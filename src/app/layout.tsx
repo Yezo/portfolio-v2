@@ -1,6 +1,5 @@
-import Logo from "@/components/Typography/Logo"
 import "../styles/globals.css"
-import { Faustina, M_PLUS_1, Rubik, Alegreya } from "next/font/google"
+import { Faustina, Rubik, Alegreya } from "next/font/google"
 import Navbar from "@/components/Navbar/Navbar"
 
 export const metadata = {
