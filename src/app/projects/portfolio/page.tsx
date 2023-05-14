@@ -59,9 +59,9 @@ export default function PortfolioPage() {
       <WorksEndNavigation
         demoURL="https://kvo.vercel.app"
         demoTitle="Portfolio"
-        previousURL="/works/"
+        previousURL="/projects/"
         previousTitle="Arkoko"
-        nextURL="/works/riskthinking"
+        nextURL="/projects/riskthinking"
         nextTitle="RiskThinking"
       ></WorksEndNavigation>
     </main>

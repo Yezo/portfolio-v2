@@ -57,9 +57,9 @@ export default function TrackrPage() {
       <WorksEndNavigation
         demoURL="https://trackr-beta.vercel.app/"
         demoTitle="Trackr"
-        previousURL="/works/kore"
+        previousURL="/projects/kore"
         previousTitle="Kore"
-        nextURL="/works/arkoko"
+        nextURL="/projects/arkoko"
         nextTitle="Arkoko"
       ></WorksEndNavigation>
     </main>

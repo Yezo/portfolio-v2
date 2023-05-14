@@ -78,9 +78,9 @@ export default function AniFluxPage() {
       <WorksEndNavigation
         demoURL="https://aniflux.onrender.com/"
         demoTitle="AniFlux"
-        previousURL="/works/arkoko"
+        previousURL="/projects/arkoko"
         previousTitle="Arkoko"
-        nextURL="/works/riskthinking"
+        nextURL="/projects/riskthinking"
         nextTitle="RiskThinking"
       ></WorksEndNavigation>
     </main>

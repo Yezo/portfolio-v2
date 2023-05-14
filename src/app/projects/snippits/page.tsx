@@ -70,9 +70,9 @@ export default function SnippitsPage() {
       <WorksEndNavigation
         demoURL="https://snippits.vercel.app/"
         demoTitle="Snippits"
-        previousURL="/works/portfolio"
+        previousURL="/projects/portfolio"
         previousTitle="My Portfolio"
-        nextURL="/works/kore"
+        nextURL="/projects/kore"
         nextTitle="Kore"
       ></WorksEndNavigation>
     </main>
