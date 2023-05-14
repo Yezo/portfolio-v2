@@ -9,18 +9,18 @@ const navItems = {
   "/": {
     name: "home",
   },
-  "/works": {
-    name: "works",
-  },
   "/profile": {
     name: "profile",
+  },
+  "/projects": {
+    name: "projects",
   },
 }
 
 export default function Navbar() {
   let pathname = usePathname() || "/"
-  if (pathname.includes("/works/")) {
-    pathname = "/works"
+  if (pathname.includes("/projects/")) {
+    pathname = "/projects"
   }
 
   return (
