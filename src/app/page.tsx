@@ -5,6 +5,7 @@ import avatar from "../../public/avatar.webp"
 
 import dynamic from "next/dynamic"
 import Image from "next/image"
+import Link from "next/link"
 
 const InfoBox = dynamic(() => import("@/components/InfoBox/InfoBox"))
 const TitleH1 = dynamic(() => import("@/components/Typography/TitleH1"))
@@ -31,7 +32,7 @@ export default function Home() {
         <Paragraph>{`I'm a design-focused Software Developer that specializes in crafting user-centered digital experiences through creativity and strategic design.`}</Paragraph>
       </section>
       <InfoBox />
-      <TitleH2>Selected works</TitleH2>
+      <TitleH2>Selected projects</TitleH2>
       <div className="mt-6">
         <ProjectBox
           imageURL={arkoko}
@@ -54,6 +55,10 @@ export default function Home() {
           description="Work sample for riskthinking.ai visualizing climate risk datasets"
           caseLink="/works/riskthinking"
         />
+
+        <div className="pt-8 font-rubik text-lg tracking-wide text-[#2b2b2b]">
+          <Link href="/projects">{"View all projects → "}</Link>
+        </div>
       </div>
     </main>
   )
