@@ -39,21 +39,21 @@ export default function Home() {
           imageALT="Picture of Arkoko's brand logo"
           title="Arkoko"
           description="Helping gamers minimize daily micro-decisions through data-driven analysis"
-          caseLink="/works/arkoko"
+          caseLink="/projects/arkoko"
         />
         <ProjectBox
           imageURL={aniflux}
           imageALT="Picture of AniFlux's brand logo"
           title="AniFlux"
           description="Exploring a modern re-design to the anime and manga database experience"
-          caseLink="/works/aniflux"
+          caseLink="/projects/aniflux"
         />
         <ProjectBox
           imageURL={riskthinking}
           imageALT="Picture of riskthinking's brand logo"
           title="RiskThinking"
           description="Work sample for riskthinking.ai visualizing climate risk datasets"
-          caseLink="/works/riskthinking"
+          caseLink="/projects/riskthinking"
         />
 
         <div className="pt-8 font-rubik text-lg tracking-wide text-[#2b2b2b]">
