@@ -51,37 +51,41 @@ export default function ArkokoPage() {
         <div>
           <TitleH2>The Problem</TitleH2>
           <Paragraph>
-            {`People enjoy playing video games but they tend to dislike figuring out efficient methods
-          or calculating various outcomes themselves. It's tedious, time-consuming, and it
-          ultimately takes away from the precious time they could have spent playing the video game
-          in the first place.`}
+            {`Video games are a beloved pastime for many, offering an immersive experience. However, players often find themselves frustrated when faced with the task of figuring out efficient methods or calculating various outcomes on their own. This process can be tedious, time-consuming, and detracts from the valuable time they could have spent enjoying the game itself.`}
+          </Paragraph>
+          <Paragraph>
+            {`As a software engineer, I am driven by the opportunity to develop tools, systems, and algorithms that streamline gameplay and remove unnecessary barriers. By automating complex calculations, optimizing strategies, and providing in-game guidance.`}
+          </Paragraph>
+          <Paragraph>
+            {`Through Arkoko, I aim to create an intuitive experience that maximizes players' enjoyment. By reducing the mental effort associated with figuring out efficient methods or calculating outcomes, I enable gamers to focus on what truly matters — the thrill of playing the game that they enjoy.`}
           </Paragraph>
         </div>
 
         <div>
           <TitleH2>The Solution</TitleH2>
           <Paragraph>
-            {`Arkoko aims to alleviate this situation by providing an all-in-one pitstop for calculators, guides, tools, and resources for the online MMORPG "Lost Ark." Players no longer need to spend minutes themselves calculating whether or not an item is profitable to craft. The tools that Arkoko provides calculates everything for the user when provided with minimal input values.`}
+            {`Arkoko is dedicated to solving this issue by offering a comprehensive all-in-one pitstop of calculators, guides, tools, and resources tailored for the online MMORPG "Lost Ark." Players are no longer required to spend valuable time crunching numbers to find out what's efficient and what's not. With Arkoko's efficient tools, users can input minimal values and have all the necessary calculations performed automatically. This streamlined approach simplifies decision-making processes and empowers players to optimize their gaming experience.
+            `}
           </Paragraph>
         </div>
 
         <div>
           <TitleH2>Challenges</TitleH2>
           <Paragraph>
-            {`Arkoko was a project I've wanted to create ever since I started my first line of code. I knew this was a goal I wanted to achieve and the process of developing it was quite the hurdle. Ultimately, it has gone through many different versions, both from a technological standpoint and a visual one. Designing a website from scratch was definitely difficult but I am confident the current look of Arkoko is modern and unique. The in-game tools I've developed are unique and it was a challenge getting the calculators to work how I wanted them to without any guidance or documentation to refer to. However, it is without a doubt twice as rewarding when I figure out the problems myself and I think that is what keeps me working on Arkoko as my main passion project.`}
+            {`Ever since I wrote my first line of code, creating Arkoko has been a long-held aspiration. It has been a challenging journey, marked by numerous iterations and iterations, both in terms of technology and visual design. Crafting a website from scratch presented its difficulties, yet I am proud of the modern and distinctive appearance of Arkoko today. Developing the in-game tools, particularly the calculators, posed a unique challenge. Without any guidance or documentation to rely on, I had to overcome hurdles to ensure they functioned precisely as intended. However, the process of troubleshooting and resolving these obstacles by myself has made the achievement doubly rewarding. It is this sense of personal accomplishment that fuels my unwavering dedication to Arkoko, which remains my foremost passion project.`}
           </Paragraph>
           <Paragraph>
-            {`From a technical standpoint, the biggest challenge was definitely the Oreha Crafting Calculator. The data structures involved were complicated since they used nested objects for the recipes. It was also difficult managing data coming from the local API as well as from the LostArkMarketOnline API. The code implementation for this specific tool leaves much to be desired. I would definitely refactor the code into a more elegant solution the next time I re-visit that component. My biggest takeaway from programming this would have to be the merging and manipulation of nested array of objects.`}
+            {`Undoubtedly, the most significant technical challenge I encountered was while working on the Oreha Crafting Calculator. The complexity arose from the intricate data structures involved, particularly the usage of nested objects for the recipes. Managing data from both the local API and the LostArkMarketOnline API further added to the difficulty. Upon reflection, the code implementation for this specific tool falls short of my desired standards. Given the chance, I would refactor the code to achieve a more elegant and streamlined solution when revisiting that component. The most valuable lesson I gained from programming this feature was mastering the art of merging and manipulating nested arrays of objects.`}
           </Paragraph>
         </div>
 
         <div>
           <TitleH2>Areas of improvement</TitleH2>
           <Paragraph>
-            {`Arkoko has many features and a majority of its content comes in the form of tabular data. Designing tabular data for mobile-first responsive design is a challenging task. The main challenge is figuring out which categories should be omitted on mobile, if needed at all. On the other hand, one alternative is to implement a completely brand new design to an existing component to show to users when on mobile as seen with the Mari's Shop page.`}
+            {`Arkoko is an ambitious project with a vision to introduce a multitude of additional features in the future. However, one significant challenge is the absence of an official API that can provide real-time data. Currently, Arkoko relies on its own local API, which, regrettably, lacks sufficient data, and an external third-party API that relies on crowd-sourced information. The dependency on these limited data sources is less than ideal. Ideally, in the future, it is my hope that Amazon will launch an official API, offering comprehensive and reliable data that would greatly enhance the capabilities of Arkoko.`}
           </Paragraph>
           <Paragraph>
-            {`The website itself fetches a lot of data from multiple sources. It pulls data from our own API that has stored data in MongoDB and it also takes in data from an external API. It would be a huge improvement to the codebase as well as the developer experience if I added a state management library like Redux, SWR, or Zustand. To further abstract the component logic from the view logic, it would be wise to create custom hooks for many of the components.`}
+            {`The website relies on fetching extensive data from multiple sources. It retrieves information from our MongoDB-based API, which houses our stored data, and also integrates data from an external API. To enhance both the codebase and the developer experience, incorporating a state management library such as Redux, SWR, or Zustand would yield significant improvements. Additionally, in order to further separate the component logic from the view logic, creating custom hooks for various components would be a good choice to achieve abstraction.`}
           </Paragraph>
         </div>
       </section>
