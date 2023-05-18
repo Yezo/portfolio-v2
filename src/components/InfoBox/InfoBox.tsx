@@ -12,8 +12,12 @@ export default function InfoBox() {
           Currently looking for opportunities
         </div>
         <div className="font-rubik text-sm font-light leading-6">
-          <div> {"I'd love to join a team of creative designers and developers."}</div>
-          <span>
+          <div>
+            {
+              "If you seek a developer with a keen eye for design, I would be thrilled to join a team of creative designers and developers. "
+            }
+          </div>
+          <div className="pt-2">
             {`Reach out and`}{" "}
             <span>
               <Link
@@ -23,7 +27,7 @@ export default function InfoBox() {
                 {"say hello! 👋"}
               </Link>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>
