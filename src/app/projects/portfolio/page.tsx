@@ -40,29 +40,28 @@ export default function PortfolioPage() {
       <section className="mt-8 space-y-6">
         <div>
           <TitleH2>Why Make A New Portfolio?</TitleH2>
-          <Paragraph>{`Originally, my first portfolio was created with React and featured a lot of fading animations. It had a lot of white space and in my opinion, it had good visuals and had a clean user interface. The goal was to make myself marketable and show that I could build appealing UIs. However, it became rather apparent that a large majority of hiring managers and recruiters don't visit an applicant's portfolio. `}</Paragraph>
-          <Paragraph>{`Therefore, if there is a low amount of people that actually visit my portfolio, then it is probably a bad idea to have things animate in slowly as well as making the user scroll down just to view my projects. There is a high chance the user may not want to waste their time scrolling down at all! `}</Paragraph>
-          <Paragraph>{`Ultimately, I chose to re-design my portfolio from the ground up. This time, I chose to build the website using Next.js. The goal of this version is to minimize eye travel time for the user from the moment they read my name to the moment they get to see my selected projects on display.  `}</Paragraph>
+          <Paragraph>{`Initially, I developed my portfolio using React, incorporating fading animations and white space to create visually appealing UI. The intention was to showcase my skills and market myself effectively. However, I soon realized that the majority of hiring managers and recruiters rarely visit applicants' portfolios. It became clear that features like slow animations and requiring users to scroll down to view my projects might not be the best approach. There was a high likelihood that users wouldn't want to invest their time scrolling extensively.`}</Paragraph>
+          <Paragraph>{`As a result, I made the decision to completely redesign my portfolio from scratch, this time using Next.js. The primary objective of this revamped version was to minimize eye travel time for users, ensuring that they quickly encounter my name and have immediate access to my selected projects on display. By streamlining the user experience and focusing on efficiency, I aimed to create a portfolio that effectively showcases my work and captivates the attention of potential employers.`}</Paragraph>
         </div>
 
         <div>
           <TitleH2>Artistic Direction</TitleH2>
-          <Paragraph>{`The portfolio itself is very minimalistic in nature. The width of the actual content is fairly short which allows the user to easily read any text content. To achieve this, all content is presented in a singular column. In order to add more depth to the website, I added a second column for the navigation bar.`}</Paragraph>
+          <Paragraph>{`The portfolio takes a sleek and minimalist design approach. To ensure optimal readability, the width of the content is deliberately kept short, enabling users to effortlessly consume text-based information. In order to enhance the website's visual appeal and provide added functionality, a second column is incorporated specifically for the navigation bar, introducing depth and facilitating easy navigation throughout the portfolio.`}</Paragraph>
         </div>
 
         <div>
           <TitleH2>Lessons Learnt</TitleH2>
-          <Paragraph>{`While my first portfolio was ambitious, I've learned to tailor my websites to the target audience. At first, the portfolio was an artistic outlet for my creativity. In my opinion, it was appealing - for others, it may have been a distraction. As a junior developer, my goal was not to market my portfolio as one that could end up on awwwwards or dribble. The goal is to showcase myself as a Software Engineer and the projects I've done in a concise manner to recruiters, hiring managers, and potential employers as efficiently as possible. `}</Paragraph>
+          <Paragraph>{`Through experience, I have come to understand the importance of tailoring my websites to suit the specific target audience. While my initial portfolio was driven by ambition and served as an artistic outlet to showcase my creativity, I recognized that its appeal might have been subjective and potentially distracting for certain viewers. As a junior developer, my primary objective was not to create a portfolio that could match the websites found on awwwards or Dribbble. Instead, my focus shifted towards effectively presenting myself as a skilled Software Engineer and showcasing my projects in a concise manner to recruiters, hiring managers, and potential employers. By aligning my portfolio's design and content with the needs and expectations of this audience, I aimed to highlight my technical expertise and demonstrate my suitability for relevant professional opportunities. `}</Paragraph>
         </div>
       </section>
 
       <WorksEndNavigation
         demoURL="https://kvo.vercel.app"
         demoTitle="Portfolio"
-        previousURL="/projects/"
-        previousTitle="Arkoko"
-        nextURL="/projects/riskthinking"
-        nextTitle="RiskThinking"
+        previousURL="/projects/riskthinking"
+        previousTitle="riskthinking"
+        nextURL="/projects/snippits"
+        nextTitle="Snippits"
       ></WorksEndNavigation>
     </main>
   )
