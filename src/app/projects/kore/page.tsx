@@ -40,17 +40,17 @@ export default function KorePage() {
       <section className="mt-8 space-y-6">
         <div>
           <TitleH2>The Objective</TitleH2>
-          <Paragraph>{`I have been studying and self-teaching myself the Korean language since high school. A lot of people that hear this usually praise me for my dedication to the Korean culture and often say they would also love to learn a language someday. To their surprise, the Korean alphabet is one of the easier languages to learn. Kore is a mini-application/game that helps users be more acquainted with the Korean lettering system and help in their memorization journey. `}</Paragraph>
+          <Paragraph>{`Since high school, I have been dedicated to studying and self-teaching myself the Korean language. When people learn about my passion for Korean, they often admire my commitment, and expressing their own desire to learn a new language. However, many are surprised to discover that the Korean alphabet, known as Hangul, is actually one of the easier writing systems to learn. To assist language learners on their journey to mastering Korean, I developed Kore, a mini-application/game designed to familiarize users with the Korean lettering system.`}</Paragraph>
         </div>
 
         <div>
           <TitleH2>Challenges</TitleH2>
-          <Paragraph>{`It was suprisingly difficult when implementing the game logic at first. There were a lot of edge cases that needed to be covered when users were navigating between letters. For example, if the user is the in the middle of the alphabet and chooses to memorize a letter, the letter should be removed from the array of letters, the count of remaining letters should update accordingly, and the current displayed item should display the previous or next item since it can't display an item that has just been removed. `}</Paragraph>
+          <Paragraph>{`Implementing the game logic for Kore proved to be more challenging than anticipated. Numerous edge cases needed to be addressed, especially when users navigated between letters. For instance, if a user was in the middle of the alphabet and chose to memorize a letter, several actions had to occur simultaneously. The selected letter had to be removed from the array of available letters, the count of remaining letters needed to be updated accordingly, and the current displayed item had to show the previous or next item since the removed letter could no longer be displayed. Tackling these intricacies and ensuring a seamless user experience required careful consideration.`}</Paragraph>
         </div>
 
         <div>
           <TitleH2>Areas of improvement</TitleH2>
-          <Paragraph>{`While this was just a small project to help myself learn more about array manipulation, I hope to expand this project into something bigger than just a mini-game. These type of things can be transferred to learning words and sentences. Ultimately, I'd love to create a web application with multiple learning resources for people to learn more about South Korea's culture and their language.`}</Paragraph>
+          <Paragraph>{`Although Kore started as a small project aimed at enhancing my understanding of array manipulation, I have grand aspirations to expand its scope beyond a simple mini-game. I envision transforming this project into a comprehensive web application that offers a plethora of learning resources, enabling users to delve deeper into South Korea's rich culture and language. One potential avenue for expansion is going beyond just learning the alphabet and help users with word and sentence learning. `}</Paragraph>
         </div>
       </section>
 
