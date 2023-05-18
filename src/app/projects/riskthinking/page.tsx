@@ -55,32 +55,41 @@ export default function KorePage() {
             This project was designed and developed by myself as a work sample for{" "}
             <Link href="https://riskthinking.ai/" className="font-semibold underline">
               riskthinking.ai
-            </Link>
-            . As outlined in their guidelines, the goal was to visualize climate risk datasets in
-            multiple forms including charts, maps, and tables. The project should also have a user
-            interface that integrated different multiple components and it should have interactable
-            user functionality.
+            </Link>{" "}
+            Following their guidelines, the objective was to create a compelling visualization of
+            climate risk datasets using various formats such as charts, maps, and tables.
+            Furthermore, the project required an integrated user interface that seamlessly
+            incorporated multiple components and offered interactive functionality for users to
+            engage with.
+          </Paragraph>
+          <Paragraph>
+            {`In order to meet these requirements, I carefully crafted an interface that effectively
+            showcased the climate risk datasets through visually appealing and informative charts,
+            maps, and tables. The goal was to present the data in a manner that facilitated easy
+            comprehension and allowed users to explore different insights. By integrating various
+            components, I ensured a cohesive user experience, enabling users to navigate seamlessly
+            between different views and access the information they needed.`}
           </Paragraph>
         </div>
 
         <div>
           <TitleH2>The Solution</TitleH2>
-          <Paragraph>{`For integrating the dataset with Maps, I chose Leaflet as my main choice for displaying the data. It was free to use, easy to set-up, and didn't require any extra steps or API keys to get it up and running. Luckily, Leaflet has a community npm package named React-Leaflet that allows for easy integrations when using it alongside React. In regards to user interactivity, I created map markers that displayed data. When a user clicked on the map marker, the data is stored globally through Jotai's global state management which also displayed the relevant information on the Line Chart as well. `}</Paragraph>
-          <Paragraph>{`Chart.js as my library for creating charts was a no-brainer. It is one of the most popular libraries for displaying this type of data. The documentation for Chart.js was not so great which led to a lot of tinkering with configurations and settings. The end result for the line chart is much to be desired but it sufficiently got the job done for me. `}</Paragraph>
-          <Paragraph>{`Finally, I was tasked with visualizing all the data as a table and was required to have sorting, filtering and pagination. At first, I attempted to do this by myself with hand-written code but opted for an external library called PrimeReact to help since it would time-efficient, be more accessible, and have cleaner code. This was my first time using PrimeReact's Data Table component and I was thoroughly impressed with the functionality and documentation. I definitely see myself using this library for all future tabular data.`}</Paragraph>
+          <Paragraph>{`When it came to integrating the dataset with maps, I opted for Leaflet as the primary choice for displaying the data. It proved to be a convenient and hassle-free solution, as it was free to use and didn't require additional steps or API keys to set up. Thankfully, there was a community npm package called React-Leaflet, which seamlessly integrated Leaflet with React, making the implementation process straightforward. To ensure user interactivity, I implemented map markers that displayed relevant data. Upon clicking a marker, the information was stored globally using Jotai's global state management, enabling its display on the Line Chart component as well. `}</Paragraph>
+          <Paragraph>{`For charts, Chart.js was the obvious choice. It is widely recognized as one of the most popular libraries for visualizing this type of data. The documentation for customiztion charts was not very intuitive. Despite this, I delved into experimentation with various configurations and settings to achieve the desired result for the line chart. Although there is room for improvement, the implementation adequately fulfilled the project requirements.`}</Paragraph>
+          <Paragraph>{`Lastly, it was required to create a data table with sorting, filtering, and pagination features. Initially, I attempted to develop this functionality from scratch, but later decided to leverage an external library called PrimeReact for its time efficiency, accessibility benefits, and cleaner code. This marked my first experience utilizing PrimeReact's Data Table component, and I was thoroughly impressed with its functionality and well-documented features. `}</Paragraph>
         </div>
 
         <div>
           <TitleH2>Challenges</TitleH2>
-          <Paragraph>{`The original dataset was actually data stored in a Google spreadsheet file. It was not data that could be easily fetched and be served conveniently as a JSON object. Thus, the spreadsheet would have to be turned into a CSV file and then parsed using an external library called PapaParse. Every component that wanted the data would end up having to individually parse the data which ended up in a lot of repeated code. To solve this, I converted the data parsing logic into a custom hook. `}</Paragraph>
-          <Paragraph>{`Once the dataset was parsed, it turns out one of the fields was just JSON but as a string format since it was parsed through a Google spreadsheet. I found myself needing to manipulate the string in such a way to have it returned as a proper key-value pair so that I could work with this data.  `}</Paragraph>
-          <Paragraph>{`One of the biggest time sinks during this project was an error that occured during the hydration stage of loading a page when attempting to use any form of global state management library within the project. I had tried Redux, ContextAPI, and Jotai all to no avail. Eventually, I found the error was due to using the latest version of Next.js and that there was a problem with JSON.parse crashing a lot of applications. My solution was to downgrade the project's version back down to 13.2.4.  `}</Paragraph>
+          <Paragraph>{`The original dataset was stored in a Google spreadsheet file. The spreadsheet data had to be converted into a CSV file and then parsed using an external library called PapaParse. However, each component that required the data had to individually parse it, resulting in repetitive code. To address this, I refactored the data parsing logic into a custom reusable hook, streamlining the process and eliminating code duplication.`}</Paragraph>
+          <Paragraph>{`After parsing the dataset, I encountered one of the data fields was an object stored as a string after being parsed from the spreadsheet. To work with this data effectively, I needed to manipulate the string and convert it into proper key-value pairs.`}</Paragraph>
+          <Paragraph>{`One significant challenge I faced during the project was an error that occurred during the loading stage of pages when attempting to utilize any form of global state management library. Despite trying Redux, ContextAPI, and Jotai, the error persisted. Eventually, I discovered that the issue stemmed from using the latest version of Next.js, where there was a problem with JSON.parse causing crashes in numerous applications. To resolve this, I downgraded the project's version to 13.2.4, which allowed me to successfuly implement a global state management library.`}</Paragraph>
         </div>
 
         <div>
           <TitleH2>Areas of improvement</TitleH2>
-          <Paragraph>{`The user interface for this project is clean and simple, but it is exactly that. It doesn't stand out in any way and given more time, I would have liked to have transformed the UI into something more polished and presentable. `}</Paragraph>
-          <Paragraph>{`Although I've carried out the tasks outlined by riskthinking.ai, I think I could have implemented more features and tests for the project. In particular, I believe a page dedicated to statistics regarding the data would be helpful to users such as "Locations with the highest risk factor" or "How many locations in this business category have this particular risk factor". `}</Paragraph>
+          <Paragraph>{`The user interface for this project adopts a clean and simplistic design approach. In spite of this, it doesn't possess any elements that particularly stand out in terms of design. Given additional time, I would have liked to transform the UI into a more refined and modern approach. My aim would have been to enhance the overall aesthetics and deliver a more polished user experience.`}</Paragraph>
+          <Paragraph>{`While I successfully completed the tasks assigned by riskthinking.ai, I believe there were opportunities to implement additional features and tests for the project. In particular, I could have developed a dedicated statistics page that would prove valuable to users. This page could showcase insightful data such as "Locations with the highest risk factor" or provide information on the prevalence of specific risk factors within various business categories. By incorporating such statistics, users would gain a deeper understanding of the data and its implications, fostering informed decision-making and enhancing the overall utility of the application. `}</Paragraph>
         </div>
       </section>
 
