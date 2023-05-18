@@ -29,7 +29,7 @@ export default function Home() {
         <TitleH1>{`Kevin Vo `}</TitleH1>
       </div>
       <section className="mt-4">
-        <Paragraph>{`I'm a design-focused Software Developer that specializes in crafting user-centered digital experiences through creativity and strategic design.`}</Paragraph>
+        <Paragraph>{`I am a design-focused Software Engineer specializing in crafting user-centered digital experiences through creativity and strategic design. By understanding user needs, I create visually compelling interfaces that enhance usability and drive positive interactions. `}</Paragraph>
       </section>
       <InfoBox />
       <TitleH2>Selected projects</TitleH2>
