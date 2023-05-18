@@ -49,28 +49,35 @@ export default function AniFluxPage() {
         <div>
           <TitleH2>The Problem</TitleH2>
           <Paragraph>
-            {`There are a lot of anime and manga related websites out there but a large majority of them do not have a modern experience. It is often bloated with unnecessary information making it difficult to digest the details of whatever it is the user is trying to read. As a byproduct, it can be hard to navigate around the website as well.`}
+            {`Many anime and manga-related websites fall short in delivering a modern design and user-friendly experience. These platforms often suffer from information overload, bombarding users with an overwhelming amount of unnecessary data that hinders their ability to focus on the content they seek. The excessive clutter and irrelevant details make it arduous for users to digest and absorb the essential information they are looking for, be it news updates, reviews, or insightful articles.`}
           </Paragraph>
+          <Paragraph>{`Consequently, navigating through such websites can prove to be a challenging task. A lack of a clear user interface make it frustrating for users to navigate around the website and find what they need. Simplifying the interface, implementing logical menu structures, and enhancing search functionalities are crucial steps toward creating a more friendly user experience.`}</Paragraph>
         </div>
 
         <div>
           <TitleH2>The Solution</TitleH2>
           <Paragraph>
-            {`AniFlux is my rendition of an anime/manga website built with modern technologies with modern visuals and a pleasant user experience. Many of the bloat is removed and what remains is the important details regarding a specific anime or manga. Navigation is intuitive and provides many of the resources to allow a user to find exactly which anime or manga they're looking for.`}
+            {`AniFlux is my personal take on an anime and manga website, crafted using modern technologies to deliver a visually appealing and modern experience. With a focus on streamlining the content, unnecessary bloat is eliminated, allowing the detailed information of each anime or manga to shine. The intuitive navigation system empowers users to effortlessly navigate between their desired anime or manga. `}
           </Paragraph>
         </div>
 
         <div>
           <TitleH2>Challenges</TitleH2>
           <Paragraph>
-            {`Unfortunately, the JikanAPI has some shortcomings despite providing a ton of data about anime. It is missing some data points for obscure anime. The API is also free which results in rate-limiting to prevent too many requests. Users that visit AniFlux may experience missing data due to being rate-limited. Despite being such a great API resource, it was rather difficult to develop with it since I would often run into 429 Too Many Requests errors while testing out components. As such, it's difficult to populate pages with multiple pieces of content from the API since you cannot exceed 3 requests a second.`}
+            {`Regrettably, the JikanAPI, while offering a vast amount of data, has certain limitations. Notably, it lacks complete data for more obscure anime titles, which can result in incomplete information being displayed. Additionally, as a free API, it imposes rate limits to prevent an excessive number of requests. This means that users visiting AniFlux may encounter missing data due to rate limiting. While the JikanAPI proves to be a valuable resource, its usage presented challenges during development, as I frequently encountered "429 Too Many Requests" errors when testing components. Consequently, populating pages with multiple pieces of content from the API became difficult, as it was necessary to adhere to the strict limit of no more than 3 requests per second.`}
           </Paragraph>
         </div>
 
         <div>
           <TitleH2>Areas of improvement</TitleH2>
           <Paragraph>
-            {`The Jikan API has many endpoints to fetch data from. Aniflux can definitely be improved by adding more links to more content including recommendations for different anime and manga, fetching reviews, and even schedules for currently airing anime.`}
+            {`The Jikan API offers a wide range of endpoints containing different forms of data. AniFlux has the potential for substantial improvement by leveraging these endpoints to incorporate additional links and expand its content. By integrating recommendations for various anime and manga, fetching reviews from users and critics, and even providing schedules for currently airing anime, AniFlux can enhance the overall user experience and offer a comprehensive platform for enthusiasts. The rate-limiting of the API proves to be a limitation of these features.`}
+          </Paragraph>
+          <Paragraph>
+            {`The inclusion of recommendations will enable users to discover new titles based on their interests and preferences, fostering a sense of exploration and expanding their anime and manga horizons. By featuring user and critic reviews, AniFlux can provide valuable insights and opinions, allowing users to make informed decisions about what to watch or read next. Furthermore, by incorporating schedules for currently airing anime, visitors can stay up to date with the latest episodes and plan their viewing accordingly.`}
+          </Paragraph>
+          <Paragraph>
+            {`These additional content elements will enrich the AniFlux experience, catering to the diverse needs and interests of anime and manga enthusiasts. By utilizing the diverse capabilities of the Jikan API, AniFlux can evolve into a comprehensive and dynamic platform that provides a wealth of information and recommendations, fostering a vibrant community of fans.`}
           </Paragraph>
         </div>
       </section>
