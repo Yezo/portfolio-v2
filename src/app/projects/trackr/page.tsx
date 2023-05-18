@@ -40,17 +40,17 @@ export default function TrackrPage() {
       <section className="mt-8 space-y-6">
         <div>
           <TitleH2>The Objective</TitleH2>
-          <Paragraph>{`Trackr is a way to keep track of all your job applications in one place. It allows for adding different jobs, editing existing applications, and also the removal of old applications. It also keeps track of certain statistics like how many are currently pending or rejected. `}</Paragraph>
+          <Paragraph>{`Trackr is a tool designed to streamline your job application process by centralizing all your applications in one convenient location. With Trackr, you can effortlessly add new job applications, edit existing entries, and remove outdated applications, ensuring that your job search remains organized and efficient. This intuitive platform also provides valuable insights by tracking essential statistics such as the number of pending applications and rejections, offering you a clear overview of your progress.`}</Paragraph>
         </div>
 
         <div>
           <TitleH2>Challenges</TitleH2>
-          <Paragraph>{`I wanted to create a small CRUD project without the use of a database to store data. Since my other projects have never dealt with LocalStorage, I thought this would be a good project to learn more about it. All the job applications are stored in LocalStorage which meant if the user came back on a different day to add more job applications to Trackr, the previous applications would still be there.`}</Paragraph>
+          <Paragraph>{`I wanted to start a project with the aim of building a small CRUD (Create, Read, Update, Delete) application without relying on a traditional database for data storage. As I delved into the development process, I saw it as an excellent opportunity to explore and deepen my understanding of using LocalStorage. By leveraging LocalStorage, I ensured that all job applications added to Trackr would persist even if the user returned on a different day to continue managing their applications. This approach allowed for a seamless user experience, as previous applications would remain accessible and editable, providing continuity and convenience. Through this project, I not only honed my skills in working with LocalStorage but also gained valuable insights into building efficient and practical solutions that cater to user needs.`}</Paragraph>
         </div>
 
         <div>
           <TitleH2>Areas of improvement</TitleH2>
-          <Paragraph>{`The single most outstanding imporvement would obviously be to expand this project to use a CRUD API and implementing user authentication for the adding, editing, removal, and storing of all job applications. It would be a more streamlined experience and it would also prevent users from losing their existing data in cases where the user uses a different device for their job applications. `}</Paragraph>
+          <Paragraph>{`The most significant improvement is the incorporation of a CRUD API coupled with user authentication functionality. By transitioning from LocalStorage to a dedicated database, users would benefit from a more seamless and secure user experience. Implementing user authentication would enable personalized access, ensuring that individuals can retrieve and manage their applications from any device without the risk of data loss.`}</Paragraph>
         </div>
       </section>
 
