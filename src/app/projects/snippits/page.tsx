@@ -41,28 +41,31 @@ export default function SnippitsPage() {
         <div>
           <TitleH2>The Problem</TitleH2>
           <Paragraph>
-            {`Newer and even veteran developers often forget basic syntax while programming. Often times, a quick google search can consume more time than needed. What if there was a single repository for useful code snippets for our favorite programming languages?`}
+            {`Developers, both new and experienced, frequently encounter situations where they forget or need a quick reference to basic syntax while programming. In such cases, resorting to a time-consuming Google search for code snippets can be inefficient. Imagine if there existed a centralized repository that housed a comprehensive collection of useful code snippets for our favorite programming languages. By providing a convenient and reliable source of reference, developers could save valuable time and streamline their coding process, fostering greater productivity and efficiency in their work.`}
           </Paragraph>
         </div>
 
         <div>
           <TitleH2>The Solution</TitleH2>
           <Paragraph>
-            {`Snippits serves as a mini cheatsheet filled with code snippets and other tips and tricks I've found over the course of self teaching myself how to code as a software engineer. The code snippits includes CSS, Javascript, TypeScript, React, and even includes useful Git commands.`}
+            {`Snippits is a curated collection of code snippets and invaluable tips and tricks that I have gathered throughout my journey of self-teaching as a software engineer. This resource offers quick access to a wide range of code snippets covering CSS, JavaScript, TypeScript, React, and even helpful Git commands. By compiling these snippets, I aim to provide fellow developers with a handy reference guide that can assist them in their coding endeavors. Snippits offers a convenient repository of practical code examples and insights to enhance your development workflow.`}
           </Paragraph>
         </div>
 
         <div>
           <TitleH2>Challenges</TitleH2>
           <Paragraph>
-            {`Between in-depth articles, blog posts, or a grid of random snippets, it was rather challenging trying to figure out which format I wanted the website to use. The idea of code snippets was for it to be easily accessible and fast to look up on a whim. In-depth articles didn't satisfy either of those although articles and blog posts would have allowed me to go a lot more indepth. Ultimately, I went with dropdown selections for the code snippets and added a mini description to help facilitate further explanation if needed.`}
+            {`Determining the optimal format for presenting the content on the website posed a significant challenge. Balancing between in-depth articles, blog posts, or a grid of random snippets required careful consideration. Considering the primary objective of Snippits, which is to provide quick and easily accessible code references, articles and blog posts did not align with the goal of instant access to information.`}
+          </Paragraph>
+          <Paragraph>
+            {`In the end, I opted for an accordion-sstyle approach for the code snippets, allowing users to swiftly navigate and find the desired information. To provide additional context and facilitate understanding, I included concise descriptions alongside the snippets. By finding the right balance between accessibility and information, Snippits strives to serve as a valuable resource for developers seeking instant and concise code references.`}
           </Paragraph>
         </div>
 
         <div>
           <TitleH2>Areas of improvement</TitleH2>
           <Paragraph>
-            {`Snippits can be expanded to allow users from across the world to enter in their own code snippets into a database and have it displayed on the website. There would have to a way to filter between code snippets that actually help people or useless excerpts. Otherwise, users could input wrong data and spread false information. For now, the code snippets are purely curated by myself.`}
+            {`Snippits has the potential to evolve into a platform that allows users worldwide to contribute their own code snippets to a single database. However, to ensure the quality and reliability of the content, careful measures must be taken to filter and validate the submissions. Implementing a robust system that distinguishes between helpful and irrelevant or inaccurate snippets becomes crucial to prevent the spread of false information.`}
           </Paragraph>
         </div>
       </section>
