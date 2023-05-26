@@ -18,7 +18,7 @@ export const metadata = {
 export default function ProfilePage() {
   return (
     <main className="max-w-[555px] flex-auto py-1">
-      <div className="border-b border-[#2b2b2b]/20 pb-2">
+      <div className="border-b border-[#2b2b2b]/20 pb-1 dark:border-[#fff]/20">
         <TitleH1>{`Hey, call me Kev 👋`}</TitleH1>
       </div>
 
@@ -61,7 +61,10 @@ export default function ProfilePage() {
 
         <div className="mt-6 grid grid-cols-4 gap-[1px] font-faustina text-3xl md:grid-cols-6">
           {SKILLS.map((item) => (
-            <div key={item.name} className="flex min-h-[91px] items-center justify-center bg-black">
+            <div
+              key={item.name}
+              className="flex min-h-[91px] items-center justify-center bg-black dark:border dark:border-neutral-500"
+            >
               {item.url && item.url ? (
                 <Link href={item.url}>
                   <Image src={item.icon} alt={item.name} width={35} height={35} />

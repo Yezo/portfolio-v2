@@ -19,9 +19,9 @@ export const metadata = {
 export default function ProjectsPage() {
   return (
     <main className="max-w-[555px] flex-auto py-1">
-      <section className="border-b border-[#2b2b2b]/20 pb-3">
-        <TitleH1>Projects</TitleH1>
-      </section>
+      <div className="border-b border-[#2b2b2b]/20 pb-1 dark:border-[#fff]/20">
+        <TitleH1>{`Projects`}</TitleH1>
+      </div>
       <section className="mt-6">
         <ProjectBox
           imageURL={arkoko}

@@ -22,7 +22,7 @@ export default function PortfolioPage() {
           src={kv}
           alt="Portfolio"
           priority
-          className="mb-1 max-h-[250px] min-w-full rounded object-cover"
+          className="mb-1 max-h-[250px] min-w-full rounded object-cover border border-neutral-500"
         />
       </figure>
 

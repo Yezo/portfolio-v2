@@ -22,7 +22,7 @@ export default function ArkokoPage() {
           src={arkoko}
           alt="Arkoko"
           priority
-          className="mb-1 max-h-[250px] min-w-full rounded object-cover"
+          className="mb-1 max-h-[250px] min-w-full rounded border border-neutral-500 object-cover"
         />
       </figure>
 
