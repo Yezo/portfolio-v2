@@ -22,9 +22,11 @@ export default function ProfilePage() {
         <TitleH1>{`Hey, call me Kev 👋`}</TitleH1>
       </div>
 
-      <Paragraph>{`As a design-focused Software Engineer, I am most experienced with the Javascript ecosystem (React, TS, Next.js, Redux, Node). My current specialization revolves around crafting responsive web applications with a mobile-first approach. I am truly passionate about front-end web positions where the worlds of creative design and web development intersect.`}</Paragraph>
+      <Paragraph>{`I'm a design-focused developer living in Canada, seeking to join a team of creatives. I have a passionate interest in front-end positions that blend the worlds of creative design and web development.`}</Paragraph>
 
-      <Paragraph>{`Video games have played a significant role in shaping my life, as they have the incredible ability to fully immerse players in unforgettable experiences. I attribute my passion for creating immersive experiences to game developers who skillfully craft atmospheres, environments, and interactions within games. It is my goal to replicate those captivating moments and bring them to others through enriching and powerful web experiences. `}</Paragraph>
+      <Paragraph>{`My skillset lies within the Javascript ecosystem, particularly in technologies like React, TypeScript, Next.js, Redux, and Node. I specialize in developing responsive web applications with a mobile-first approach. `}</Paragraph>
+
+      <Paragraph>{`Video games have played a significant role in shaping my life, as they have the incredible ability to fully immerse players in unforgettable experiences. It's my goal to recreate those captivating moments and deliver enriching and impactful web experiences to others. `}</Paragraph>
 
       <section className="mt-6">
         <TitleH2>Contact</TitleH2>
