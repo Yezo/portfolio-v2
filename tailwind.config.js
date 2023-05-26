@@ -22,8 +22,13 @@ module.exports = {
         faustina: ["var(--font-faustina)"],
         rubik: ["var(--font-rubik)"],
         alegreya: ["var(--font-alegreya)"],
+        inter: ["var(--font-inter)"],
       },
       colors: {
+        dark: {
+          background: "#18181A",
+          text: "#d1d5db",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
