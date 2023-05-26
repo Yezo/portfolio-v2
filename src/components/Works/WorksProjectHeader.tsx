@@ -12,12 +12,14 @@ type Props = {
 
 export default function WorksProjectHeader({ title, subtitle, technologies }: Props) {
   return (
-    <section className="mt-1 rounded bg-black p-4 text-white shadow-sm">
-      <div className="text-white">
-        <TitleH1>{title}</TitleH1>
+    <section className="mt-1 rounded border border-neutral-500 bg-black p-4 text-white shadow-sm ">
+      <div className="text-white ">
+        <h1 className="pb-2 font-alegreya text-2xl font-bold [word-spacing:-.04em] lg:text-4xl">
+          {title}
+        </h1>
       </div>
       <Subtitle>{subtitle}</Subtitle>
-      <div className="mt-8 flex select-none flex-wrap gap-2 font-rubik text-xs tracking-widest">
+      <div className="mt-8 flex select-none flex-wrap gap-2 font-rubik text-[0.65rem] tracking-widest ">
         {technologies.map((item, index) => (
           <Badge key={index}>{item}</Badge>
         ))}

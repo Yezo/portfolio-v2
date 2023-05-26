@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation"
 import Logo from "@/components/Typography/Logo"
 import NavbarLink from "@/components/Navbar/NavbarLink"
 import Link from "next/link"
+import { ThemeToggle } from "@/components/Theme/theme-toggle"
 
 const navItems = {
   "/": {
@@ -44,6 +45,9 @@ export default function Navbar() {
                   resume
                 </Link>
               </li>
+              {/* <li>
+                <ThemeToggle />
+              </li> */}
             </ul>
           </nav>
         </div>

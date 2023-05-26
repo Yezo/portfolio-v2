@@ -12,7 +12,7 @@ export default function WorksExternalLinks({ githubURL, demoURL }: Props) {
       <Link
         href={githubURL}
         target="_blank"
-        className="flex w-full select-none items-center justify-between rounded  bg-black p-4 font-rubik font-medium text-white shadow-sm transition-colors hover:bg-[#262626]"
+        className="flex w-full select-none items-center justify-between rounded border border-neutral-500 bg-black p-4 font-rubik font-medium text-white transition-colors hover:bg-[#262626]"
       >
         <div className="flex items-center gap-2 text-[0.8rem]">
           <GithubIcon size="20" />
@@ -24,7 +24,7 @@ export default function WorksExternalLinks({ githubURL, demoURL }: Props) {
       <Link
         href={demoURL}
         target="_blank"
-        className="flex w-full select-none items-center justify-between rounded  bg-black p-4 font-rubik font-medium text-white shadow-sm transition-colors hover:bg-[#262626]"
+        className="flex w-full select-none items-center justify-between rounded border border-neutral-500 bg-black p-4 font-rubik font-medium text-white transition-colors hover:bg-[#262626]"
       >
         <div className="flex items-center gap-2 text-[0.8rem]">
           <RocketIcon size="20" />
