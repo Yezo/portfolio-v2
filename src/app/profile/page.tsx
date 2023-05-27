@@ -5,6 +5,7 @@ import dynamic from "next/dynamic"
 import Image from "next/image"
 import Link from "next/link"
 
+const MainContainer = dynamic(() => import("@/components/Main/MainContainer"))
 const TitleH1 = dynamic(() => import("@/components/Typography/TitleH1"))
 const TitleH2 = dynamic(() => import("@/components/Typography/TitleH2"))
 const Paragraph = dynamic(() => import("@/components/Typography/Paragraph"))
@@ -17,7 +18,7 @@ export const metadata = {
 
 export default function ProfilePage() {
   return (
-    <main className="max-w-[555px] flex-auto py-1">
+    <MainContainer>
       <div className="border-b border-[#2b2b2b]/20 pb-1 dark:border-[#fff]/20">
         <TitleH1>{`Hey, call me Kev 👋`}</TitleH1>
       </div>
@@ -76,7 +77,7 @@ export default function ProfilePage() {
           ))}
         </div>
       </section>
-    </main>
+    </MainContainer>
   )
 }
 

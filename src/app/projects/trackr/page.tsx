@@ -3,6 +3,7 @@ import trackr from "../../../../public/trackr.png"
 import dynamic from "next/dynamic"
 import Image from "next/image"
 
+const MainContainer = dynamic(() => import("@/components/Main/MainContainer"))
 const TitleH2 = dynamic(() => import("@/components/Typography/TitleH2"))
 const Paragraph = dynamic(() => import("@/components/Typography/Paragraph"))
 const WorksProjectHeader = dynamic(() => import("@/components/Works/WorksProjectHeader"))
@@ -16,7 +17,7 @@ export const metadata = {
 
 export default function TrackrPage() {
   return (
-    <main className="max-w-[555px] flex-auto py-1">
+    <MainContainer>
       <figure>
         <Image
           src={trackr}
@@ -62,6 +63,6 @@ export default function TrackrPage() {
         nextURL="/projects/arkoko"
         nextTitle="Arkoko"
       ></WorksEndNavigation>
-    </main>
+    </MainContainer>
   )
 }

@@ -3,6 +3,7 @@ import snippits from "../../../../public/snippits.webp"
 import dynamic from "next/dynamic"
 import Image from "next/image"
 
+const MainContainer = dynamic(() => import("@/components/Main/MainContainer"))
 const TitleH2 = dynamic(() => import("@/components/Typography/TitleH2"))
 const Paragraph = dynamic(() => import("@/components/Typography/Paragraph"))
 const WorksProjectHeader = dynamic(() => import("@/components/Works/WorksProjectHeader"))
@@ -16,13 +17,13 @@ export const metadata = {
 
 export default function SnippitsPage() {
   return (
-    <main className="max-w-[555px] flex-auto py-1">
+    <MainContainer>
       <figure>
         <Image
           src={snippits}
           alt="Snippits"
           priority
-          className="mb-1 max-h-[250px] min-w-full rounded object-cover border border-neutral-500"
+          className="mb-1 max-h-[250px] min-w-full rounded border border-neutral-500 object-cover"
         />
       </figure>
 
@@ -78,6 +79,6 @@ export default function SnippitsPage() {
         nextURL="/projects/kore"
         nextTitle="Kore"
       ></WorksEndNavigation>
-    </main>
+    </MainContainer>
   )
 }

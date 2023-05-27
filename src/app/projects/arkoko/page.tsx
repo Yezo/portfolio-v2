@@ -16,7 +16,7 @@ export const metadata = {
 
 export default function ArkokoPage() {
   return (
-    <main className="max-w-[555px] flex-auto py-1">
+    <main className="max-w-[600px] flex-auto py-1">
       <figure>
         <Image
           src={arkoko}

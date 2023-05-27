@@ -3,6 +3,7 @@ import kore from "../../../../public/kore.png"
 import dynamic from "next/dynamic"
 import Image from "next/image"
 
+const MainContainer = dynamic(() => import("@/components/Main/MainContainer"))
 const TitleH2 = dynamic(() => import("@/components/Typography/TitleH2"))
 const Paragraph = dynamic(() => import("@/components/Typography/Paragraph"))
 const WorksProjectHeader = dynamic(() => import("@/components/Works/WorksProjectHeader"))
@@ -16,7 +17,7 @@ export const metadata = {
 
 export default function KorePage() {
   return (
-    <main className="max-w-[555px] flex-auto py-1">
+    <MainContainer>
       <figure>
         <Image
           src={kore}
@@ -62,6 +63,6 @@ export default function KorePage() {
         nextURL="/projects/trackr"
         nextTitle="Trackr"
       ></WorksEndNavigation>
-    </main>
+    </MainContainer>
   )
 }
