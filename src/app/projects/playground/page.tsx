@@ -29,31 +29,28 @@ export default function TrackrPage() {
         />
       </figure>
 
-      <WorksExternalLinks
-        githubURL="https://github.com/Yezo/learn-trackran"
-        demoURL="https://trackr-beta.vercel.app/"
-      />
+      <WorksExternalLinks githubURL="https://github.com/Yezo/shadcn-playground" demoURL="/" />
 
       <WorksProjectHeader
-        title="trackr"
-        subtitle="Mar. 2023"
-        technologies={["React", "TypeScript", "Tailwind", "Vite"]}
+        title="Playground"
+        subtitle="Apr. 2023"
+        technologies={["Next.js", "TypeScript", "Tailwind", "RadixUI", "shadcn"]}
       />
 
       <section className="mt-8 space-y-6">
         <div>
-          <TitleH2>The Objective</TitleH2>
-          <Paragraph>{`Trackr is a tool designed to streamline your job application process by centralizing all your applications in one convenient location. With Trackr, you can effortlessly add new job applications, edit existing entries, and remove outdated applications, ensuring that your job search remains organized and efficient. This intuitive platform also provides valuable insights by tracking essential statistics such as the number of pending applications and rejections, offering you a clear overview of your progress.`}</Paragraph>
+          <TitleH2>The Purpose</TitleH2>
+          <Paragraph>{`This playground is a place for me to play around and test different components from the component library that shadcn has built.`}</Paragraph>
         </div>
 
         <div>
           <TitleH2>Challenges</TitleH2>
-          <Paragraph>{`I wanted to start a project with the aim of building a small CRUD (Create, Read, Update, Delete) application without relying on a traditional database for data storage. As I delved into the development process, I saw it as an excellent opportunity to explore and deepen my understanding of using LocalStorage. By leveraging LocalStorage, I ensured that all job applications added to Trackr would persist even if the user returned on a different day to continue managing their applications. This approach allowed for a seamless user experience, as previous applications would remain accessible and editable, providing continuity and convenience. Through this project, I not only honed my skills in working with LocalStorage but also gained valuable insights into building efficient and practical solutions that cater to user needs.`}</Paragraph>
+          <Paragraph>{``}</Paragraph>
         </div>
 
         <div>
           <TitleH2>Areas of improvement</TitleH2>
-          <Paragraph>{`The most significant improvement is the incorporation of a CRUD API coupled with user authentication functionality. By transitioning from LocalStorage to a dedicated database, users would benefit from a more seamless and secure user experience. Implementing user authentication would enable personalized access, ensuring that individuals can retrieve and manage their applications from any device without the risk of data loss.`}</Paragraph>
+          <Paragraph>{``}</Paragraph>
         </div>
       </section>
 
