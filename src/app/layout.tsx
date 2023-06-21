@@ -2,7 +2,7 @@ import "../styles/globals.css"
 import { Faustina, Rubik, Alegreya, Inter } from "next/font/google"
 import Navbar from "@/components/Navbar/Navbar"
 import { ThemeProvider } from "@/components/Theme/theme-provider"
-
+import { Analytics } from "@vercel/analytics/react"
 export const metadata = {
   title: {
     default: "Kevin Vo",
@@ -56,6 +56,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Navbar />
 
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
