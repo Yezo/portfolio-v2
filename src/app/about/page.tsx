@@ -12,16 +12,14 @@ const Paragraph = dynamic(() => import("@/components/Typography/Paragraph"))
 const ContactButton = dynamic(() => import("@/components/Contact/ContactButton"))
 
 export const metadata = {
-  title: "Profile",
-  description: "Profile page for Kevin Vo's Portfolio",
+  title: "About",
+  description: "About page for Kevin Vo's Portfolio",
 }
 
-export default function ProfilePage() {
+export default function AboutPage() {
   return (
     <MainContainer>
-      <div className="border-b border-[#2b2b2b]/20 pb-1 dark:border-[#fff]/20">
-        <TitleH1>{`Hey, call me Kev 👋`}</TitleH1>
-      </div>
+      <TitleH1>{`About`}</TitleH1>
 
       <Paragraph>{`I'm a design-focused developer living in Canada, seeking to join a team of creatives. I have a passionate interest in front-end positions that blend the worlds of creative design and web development.`}</Paragraph>
 
