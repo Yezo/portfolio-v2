@@ -1,4 +1,4 @@
-import snippits from "../../../../public/snippits.webp"
+import snippits from "../../../../public/snippits.png"
 
 import dynamic from "next/dynamic"
 import Image from "next/image"

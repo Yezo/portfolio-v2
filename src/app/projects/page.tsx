@@ -1,6 +1,6 @@
-import arkoko from "../../../public/arkoko.webp"
-import aniflux from "../../../public/aniflux.webp"
-import snippits from "../../../public/snippits.webp"
+import arkoko from "../../../public/arkoko.png"
+import aniflux from "../../../public/aniflux.png"
+import snippits from "../../../public/snippits.png"
 import trackr from "../../../public/trackr.png"
 import kore from "../../../public/kore.png"
 import riskthinking from "../../../public/riskthinking.png"
@@ -39,7 +39,7 @@ export default function ProjectsPage() {
         />
         <ProjectBox
           imageURL={riskthinking}
-          imageALT="Picture of riskthinking's brand logo"
+          imageALT="Picture of inging's brand logo"
           title="riskthinking."
           description="Web application as a work sample for riskthinking.ai visualizing climate risk datasets"
           caseLink="/projects/riskthinking"

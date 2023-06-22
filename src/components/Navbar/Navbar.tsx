@@ -16,6 +16,9 @@ const navItems = {
   "/projects": {
     name: "projects",
   },
+  "/resources": {
+    name: "resources",
+  },
 }
 
 export default function Navbar() {

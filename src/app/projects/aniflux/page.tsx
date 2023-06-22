@@ -1,4 +1,4 @@
-import aniflux from "../../../../public/aniflux.webp"
+import aniflux from "../../../../public/aniflux.png"
 
 import dynamic from "next/dynamic"
 import Image from "next/image"

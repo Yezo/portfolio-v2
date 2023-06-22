@@ -1,5 +1,4 @@
-import arkoko from "../../../../public/arkoko.webp"
-
+import arkoko from "../../../../public/arkoko.png"
 import dynamic from "next/dynamic"
 import Image from "next/image"
 

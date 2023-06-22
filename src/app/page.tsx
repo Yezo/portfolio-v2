@@ -1,5 +1,5 @@
-import arkoko from "../../public/arkoko.webp"
-import aniflux from "../../public/aniflux.webp"
+import arkoko from "../../public/arkoko.png"
+import aniflux from "../../public/aniflux.png"
 import riskthinking from "../../public/riskthinking.png"
 
 import dynamic from "next/dynamic"
@@ -14,7 +14,7 @@ const ProjectBox = dynamic(() => import("@/components/Projects/ProjectBox"))
 export default function Home() {
   return (
     <MainContainer>
-      <TitleH1>{`Kevin Vo`}</TitleH1>
+      <TitleH1>{`Kevin Vo `}</TitleH1>
 
       <section className="mb-12 mt-4">
         <Paragraph>{`I'm a design-focused developer specializing in crafting user-centered digital experiences through creativity and strategic design. By understanding user needs, I create visually compelling interfaces that enhance usability and drive positive interactions. `}</Paragraph>
@@ -24,7 +24,7 @@ export default function Home() {
           <span>
             <Link
               href="mailto:kvo.codes@gmail.com"
-              className="text-[0.95rem] font-bold underline transition-all hover:opacity-[0.7]"
+              className="text-[0.95rem] font-bold transition-all hover:opacity-[0.7] dark:text-[#F3F4F6]"
             >
               {"say hello!"}
             </Link>
