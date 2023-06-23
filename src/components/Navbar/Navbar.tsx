@@ -48,9 +48,9 @@ export default function Navbar() {
                   resume
                 </Link>
               </li>
-              {/* <li>
+              <li>
                 <ThemeToggle />
-              </li> */}
+              </li>
             </ul>
           </nav>
         </div>
