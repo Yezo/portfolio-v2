@@ -1,6 +1,7 @@
 import arkoko from "../../public/arkoko.png"
 import aniflux from "../../public/aniflux.png"
 import riskthinking from "../../public/riskthinking.png"
+import kv from "../../public/kv.png"
 
 import dynamic from "next/dynamic"
 import Link from "next/link"
@@ -56,6 +57,13 @@ export default function Home() {
           title="riskthinking."
           description="Work sample for riskthinking.ai visualizing climate risk datasets"
           caseLink="/projects/riskthinking"
+        />
+        <ProjectBox
+          imageURL={kv}
+          imageALT="Picture of Kevin Vo's brand logo"
+          title="my portfolio."
+          description="A deep dive on a junior web developer's perspective to self-branding"
+          caseLink="/projects/portfolio"
         />
 
         <div className="pt-8 font-rubik text-lg tracking-wide dark:text-white">
