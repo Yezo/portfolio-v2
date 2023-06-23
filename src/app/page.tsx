@@ -66,7 +66,7 @@ export default function Home() {
           caseLink="/projects/portfolio"
         />
 
-        <div className="pt-8 font-rubik text-lg tracking-wide dark:text-white">
+        <div className="pt-8 font-rubik  tracking-wide dark:text-white">
           <Link href="/projects">{"View all projects → "}</Link>
         </div>
       </div>
