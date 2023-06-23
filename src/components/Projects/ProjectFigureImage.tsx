@@ -14,7 +14,7 @@ export default function ProjectFigureImage({ src, alt }: Props) {
         src={src}
         alt={alt}
         priority
-        className="mb-1 max-h-[350px] min-w-full rounded object-cover shadow-sm"
+        className="mb-1 mt-4 max-h-[350px] min-w-full rounded object-cover shadow-md"
       />
     </figure>
   )
