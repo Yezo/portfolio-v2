@@ -1,12 +1,15 @@
 import arkoko from "../../../../public/arkoko.png"
 import dynamic from "next/dynamic"
-import Image from "next/image"
 
+const MainContainer = dynamic(() => import("@/components/Main/MainContainer"))
 const TitleH2 = dynamic(() => import("@/components/Typography/TitleH2"))
 const Paragraph = dynamic(() => import("@/components/Typography/Paragraph"))
-const WorksProjectHeader = dynamic(() => import("@/components/Works/WorksProjectHeader"))
-const WorksExternalLinks = dynamic(() => import("@/components/Works/WorksExternalLinks"))
 const WorksEndNavigation = dynamic(() => import("@/components/Works/WorksEndNavigation"))
+const ExternalLinkContainer = dynamic(() => import("@/components/Contact/ExternalLinkContainer"))
+const ExternalLinkButton = dynamic(() => import("@/components/Contact/ExternalLinkButton"))
+const ExternalLinkDate = dynamic(() => import("@/components/Contact/ExternalLinkDate"))
+const ProjectFigureImage = dynamic(() => import("@/components/Projects/ProjectFigureImage"))
+const ProjectLinkContainer = dynamic(() => import("@/components/Projects/ProjectLinkContainer"))
 
 export const metadata = {
   title: "Arkoko",
@@ -15,38 +18,31 @@ export const metadata = {
 
 export default function ArkokoPage() {
   return (
-    <main className="max-w-[600px] flex-auto py-1">
-      <figure>
-        <Image
-          src={arkoko}
-          alt="Arkoko"
-          priority
-          className="mb-1 max-h-[250px] min-w-full rounded border border-neutral-500 object-cover"
-        />
-      </figure>
+    <MainContainer>
+      <ProjectFigureImage src={arkoko} alt="Image of arkoko's website" />
 
-      <WorksExternalLinks
-        githubURL="https://github.com/Yezo/arkoko"
-        demoURL="https://arkoko.vercel.app/"
-      />
+      <ProjectLinkContainer>
+        <ExternalLinkContainer
+          title="Arkoko"
+          description="React, Typescript, Tailwind, Node.js, Express, MongoDB, Vite"
+        >
+          <ExternalLinkDate>Dec. 2022 - Apr.2023</ExternalLinkDate>
+        </ExternalLinkContainer>
 
-      <WorksProjectHeader
-        title="arkoko"
-        subtitle="Dec. 2023 - Apr. 2023"
-        technologies={[
-          "React",
-          "TypeScript",
-          "Tailwind",
-          "Node.js",
-          "Express",
-          "MongoDB",
-          "Mongoose",
-          "React-Router",
-          "Vite",
-        ]}
-      />
+        <ExternalLinkContainer title="Live Demo" description="arkoko.vercel.app">
+          <ExternalLinkButton url="https://arkoko.vercel.app" type="External">
+            View Live Demo
+          </ExternalLinkButton>
+        </ExternalLinkContainer>
 
-      <section className="mt-8 space-y-6">
+        <ExternalLinkContainer title="GitHub Repository" description="github.com/Yezo/arkoko">
+          <ExternalLinkButton url="https://github.com/Yezo/arkoko" type="GitHub">
+            View on GitHub
+          </ExternalLinkButton>
+        </ExternalLinkContainer>
+      </ProjectLinkContainer>
+
+      <section className="mt-8 space-y-16">
         <div>
           <TitleH2>The Problem</TitleH2>
           <Paragraph>
@@ -119,6 +115,6 @@ export default function ArkokoPage() {
         nextURL="/projects/aniflux"
         nextTitle="AniFlux"
       ></WorksEndNavigation>
-    </main>
+    </MainContainer>
   )
 }

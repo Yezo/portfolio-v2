@@ -2,14 +2,16 @@ import riskthinking from "../../../../public/riskthinking.png"
 
 import Link from "next/link"
 import dynamic from "next/dynamic"
-import Image from "next/image"
 
 const MainContainer = dynamic(() => import("@/components/Main/MainContainer"))
 const TitleH2 = dynamic(() => import("@/components/Typography/TitleH2"))
 const Paragraph = dynamic(() => import("@/components/Typography/Paragraph"))
-const WorksProjectHeader = dynamic(() => import("@/components/Works/WorksProjectHeader"))
-const WorksExternalLinks = dynamic(() => import("@/components/Works/WorksExternalLinks"))
 const WorksEndNavigation = dynamic(() => import("@/components/Works/WorksEndNavigation"))
+const ExternalLinkContainer = dynamic(() => import("@/components/Contact/ExternalLinkContainer"))
+const ExternalLinkButton = dynamic(() => import("@/components/Contact/ExternalLinkButton"))
+const ExternalLinkDate = dynamic(() => import("@/components/Contact/ExternalLinkDate"))
+const ProjectFigureImage = dynamic(() => import("@/components/Projects/ProjectFigureImage"))
+const ProjectLinkContainer = dynamic(() => import("@/components/Projects/ProjectLinkContainer"))
 
 export const metadata = {
   title: "RiskThinking",
@@ -19,37 +21,30 @@ export const metadata = {
 export default function KorePage() {
   return (
     <MainContainer>
-      <figure>
-        <Image
-          src={riskthinking}
-          alt="RiskThinking"
-          priority
-          className="mb-1 max-h-[250px] min-w-full rounded border border-neutral-500 object-cover"
-        />
-      </figure>
+      <ProjectFigureImage src={riskthinking} alt="Image of riskthinking's website" />
 
-      <WorksExternalLinks
-        githubURL="https://github.com/Yezo/riskthinking"
-        demoURL="https://riskthinking.vercel.app/"
-      />
+      <ProjectLinkContainer>
+        <ExternalLinkContainer
+          title="riskthinking.ai"
+          description="Next.js, Jotai, TypeScript, Tailwind, Chart.js, Leaflet, PrimeReact, Jest"
+        >
+          <ExternalLinkDate>Apr. 2023</ExternalLinkDate>
+        </ExternalLinkContainer>
 
-      <WorksProjectHeader
-        title="riskthinking"
-        subtitle="Apr. 2023"
-        technologies={[
-          "Next.js",
-          "React",
-          "Jotai",
-          "TypeScript",
-          "Tailwind",
-          "Chart.js",
-          "React-Leaflet",
-          "PrimeReact",
-          "Jest",
-        ]}
-      />
+        <ExternalLinkContainer title="Live Demo" description="riskthinking.vercel.app/">
+          <ExternalLinkButton url="https://riskthinking.vercel.app/" type="External">
+            View Live Demo
+          </ExternalLinkButton>
+        </ExternalLinkContainer>
 
-      <section className="mt-8 space-y-6">
+        <ExternalLinkContainer title="GitHub Repository" description="github.com/Yezo/riskthinking">
+          <ExternalLinkButton url="https://github.com/Yezo/riskthinking" type="GitHub">
+            View on GitHub
+          </ExternalLinkButton>
+        </ExternalLinkContainer>
+      </ProjectLinkContainer>
+
+      <section className="mt-8 space-y-16">
         <div>
           <TitleH2>The Objective</TitleH2>
           <Paragraph>

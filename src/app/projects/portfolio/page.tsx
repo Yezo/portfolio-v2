@@ -1,14 +1,15 @@
 import kv from "../../../../public/kv.png"
-
 import dynamic from "next/dynamic"
-import Image from "next/image"
 
 const MainContainer = dynamic(() => import("@/components/Main/MainContainer"))
 const TitleH2 = dynamic(() => import("@/components/Typography/TitleH2"))
 const Paragraph = dynamic(() => import("@/components/Typography/Paragraph"))
-const WorksProjectHeader = dynamic(() => import("@/components/Works/WorksProjectHeader"))
-const WorksExternalLinks = dynamic(() => import("@/components/Works/WorksExternalLinks"))
 const WorksEndNavigation = dynamic(() => import("@/components/Works/WorksEndNavigation"))
+const ExternalLinkContainer = dynamic(() => import("@/components/Contact/ExternalLinkContainer"))
+const ExternalLinkButton = dynamic(() => import("@/components/Contact/ExternalLinkButton"))
+const ExternalLinkDate = dynamic(() => import("@/components/Contact/ExternalLinkDate"))
+const ProjectFigureImage = dynamic(() => import("@/components/Projects/ProjectFigureImage"))
+const ProjectLinkContainer = dynamic(() => import("@/components/Projects/ProjectLinkContainer"))
 
 export const metadata = {
   title: "Portfolio",
@@ -18,27 +19,30 @@ export const metadata = {
 export default function PortfolioPage() {
   return (
     <MainContainer>
-      <figure>
-        <Image
-          src={kv}
-          alt="Portfolio"
-          priority
-          className="mb-1 max-h-[250px] min-w-full rounded border border-neutral-500 object-cover"
-        />
-      </figure>
+      <ProjectFigureImage src={kv} alt="Image of portfolio's website" />
 
-      <WorksExternalLinks
-        githubURL="https://github.com/Yezo/portfolio-v2"
-        demoURL="https://kvo.vercel.app"
-      />
+      <ProjectLinkContainer>
+        <ExternalLinkContainer
+          title="My Portfolio"
+          description="Next.js, React, TypeScript, Tailwind"
+        >
+          <ExternalLinkDate>Apr. 2023 - Present</ExternalLinkDate>
+        </ExternalLinkContainer>
 
-      <WorksProjectHeader
-        title="my portfolio"
-        subtitle="Apr. 2023 - May. 2023"
-        technologies={["Next.js", "React", "TypeScript", "Jotai", "Tailwind"]}
-      />
+        <ExternalLinkContainer title="Live Demo" description="kvo.vercel.app">
+          <ExternalLinkButton url="https://kvo.vercel.app" type="External">
+            View Live Demo
+          </ExternalLinkButton>
+        </ExternalLinkContainer>
 
-      <section className="mt-8 space-y-6">
+        <ExternalLinkContainer title="GitHub Repository" description="github.com/Yezo/portfolio-v2">
+          <ExternalLinkButton url="https://github.com/Yezo/portfolio-v2" type="GitHub">
+            View on GitHub
+          </ExternalLinkButton>
+        </ExternalLinkContainer>
+      </ProjectLinkContainer>
+
+      <section className="mt-8 space-y-16">
         <div>
           <TitleH2>Why Make A New Portfolio?</TitleH2>
           <Paragraph>{`Initially, I developed my portfolio using React, incorporating fading animations and white space to create visually appealing UI. The intention was to showcase my skills and market myself effectively. However, I soon realized that the majority of hiring managers and recruiters rarely visit applicants' portfolios. It became clear that features like slow animations and requiring users to scroll down to view my projects might not be the best approach. There was a high likelihood that users wouldn't want to invest their time scrolling extensively.`}</Paragraph>

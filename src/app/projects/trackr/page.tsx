@@ -6,9 +6,12 @@ import Image from "next/image"
 const MainContainer = dynamic(() => import("@/components/Main/MainContainer"))
 const TitleH2 = dynamic(() => import("@/components/Typography/TitleH2"))
 const Paragraph = dynamic(() => import("@/components/Typography/Paragraph"))
-const WorksProjectHeader = dynamic(() => import("@/components/Works/WorksProjectHeader"))
-const WorksExternalLinks = dynamic(() => import("@/components/Works/WorksExternalLinks"))
 const WorksEndNavigation = dynamic(() => import("@/components/Works/WorksEndNavigation"))
+const ExternalLinkContainer = dynamic(() => import("@/components/Contact/ExternalLinkContainer"))
+const ExternalLinkButton = dynamic(() => import("@/components/Contact/ExternalLinkButton"))
+const ExternalLinkDate = dynamic(() => import("@/components/Contact/ExternalLinkDate"))
+const ProjectFigureImage = dynamic(() => import("@/components/Projects/ProjectFigureImage"))
+const ProjectLinkContainer = dynamic(() => import("@/components/Projects/ProjectLinkContainer"))
 
 export const metadata = {
   title: "trackr",
@@ -18,27 +21,27 @@ export const metadata = {
 export default function TrackrPage() {
   return (
     <MainContainer>
-      <figure>
-        <Image
-          src={trackr}
-          alt="Trackr"
-          priority
-          className="mb-1 max-h-[250px] min-w-full rounded border border-neutral-500 object-cover"
-        />
-      </figure>
+      <ProjectFigureImage src={trackr} alt="Image of trackr' website" />
 
-      <WorksExternalLinks
-        githubURL="https://github.com/Yezo/learn-trackran"
-        demoURL="https://trackr-beta.vercel.app/"
-      />
+      <ProjectLinkContainer>
+        <ExternalLinkContainer title="Trackr" description="React, TypeScript, Tailwind, Vite">
+          <ExternalLinkDate>Mar. 2023</ExternalLinkDate>
+        </ExternalLinkContainer>
 
-      <WorksProjectHeader
-        title="trackr"
-        subtitle="Mar. 2023"
-        technologies={["React", "TypeScript", "Tailwind", "Vite"]}
-      />
+        <ExternalLinkContainer title="Live Demo" description="trackr-beta.vercel.app/">
+          <ExternalLinkButton url="https://trackr-beta.vercel.app/" type="External">
+            View Live Demo
+          </ExternalLinkButton>
+        </ExternalLinkContainer>
 
-      <section className="mt-8 space-y-6">
+        <ExternalLinkContainer title="GitHub Repository" description="github.com/Yezo/trackr">
+          <ExternalLinkButton url="https://github.com/Yezo/trackr" type="GitHub">
+            View on GitHub
+          </ExternalLinkButton>
+        </ExternalLinkContainer>
+      </ProjectLinkContainer>
+
+      <section className="mt-8 space-y-16">
         <div>
           <TitleH2>The Objective</TitleH2>
           <Paragraph>{`Trackr is a tool designed to streamline your job application process by centralizing all your applications in one convenient location. With Trackr, you can effortlessly add new job applications, edit existing entries, and remove outdated applications, ensuring that your job search remains organized and efficient. This intuitive platform also provides valuable insights by tracking essential statistics such as the number of pending applications and rejections, offering you a clear overview of your progress.`}</Paragraph>

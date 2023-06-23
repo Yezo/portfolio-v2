@@ -1,14 +1,15 @@
 import kore from "../../../../public/kore.png"
-
 import dynamic from "next/dynamic"
-import Image from "next/image"
 
 const MainContainer = dynamic(() => import("@/components/Main/MainContainer"))
 const TitleH2 = dynamic(() => import("@/components/Typography/TitleH2"))
 const Paragraph = dynamic(() => import("@/components/Typography/Paragraph"))
-const WorksProjectHeader = dynamic(() => import("@/components/Works/WorksProjectHeader"))
-const WorksExternalLinks = dynamic(() => import("@/components/Works/WorksExternalLinks"))
 const WorksEndNavigation = dynamic(() => import("@/components/Works/WorksEndNavigation"))
+const ExternalLinkContainer = dynamic(() => import("@/components/Contact/ExternalLinkContainer"))
+const ExternalLinkButton = dynamic(() => import("@/components/Contact/ExternalLinkButton"))
+const ExternalLinkDate = dynamic(() => import("@/components/Contact/ExternalLinkDate"))
+const ProjectFigureImage = dynamic(() => import("@/components/Projects/ProjectFigureImage"))
+const ProjectLinkContainer = dynamic(() => import("@/components/Projects/ProjectLinkContainer"))
 
 export const metadata = {
   title: "Kore",
@@ -18,27 +19,30 @@ export const metadata = {
 export default function KorePage() {
   return (
     <MainContainer>
-      <figure>
-        <Image
-          src={kore}
-          alt="Kore"
-          priority
-          className="mb-1 max-h-[250px] min-w-full rounded border border-neutral-500 object-cover"
-        />
-      </figure>
+      <ProjectFigureImage src={kore} alt="Image of kore' website" />
 
-      <WorksExternalLinks
-        githubURL="https://github.com/Yezo/learn-korean"
-        demoURL="https://kore-beta.vercel.app/"
-      />
+      <ProjectLinkContainer>
+        <ExternalLinkContainer
+          title="Kore"
+          description="React, TypeScript, Tailwind, PrismJS, React-Router, Vite"
+        >
+          <ExternalLinkDate>Mar. 2023</ExternalLinkDate>
+        </ExternalLinkContainer>
 
-      <WorksProjectHeader
-        title="kore"
-        subtitle="Mar. 2023"
-        technologies={["React", "TypeScript", "Tailwind", "Vite"]}
-      />
+        <ExternalLinkContainer title="Live Demo" description="kore-beta.vercel.app">
+          <ExternalLinkButton url="https://kore-beta.vercel.app" type="External">
+            View Live Demo
+          </ExternalLinkButton>
+        </ExternalLinkContainer>
 
-      <section className="mt-8 space-y-6">
+        <ExternalLinkContainer title="GitHub Repository" description="github.com/Yezo/learn-korean">
+          <ExternalLinkButton url="https://github.com/Yezo/learn-korean" type="GitHub">
+            View on GitHub
+          </ExternalLinkButton>
+        </ExternalLinkContainer>
+      </ProjectLinkContainer>
+
+      <section className="mt-8 space-y-16">
         <div>
           <TitleH2>The Objective</TitleH2>
           <Paragraph>{`Since high school, I have been dedicated to studying and self-teaching myself the Korean language. When people learn about my passion for Korean, they often admire my commitment, and expressing their own desire to learn a new language. However, many are surprised to discover that the Korean alphabet, known as Hangul, is actually one of the easier writing systems to learn. To assist language learners on their journey to mastering Korean, I developed Kore, a mini-application/game designed to familiarize users with the Korean lettering system.`}</Paragraph>

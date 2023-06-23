@@ -1,14 +1,15 @@
 import aniflux from "../../../../public/aniflux.png"
-
 import dynamic from "next/dynamic"
-import Image from "next/image"
 
 const MainContainer = dynamic(() => import("@/components/Main/MainContainer"))
 const TitleH2 = dynamic(() => import("@/components/Typography/TitleH2"))
 const Paragraph = dynamic(() => import("@/components/Typography/Paragraph"))
-const WorksProjectHeader = dynamic(() => import("@/components/Works/WorksProjectHeader"))
-const WorksExternalLinks = dynamic(() => import("@/components/Works/WorksExternalLinks"))
 const WorksEndNavigation = dynamic(() => import("@/components/Works/WorksEndNavigation"))
+const ExternalLinkContainer = dynamic(() => import("@/components/Contact/ExternalLinkContainer"))
+const ExternalLinkButton = dynamic(() => import("@/components/Contact/ExternalLinkButton"))
+const ExternalLinkDate = dynamic(() => import("@/components/Contact/ExternalLinkDate"))
+const ProjectFigureImage = dynamic(() => import("@/components/Projects/ProjectFigureImage"))
+const ProjectLinkContainer = dynamic(() => import("@/components/Projects/ProjectLinkContainer"))
 
 export const metadata = {
   title: "AniFlux",
@@ -18,35 +19,33 @@ export const metadata = {
 export default function AniFluxPage() {
   return (
     <MainContainer>
-      <figure>
-        <Image
-          src={aniflux}
-          alt="AniFlux"
-          priority
-          className="mb-1 max-h-[250px] min-w-full rounded border border-neutral-500 object-cover"
-        />
-      </figure>
+      <ProjectFigureImage src={aniflux} alt="Image of aniflux's website" />
 
-      <WorksExternalLinks
-        githubURL="https://github.com/Yezo/jikan-anime-project"
-        demoURL="https://aniflux.onrender.com/"
-      />
+      <ProjectLinkContainer>
+        <ExternalLinkContainer
+          title="AniFlux"
+          description="React, Redux Toolkit, Redux Query TypeScript, Tailwind, Vite"
+        >
+          <ExternalLinkDate>Feb. 2023 - Apr. 2023</ExternalLinkDate>
+        </ExternalLinkContainer>
 
-      <WorksProjectHeader
-        title="aniflux"
-        subtitle="Feb. 2023 - Apr. 2023"
-        technologies={[
-          "React",
-          "Redux Toolkit",
-          "Redux Query",
-          "TypeScript",
-          "Tailwind",
-          "React-Router",
-          "Vite",
-        ]}
-      />
+        <ExternalLinkContainer title="Live Demo" description="aniflux.onrender.com/">
+          <ExternalLinkButton url="https://aniflux.onrender.com/" type="External">
+            View Live Demo
+          </ExternalLinkButton>
+        </ExternalLinkContainer>
 
-      <section className="mt-8 space-y-6">
+        <ExternalLinkContainer
+          title="GitHub Repository"
+          description="github.com/Yezo/jikan-anime-project"
+        >
+          <ExternalLinkButton url="https://github.com/Yezo/jikan-anime-project" type="GitHub">
+            View on GitHub
+          </ExternalLinkButton>
+        </ExternalLinkContainer>
+      </ProjectLinkContainer>
+
+      <section className="mt-8 space-y-16">
         <div>
           <TitleH2>The Problem</TitleH2>
           <Paragraph>

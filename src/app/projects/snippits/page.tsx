@@ -1,14 +1,15 @@
 import snippits from "../../../../public/snippits.png"
-
 import dynamic from "next/dynamic"
-import Image from "next/image"
 
 const MainContainer = dynamic(() => import("@/components/Main/MainContainer"))
 const TitleH2 = dynamic(() => import("@/components/Typography/TitleH2"))
 const Paragraph = dynamic(() => import("@/components/Typography/Paragraph"))
-const WorksProjectHeader = dynamic(() => import("@/components/Works/WorksProjectHeader"))
-const WorksExternalLinks = dynamic(() => import("@/components/Works/WorksExternalLinks"))
 const WorksEndNavigation = dynamic(() => import("@/components/Works/WorksEndNavigation"))
+const ExternalLinkContainer = dynamic(() => import("@/components/Contact/ExternalLinkContainer"))
+const ExternalLinkButton = dynamic(() => import("@/components/Contact/ExternalLinkButton"))
+const ExternalLinkDate = dynamic(() => import("@/components/Contact/ExternalLinkDate"))
+const ProjectFigureImage = dynamic(() => import("@/components/Projects/ProjectFigureImage"))
+const ProjectLinkContainer = dynamic(() => import("@/components/Projects/ProjectLinkContainer"))
 
 export const metadata = {
   title: "Snippits",
@@ -18,27 +19,30 @@ export const metadata = {
 export default function SnippitsPage() {
   return (
     <MainContainer>
-      <figure>
-        <Image
-          src={snippits}
-          alt="Snippits"
-          priority
-          className="mb-1 max-h-[250px] min-w-full rounded border border-neutral-500 object-cover"
-        />
-      </figure>
+      <ProjectFigureImage src={snippits} alt="Image of snippits' website" />
 
-      <WorksExternalLinks
-        githubURL="https://github.com/Yezo/snippit"
-        demoURL="https://snippits.vercel.app/"
-      />
+      <ProjectLinkContainer>
+        <ExternalLinkContainer
+          title="Snippits"
+          description="React, TypeScript, Tailwind, PrismJS, React-Router, Vite"
+        >
+          <ExternalLinkDate>Jan. 2023</ExternalLinkDate>
+        </ExternalLinkContainer>
 
-      <WorksProjectHeader
-        title="snippits"
-        subtitle="Jan. 2023"
-        technologies={["React", "TypeScript", "Tailwind", "PrismJS", "React-Router", "Vite"]}
-      />
+        <ExternalLinkContainer title="Live Demo" description="snippits.vercel.app">
+          <ExternalLinkButton url="https://snippits.vercel.app" type="External">
+            View Live Demo
+          </ExternalLinkButton>
+        </ExternalLinkContainer>
 
-      <section className="mt-8 space-y-6">
+        <ExternalLinkContainer title="GitHub Repository" description="github.com/Yezo/snippit">
+          <ExternalLinkButton url="https://github.com/Yezo/snippit" type="GitHub">
+            View on GitHub
+          </ExternalLinkButton>
+        </ExternalLinkContainer>
+      </ProjectLinkContainer>
+
+      <section className="mt-8 space-y-16">
         <div>
           <TitleH2>The Problem</TitleH2>
           <Paragraph>
