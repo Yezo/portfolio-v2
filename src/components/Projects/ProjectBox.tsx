@@ -19,7 +19,7 @@ export default function ProjectBox({ imageURL, imageALT, title, description, cas
           src={imageURL}
           alt={imageALT}
           placeholder="blur"
-          className="max-h-[185px] min-h-[185px] max-w-[180px] basis-3/5 rounded object-cover md:max-w-[300px] "
+          className="max-h-[185px] min-h-[185px] max-w-[180px] basis-3/5 rounded object-cover shadow-sm md:max-w-[300px] "
         />
       </Link>
       <div className="basis-2/5">
