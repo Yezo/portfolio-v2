@@ -10,7 +10,7 @@ export default function WordLink({ children, url }: Props) {
     <Link
       href={url}
       target="_blank"
-      className="font-rubik text-[0.95rem] font-medium leading-[1.6] tracking-tight [word-spacing:-.02em] hover:underline dark:text-[#F3F4F6] [&:not(:first-child)]:mt-4 "
+      className="font-rubik text-[0.95rem] font-medium leading-[1.6] tracking-tight underline transition-colors duration-300 ease-in-out [word-spacing:-.02em] dark:text-[#F3F4F6] hover:dark:text-[#adadad] [&:not(:first-child)]:mt-4"
     >
       {children}
     </Link>
