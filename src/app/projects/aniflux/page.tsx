@@ -21,7 +21,7 @@ export const metadata = {
 export default function AniFluxPage() {
   return (
     <MainContainer>
-      <ProjectFigureImage src={aniflux} alt="Image of aniflux's website" />
+      <ProjectFigureImage src={aniflux} alt="Image of AniFlux's website" />
 
       <ProjectLinkContainer>
         <ExternalLinkContainer
