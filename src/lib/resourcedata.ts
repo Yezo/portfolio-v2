@@ -10,6 +10,7 @@ import vercel from "../../public/resources/vercel.webp"
 import gsoft from "../../public/resources/gsoft.webp"
 import arc from "../../public/resources/arc.webp"
 import shadcn from "../../public/shadcn.webp"
+import nanda from "../../public/resources/nanda.png"
 
 export const RESOURCE_DATA = [
   {
@@ -74,6 +75,13 @@ export const RESOURCE_DATA = [
     date: "Jun. 2023",
     url: "https://jacobleech.com/",
     avatar: jacobleech,
+  },
+  {
+    title: "Nanda Syahrasyad",
+    description: "nan.fyi",
+    date: "July. 2023",
+    url: "https://www.nan.fyi/",
+    avatar: nanda,
   },
 ]
 
