@@ -48,7 +48,7 @@ export default function Navbar() {
                   resume
                 </Link>
               </li>
-              <li>
+              <li className="hidden md:block">
                 <ThemeToggle />
               </li>
             </ul>
