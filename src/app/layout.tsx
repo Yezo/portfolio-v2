@@ -47,7 +47,7 @@ const alegreya = Alegreya({
 
 const spectral = Spectral({
   variable: "--font-spectral",
-  weight: ["200", "300", "400"],
+  weight: ["200", "300", "400", "500", "600"],
   display: "swap",
   subsets: ["latin"],
 })
