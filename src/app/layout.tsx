@@ -1,5 +1,5 @@
 import "../styles/globals.css"
-import { Faustina, Rubik, Alegreya, Inter } from "next/font/google"
+import { Faustina, Rubik, Alegreya, Inter, Spectral } from "next/font/google"
 import Navbar from "@/components/Navbar/Navbar"
 import { ThemeProvider } from "@/components/Theme/theme-provider"
 import { Analytics } from "@vercel/analytics/react"
@@ -45,11 +45,18 @@ const alegreya = Alegreya({
   subsets: ["latin"],
 })
 
+const spectral = Spectral({
+  variable: "--font-spectral",
+  weight: ["200", "300", "400"],
+  display: "swap",
+  subsets: ["latin"],
+})
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="en"
-      className={`${faustina.variable} ${rubik.variable} ${alegreya.variable} ${inter.variable}`}
+      className={`${faustina.variable} ${rubik.variable} ${alegreya.variable} ${inter.variable} ${spectral.variable} `}
     >
       <body className="mx-4 mb-40 mt-8 flex max-w-4xl flex-col bg-background antialiased md:mt-20 md:flex-row lg:mx-auto lg:mt-24">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>

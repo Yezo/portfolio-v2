@@ -23,6 +23,8 @@ module.exports = {
         rubik: ["var(--font-rubik)"],
         alegreya: ["var(--font-alegreya)"],
         inter: ["var(--font-inter)"],
+        spectral: ["var(--font-spectral)"],
+        ibmplexsans: ["var(--font-ibmplexsans)"],
       },
       colors: {
         dark: {
