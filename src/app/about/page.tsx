@@ -38,7 +38,7 @@ export default function AboutPage() {
         component library for more complex elements.
       </Paragraph>
 
-      <section className="mt-12">
+      <section className="mt-20">
         <TitleH2>Contact</TitleH2>
         <div className="divide-y divide-[#d6d6d6] dark:divide-[#333333]">
           <ExternalLinkContainer title="Let's connect" description="kvo.codes@gmail.com">
@@ -67,7 +67,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mt-12">
+      <section className="mt-20">
         <TitleH2>Frontend Ecosystem</TitleH2>
         <div className="divide-y divide-[#d6d6d6] dark:divide-[#333333]">
           {FRONTEND_DATA.map((item, index) => (

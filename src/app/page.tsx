@@ -15,11 +15,10 @@ const ProjectBox = dynamic(() => import("@/components/Projects/ProjectBox"))
 export default function Home() {
   return (
     <MainContainer>
-      <TitleH1>{`Kevin Vo `}</TitleH1>
-
+      <TitleH1>{`kv.`}</TitleH1>
       <section className="mb-12 mt-4">
-        <Paragraph>{`I'm a design-focused developer specializing in crafting user-centered digital experiences through creativity and strategic design. By understanding user needs, I create visually compelling interfaces that enhance usability and drive positive interactions. `}</Paragraph>
-        <Paragraph>{`I am currently actively seeking new opportunities. If you are in search of a developer who possesses a strong eye for design, I am extremely excited to collaborate with a team of creative designers and developers.`}</Paragraph>
+        <Paragraph>{`I'm a design-focused developer committed to crafting digital experiences through creativity and strategic design. Through a user-centered lens, I help create visually compelling interfaces that aim to enhance usability and drive positive interactions.`}</Paragraph>
+        <Paragraph>{`I am currently actively seeking new opportunities. If you're in search of a developer who possesses a strong eye for design, I'm extremely excited to collaborate with a team of creative designers and developers.`}</Paragraph>
         <Paragraph>
           {`Please feel free to reach out and`}{" "}
           <span>
@@ -34,14 +33,14 @@ export default function Home() {
         </Paragraph>
       </section>
 
-      <TitleH2>Selected projects</TitleH2>
+      <TitleH2>Selected projects.</TitleH2>
 
-      <div className="mt-6">
+      <section className="mt-6">
         <ProjectBox
           imageURL={arkoko}
           imageALT="Picture of Arkoko's brand logo"
           title="arkoko."
-          description="Helping gamers minimize daily micro-decisions through data-driven analysis"
+          description="Helping gamers minimize daily micro-decisions through data-driven analytics"
           caseLink="/projects/arkoko"
         />
         <ProjectBox
@@ -69,7 +68,7 @@ export default function Home() {
         <div className="pt-8 font-rubik  tracking-wide dark:text-white">
           <Link href="/projects">{"View all projects → "}</Link>
         </div>
-      </div>
+      </section>
     </MainContainer>
   )
 }
