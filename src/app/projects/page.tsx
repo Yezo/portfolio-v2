@@ -20,7 +20,7 @@ export const metadata = {
 export default function ProjectsPage() {
   return (
     <MainContainer>
-      <TitleH1>{`Projects`}</TitleH1>
+      <TitleH1>{`Projects.`}</TitleH1>
 
       <section className="mt-6">
         <ProjectBox

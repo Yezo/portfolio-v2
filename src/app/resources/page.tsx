@@ -16,12 +16,12 @@ export const metadata = {
 export default function ResourcesPage() {
   return (
     <MainContainer>
-      <TitleH1>{`Resources`}</TitleH1>
+      <TitleH1>{`Resources.`}</TitleH1>
 
       <Paragraph>{`Here, I've carefully curated a list of talented individuals and innovative businesses that can serve as invaluable resources for learning and inspiration. My goal is to spread my enthusiasm for modern web design, igniting the same passion in others as these people below have done so for me. `}</Paragraph>
 
       <section className="mt-12">
-        <TitleH2>Individuals</TitleH2>
+        <TitleH2>Individuals.</TitleH2>
         <div className="divide-y divide-[#d6d6d6] dark:divide-[#333333]">
           {RESOURCE_DATA.map((item, index) => (
             <ResourceLink
@@ -37,7 +37,7 @@ export default function ResourcesPage() {
       </section>
 
       <section className="mt-12">
-        <TitleH2>Companies</TitleH2>
+        <TitleH2>Companies.</TitleH2>
         <div className="divide-y divide-[#d6d6d6] dark:divide-[#333333]">
           {COMPANY_DATA.map((item, index) => (
             <ResourceLink

@@ -22,7 +22,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <MainContainer>
-      <TitleH1>{`About Me`}</TitleH1>
+      <TitleH1>{`About Me.`}</TitleH1>
 
       <Paragraph>{`I'm a design-focused developer living in Canada, looking to join a team of talents. I have a passionate interest in front-end positions that blend the worlds of creative design and web development.`}</Paragraph>
 
@@ -39,7 +39,7 @@ export default function AboutPage() {
       </Paragraph>
 
       <section className="mt-20">
-        <TitleH2>Contact</TitleH2>
+        <TitleH2>Contact.</TitleH2>
         <div className="divide-y divide-[#d6d6d6] dark:divide-[#333333]">
           <ExternalLinkContainer title="Let's connect" description="kvo.codes@gmail.com">
             <ExternalLinkButton url="mailto:kvo.codes@gmail.com" type="Compose">
@@ -68,7 +68,7 @@ export default function AboutPage() {
       </section>
 
       <section className="mt-20">
-        <TitleH2>Frontend Ecosystem</TitleH2>
+        <TitleH2>Frontend Ecosystem.</TitleH2>
         <div className="divide-y divide-[#d6d6d6] dark:divide-[#333333]">
           {FRONTEND_DATA.map((item, index) => (
             <ResourceLink
@@ -84,7 +84,7 @@ export default function AboutPage() {
       </section>
 
       <section className="mt-12">
-        <TitleH2>Backend & Tools</TitleH2>
+        <TitleH2>Backend & Tools.</TitleH2>
         <div className="divide-y divide-[#d6d6d6] dark:divide-[#333333]">
           {BACKEND_DATA.map((item, index) => (
             <ResourceLink
@@ -100,7 +100,7 @@ export default function AboutPage() {
       </section>
 
       <section className="mt-12">
-        <TitleH2>Styling</TitleH2>
+        <TitleH2>Styling.</TitleH2>
         <div className="divide-y divide-[#d6d6d6] dark:divide-[#333333]">
           {STYLING_DATA.map((item, index) => (
             <ResourceLink
