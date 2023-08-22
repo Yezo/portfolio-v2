@@ -1,10 +1,11 @@
 import trackr from "../../../../public/trackr.png"
 
 import dynamic from "next/dynamic"
-import Image from "next/image"
+import TrackrInfographicOne from "../../../../public/trackr/TrackrInfographicOne.png"
+import TrackrInfographicTwo from "../../../../public/trackr/TrackrInfographicTwo.png"
+import TrackrInfographicThree from "../../../../public/trackr/TrackrInfographicThree.png"
 
 const MainContainer = dynamic(() => import("@/components/Main/MainContainer"))
-const TitleH2 = dynamic(() => import("@/components/Typography/TitleH2"))
 const Paragraph = dynamic(() => import("@/components/Typography/Paragraph"))
 const WorksEndNavigation = dynamic(() => import("@/components/Works/WorksEndNavigation"))
 const ExternalLinkContainer = dynamic(() => import("@/components/Contact/ExternalLinkContainer"))
@@ -12,6 +13,7 @@ const ExternalLinkButton = dynamic(() => import("@/components/Contact/ExternalLi
 const ExternalLinkDate = dynamic(() => import("@/components/Contact/ExternalLinkDate"))
 const ProjectFigureImage = dynamic(() => import("@/components/Projects/ProjectFigureImage"))
 const ProjectLinkContainer = dynamic(() => import("@/components/Projects/ProjectLinkContainer"))
+const WordLink = dynamic(() => import("@/components/Typography/WordLink"))
 
 export const metadata = {
   title: "trackr",
@@ -24,18 +26,21 @@ export default function TrackrPage() {
       <ProjectFigureImage src={trackr} alt="Image of trackr' website" />
 
       <ProjectLinkContainer>
-        <ExternalLinkContainer title="Trackr" description="React, TypeScript, Tailwind, Vite">
-          <ExternalLinkDate>Mar. 2023</ExternalLinkDate>
+        <ExternalLinkContainer
+          title="Trackr"
+          description="Next.js, NextAuth, MongoDB, TypeScript, TailwindCSS, Shad/cn "
+        >
+          <ExternalLinkDate>Aug. 2023</ExternalLinkDate>
         </ExternalLinkContainer>
 
-        <ExternalLinkContainer title="Live Demo" description="trackr-beta.vercel.app/">
-          <ExternalLinkButton url="https://trackr-beta.vercel.app/" type="External">
+        <ExternalLinkContainer title="Live Demo" description="trackr-v2.vercel.app/">
+          <ExternalLinkButton url="https://trackr-v2.vercel.app/" type="External">
             View Live Demo
           </ExternalLinkButton>
         </ExternalLinkContainer>
 
-        <ExternalLinkContainer title="GitHub Repository" description="github.com/Yezo/trackr">
-          <ExternalLinkButton url="https://github.com/Yezo/trackr" type="GitHub">
+        <ExternalLinkContainer title="GitHub Repository" description="github.com/Yezo/trackr-v2">
+          <ExternalLinkButton url="https://github.com/Yezo/trackr-v2" type="GitHub">
             View on GitHub
           </ExternalLinkButton>
         </ExternalLinkContainer>
@@ -43,23 +48,60 @@ export default function TrackrPage() {
 
       <section className="mt-8 space-y-16">
         <div>
-          <TitleH2>The Objective</TitleH2>
-          <Paragraph>{`Trackr is a tool designed to streamline your job application process by centralizing all your applications in one convenient location. With Trackr, you can effortlessly add new job applications, edit existing entries, and remove outdated applications, ensuring that your job search remains organized and efficient. This intuitive platform also provides valuable insights by tracking essential statistics such as the number of pending applications and rejections, offering you a clear overview of your progress.`}</Paragraph>
-        </div>
+          <ProjectFigureImage
+            src={TrackrInfographicOne}
+            alt="Image of a venn diagram between enjoying the game, calculating strategies, and arkoko finding a balance between them"
+          />
+          <Paragraph>
+            An initial iteration of Trackr came to life when I was first applying for tech jobs. The
+            objective involved building a React.js CRUD application that enabled users to add, edit,
+            and delete job applications. Unfortunately, I {`didn't`} move onto the next round with
+            them. Instead, I dedicated my personal time to reimagining the application. Feel free to
+            explore the original version{" "}
+            <WordLink url="https://trackr-beta.vercel.app/">here.</WordLink>.
+          </Paragraph>
 
-        <div>
-          <TitleH2>Challenges</TitleH2>
-          <Paragraph>{`I wanted to start a project with the aim of building a small CRUD (Create, Read, Update, Delete) application without relying on a traditional database for data storage. As I delved into the development process, I saw it as an excellent opportunity to explore and deepen my understanding of using LocalStorage. By leveraging LocalStorage, I ensured that all job applications added to Trackr would persist even if the user returned on a different day to continue managing their applications. This approach allowed for a seamless user experience, as previous applications would remain accessible and editable, providing continuity and convenience. Through this project, I not only honed my skills in working with LocalStorage but also gained valuable insights into building efficient and practical solutions that cater to user needs.`}</Paragraph>
-        </div>
+          <Paragraph>
+            After getting the hang of Next.js, it suddenly dawned on me: User Authorization suddenly
+            became way easier with NextAuth than the hoops I used to jump through with Vanilla
+            Javascript. I was itching to start a new project but {`wasn't`} sure where to focus.
+            What I did know was that I wanted users to make accounts, stash their stuff in a
+            database, and allow users to interact with their own data.
+          </Paragraph>
 
-        <div>
-          <TitleH2>Areas of improvement</TitleH2>
-          <Paragraph>{`The most significant improvement is the incorporation of a CRUD API coupled with user authentication functionality. By transitioning from LocalStorage to a dedicated database, users would benefit from a more seamless and secure user experience. Implementing user authentication would enable personalized access, ensuring that individuals can retrieve and manage their applications from any device without the risk of data loss.`}</Paragraph>
+          <ProjectFigureImage
+            src={TrackrInfographicTwo}
+            alt="Image of a venn diagram between enjoying the game, calculating strategies, and arkoko finding a balance between them"
+          />
+
+          <Paragraph>
+            NextAuth was a no-brainer when it came to choosing how to implement user authentication.
+            Its setup was swift and seamless, and the range of valuable features it provides is
+            great for developers. As for the database, I went with MongoDB to house user accounts
+            and their data.
+          </Paragraph>
+
+          <Paragraph>
+            And yes, passwords are indeed encrypted before making their way into the database!
+          </Paragraph>
+
+          <ProjectFigureImage
+            src={TrackrInfographicThree}
+            alt="Image of a venn diagram between enjoying the game, calculating strategies, and arkoko finding a balance between them"
+          />
+          <Paragraph>
+            Thanks to{" "}
+            <WordLink url="https://ui.shadcn.com/">{`shadcn's component library`}</WordLink>., this
+            project got to its current state a lot faster than my past projects. The library handles
+            all the necessary accessibility aspects for a website, while also granting developers
+            complete styling control over their components. {`It's`} boosted my productivity by
+            multiple magnitudes and {`I'm`} excited to build future projects with it again.
+          </Paragraph>
         </div>
       </section>
 
       <WorksEndNavigation
-        demoURL="https://trackr-beta.vercel.app/"
+        demoURL="https://trackr-v2.vercel.app/"
         demoTitle="Trackr"
         previousURL="/projects/kore"
         previousTitle="Kore"

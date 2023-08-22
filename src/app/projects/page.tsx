@@ -24,6 +24,13 @@ export default function ProjectsPage() {
 
       <section className="mt-6">
         <ProjectBox
+          imageURL={trackr}
+          imageALT="Picture of Trackr's brand logo"
+          title="trackr."
+          description="Ditch the spreadsheets, manage and track your job applications"
+          caseLink="/projects/trackr"
+        />
+        <ProjectBox
           imageURL={arkoko}
           imageALT="Picture of Arkoko's brand logo"
           title="arkoko."
@@ -64,13 +71,6 @@ export default function ProjectsPage() {
           title="kore."
           description="Minigame where players can learn the Korean alphabet"
           caseLink="/projects/kore"
-        />
-        <ProjectBox
-          imageURL={trackr}
-          imageALT="Picture of Trackr's brand logo"
-          title="trackr."
-          description="Keep track of your job applications by adding, editing, or removing job applications as needed"
-          caseLink="/projects/trackr"
         />
       </section>
     </MainContainer>

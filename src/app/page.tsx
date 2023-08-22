@@ -2,7 +2,7 @@ import arkoko from "../../public/arkoko.png"
 import aniflux from "../../public/aniflux.png"
 import riskthinking from "../../public/riskthinking.png"
 import kv from "../../public/kv.png"
-
+import trackr from "../../public/trackr.png"
 import dynamic from "next/dynamic"
 import Link from "next/link"
 
@@ -36,6 +36,13 @@ export default function Home() {
       <TitleH2>Selected projects.</TitleH2>
 
       <section className="mt-6">
+        <ProjectBox
+          imageURL={trackr}
+          imageALT="Picture of Trackr's brand logo"
+          title="trackr."
+          description="Ditch the spreadsheets, manage and track your job applications"
+          caseLink="/projects/trackr"
+        />
         <ProjectBox
           imageURL={arkoko}
           imageALT="Picture of Arkoko's brand logo"
