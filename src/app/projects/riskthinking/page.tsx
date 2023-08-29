@@ -51,8 +51,8 @@ export default function KorePage() {
             This project was designed and developed by myself as a work sample for{" "}
             <Link href="https://riskthinking.ai/" className="font-semibold underline">
               riskthinking.ai
-            </Link>{" "}
-            Following their guidelines, the objective was to create a compelling visualization of
+            </Link>
+            . Following their guidelines, the objective was to create a compelling visualization of
             climate risk datasets using various formats such as charts, maps, and tables.
             Furthermore, the project required an integrated user interface that seamlessly
             incorporated multiple components and offered interactive functionality for users to

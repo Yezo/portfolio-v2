@@ -63,7 +63,7 @@ export default function ArkokoPage() {
           <Paragraph>
             Through <WordLink url="https://arkoko.vercel.app">Arkoko</WordLink>, I aim to create an
             intuitive experience that maximizes players&apos; enjoyment. By reducing the mental
-            effort involving complex calculations and optimizing strategies,, I enable gamers to
+            effort involving complex calculations and optimizing strategies, I enable gamers to
             focus on what truly matters — the thrill of playing the game that they enjoy.
           </Paragraph>
 
