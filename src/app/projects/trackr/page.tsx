@@ -28,7 +28,7 @@ export default function TrackrPage() {
       <ProjectLinkContainer>
         <ExternalLinkContainer
           title="Trackr"
-          description="Next.js, NextAuth, MongoDB, TypeScript, TailwindCSS, Shad/cn "
+          description="Next.js, NextAuth, MongoDB, TypeScript, TailwindCSS, shad/cn "
         >
           <ExternalLinkDate>Aug. 2023</ExternalLinkDate>
         </ExternalLinkContainer>
@@ -53,20 +53,27 @@ export default function TrackrPage() {
             alt="Image of a venn diagram between enjoying the game, calculating strategies, and arkoko finding a balance between them"
           />
           <Paragraph>
+            Trackr is a comprehensive solution designed to allow users to track and manage their job
+            applications. Users can create personalized accounts, with their data securely stored
+            within a MongoDB database, They can seamlessly add, edit and remove all of their past,
+            current, and future job applications, all of which are displayed through an intuitive
+            dashboard or visualized using dynamic data charts.
+          </Paragraph>
+          <Paragraph>
             An initial iteration of Trackr came to life when I was first applying for tech jobs. The
             objective involved building a React.js CRUD application that enabled users to add, edit,
-            and delete job applications. Unfortunately, I {`didn't`} move onto the next round with
-            them. Instead, I dedicated my personal time to reimagining the application. Feel free to
-            explore the original version{" "}
-            <WordLink url="https://trackr-beta.vercel.app/">here.</WordLink>.
+            and delete job applications. Unfortunately, I didn't move onto the next round with them.
+            Instead, I dedicated my personal time to reimagining the application. Feel free to
+            explore the original version
+            <WordLink url="https://trackr-beta.vercel.app/">here</WordLink>.
           </Paragraph>
 
           <Paragraph>
             After getting the hang of Next.js, it suddenly dawned on me: User Authorization suddenly
             became way easier with NextAuth than the hoops I used to jump through with Vanilla
-            Javascript. I was itching to start a new project but {`wasn't`} sure where to focus.
-            What I did know was that I wanted users to make accounts, stash their stuff in a
-            database, and allow users to interact with their own data.
+            Javascript. I was itching to start a new project but wasn't sure where to focus. What I
+            did know was that I wanted users to make accounts, stash their stuff in a database, and
+            allow users to interact with their own data.
           </Paragraph>
 
           <ProjectFigureImage
@@ -90,12 +97,11 @@ export default function TrackrPage() {
             alt="Image of a venn diagram between enjoying the game, calculating strategies, and arkoko finding a balance between them"
           />
           <Paragraph>
-            Thanks to{" "}
-            <WordLink url="https://ui.shadcn.com/">{`shadcn's component library`}</WordLink>., this
-            project got to its current state a lot faster than my past projects. The library handles
-            all the necessary accessibility aspects for a website, while also granting developers
-            complete styling control over their components. {`It's`} boosted my productivity by
-            multiple magnitudes and {`I'm`} excited to build future projects with it again.
+            Thanks to <WordLink url="https://ui.shadcn.com/">shadcn's component library</WordLink>,
+            this project got to its current state a lot faster than my past projects. The library
+            handles all the necessary accessibility aspects for a website, while also granting
+            developers complete styling control over their components. It's boosted my productivity
+            by multiple magnitudes and I'm excited to build future projects with it again.
           </Paragraph>
         </div>
       </section>

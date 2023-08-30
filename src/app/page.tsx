@@ -11,25 +11,26 @@ const TitleH1 = dynamic(() => import("@/components/Typography/TitleH1"))
 const TitleH2 = dynamic(() => import("@/components/Typography/TitleH2"))
 const Paragraph = dynamic(() => import("@/components/Typography/Paragraph"))
 const ProjectBox = dynamic(() => import("@/components/Projects/ProjectBox"))
+const WordLink = dynamic(() => import("@/components/Typography/WordLink"))
 
 export default function Home() {
   return (
     <MainContainer>
-      <TitleH1>{`kv.`}</TitleH1>
+      <TitleH1>kv.</TitleH1>
       <section className="mb-12 mt-4">
-        <Paragraph>{`I'm a design-focused developer committed to crafting digital experiences through creativity and strategic design. Through a user-centered lens, I help create visually compelling interfaces that aim to enhance usability and drive positive interactions.`}</Paragraph>
-        <Paragraph>{`I am currently actively seeking new opportunities. If you're in search of a developer who possesses a strong eye for design, I'm extremely excited to collaborate with a team of creative designers and developers.`}</Paragraph>
         <Paragraph>
-          {`Please feel free to reach out and`}{" "}
-          <span>
-            <Link
-              href="mailto:kvo.codes@gmail.com"
-              className="text-[0.95rem] font-bold transition-all hover:opacity-[0.7] dark:text-[#F3F4F6]"
-            >
-              {"say hello!"}
-            </Link>
-            {"👋 "}
-          </span>
+          I'm a design-focused developer committed to crafting digital experiences through
+          creativity and strategic design. Through a user-centered lens, I help create visually
+          compelling interfaces that aim to enhance usability and drive positive interactions.
+        </Paragraph>
+        <Paragraph>
+          I am actively seeking for new opportunities. If you're in search for a creative developer,
+          I'd love to collaborate with your talented team.
+        </Paragraph>
+        <Paragraph>
+          Please reach out and
+          <WordLink url="mailto:kvo.codes@gmail.com">say hello!</WordLink>
+          👋
         </Paragraph>
       </section>
 
@@ -72,7 +73,7 @@ export default function Home() {
           caseLink="/projects/portfolio"
         />
 
-        <div className="pt-8 font-rubik  tracking-wide dark:text-white">
+        <div className="pt-8 tracking-wide dark:text-white">
           <Link href="/projects">{"View all projects → "}</Link>
         </div>
       </section>

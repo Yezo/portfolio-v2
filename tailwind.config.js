@@ -20,11 +20,8 @@ module.exports = {
     extend: {
       fontFamily: {
         faustina: ["var(--font-faustina)"],
-        rubik: ["var(--font-rubik)"],
-        alegreya: ["var(--font-alegreya)"],
-        inter: ["var(--font-inter)"],
         spectral: ["var(--font-spectral)"],
-        ibmplexsans: ["var(--font-ibmplexsans)"],
+        nunito: ["var(--font-nunito)"],
       },
       colors: {
         dark: {

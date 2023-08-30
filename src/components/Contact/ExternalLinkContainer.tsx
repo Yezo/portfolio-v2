@@ -9,7 +9,7 @@ type Props = {
 
 export default function ExternalLinkContainer({ title, description, children }: Props) {
   return (
-    <div className="flex min-h-[75px] items-center justify-between font-rubik tracking-tight">
+    <div className="flex min-h-[75px] items-center justify-between tracking-tight">
       <div className="flex items-center gap-4">
         <div className="flex flex-col">
           <p className="flex items-center gap-2 font-medium dark:text-white">{title}</p>

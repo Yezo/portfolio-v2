@@ -22,10 +22,7 @@ export default function KorePage() {
       <ProjectFigureImage src={kore} alt="Image of kore' website" />
 
       <ProjectLinkContainer>
-        <ExternalLinkContainer
-          title="Kore"
-          description="React, TypeScript, Tailwind, PrismJS, React-Router, Vite"
-        >
+        <ExternalLinkContainer title="Kore" description="React, TypeScript, Tailwind, Vite">
           <ExternalLinkDate>Mar. 2023</ExternalLinkDate>
         </ExternalLinkContainer>
 

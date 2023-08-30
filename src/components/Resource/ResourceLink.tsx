@@ -19,7 +19,7 @@ export default function ResourceLink({ title, url, date, description, avatar }: 
   return (
     <Link
       href={url}
-      className="flex min-h-[75px] items-center justify-between px-4 font-rubik tracking-tight transition-colors hover:bg-[#e5e6e8] hover:transition-all hover:duration-300 dark:hover:bg-[#212121]"
+      className="flex min-h-[75px] items-center justify-between px-4 tracking-tight transition-colors hover:bg-[#e5e6e8] hover:transition-all hover:duration-300 dark:hover:bg-[#212121]"
       onMouseEnter={() => setVisible(true)}
       onMouseLeave={() => setVisible(false)}
       target="_blank"

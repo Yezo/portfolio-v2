@@ -110,8 +110,7 @@ export default function ArkokoPage() {
             an official API that can provide real-time data.
           </Paragraph>
           <Paragraph>
-            Currently, Arkoko relies on its own local API, which, regrettably, lacks sufficient
-            data, and an{" "}
+            Currently, Arkoko relies on its own local API and an{" "}
             <WordLink url="https://documenter.getpostman.com/view/20821530/UyxbppKr">
               external third-party API
             </WordLink>{" "}
