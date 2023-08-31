@@ -3,19 +3,24 @@ import { Faustina, Spectral, Nunito } from "next/font/google"
 import Navbar from "@/components/Navbar/Navbar"
 import { ThemeProvider } from "@/components/Theme/theme-provider"
 import { Analytics } from "@vercel/analytics/react"
+
 export const metadata = {
   title: {
     default: "Kevin Vo",
     template: "%s | Kevin Vo",
   },
-  description: "Kevin Vo - Software Developer",
+  description: "Design-focused Software Developer",
   openGraph: {
     title: "Kevin Vo",
-    description: "Kevin Vo - Software Developer",
-    url: "https://kvo.vercel.app/",
+    description: "Design-focused Software Developer",
+    url: "https://kevinvo.me",
     siteName: "Kevin Vo",
     locale: "en-US",
     type: "website",
+  },
+  twitter: {
+    title: "Kevin Vo",
+    card: "summary_large_image",
   },
 }
 
