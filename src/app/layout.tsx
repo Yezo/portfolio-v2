@@ -9,10 +9,10 @@ export const metadata = {
     default: "Kevin Vo",
     template: "%s | Kevin Vo",
   },
-  description: "Design-focused Software Developer",
+  description: "Design-focused Software Developer.",
   openGraph: {
     title: "Kevin Vo",
-    description: "Design-focused Software Developer",
+    description: "Design-focused Software Developer.",
     url: "https://kevinvo.me",
     siteName: "Kevin Vo",
     locale: "en-US",
