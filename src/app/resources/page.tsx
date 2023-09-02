@@ -22,7 +22,7 @@ export default function ResourcesPage() {
 
       <section className="mt-12">
         <TitleH2>Individuals.</TitleH2>
-        <div className="divide-y divide-[#d6d6d6] dark:divide-[#333333]">
+        <ul className="divide-y divide-[#d6d6d6] dark:divide-[#333333]">
           {RESOURCE_DATA.map((item, index) => (
             <ResourceLink
               key={index}
@@ -33,12 +33,12 @@ export default function ResourcesPage() {
               avatar={item.avatar}
             />
           ))}
-        </div>
+        </ul>
       </section>
 
       <section className="mt-12">
         <TitleH2>Companies.</TitleH2>
-        <div className="divide-y divide-[#d6d6d6] dark:divide-[#333333]">
+        <ul className="divide-y divide-[#d6d6d6] dark:divide-[#333333]">
           {COMPANY_DATA.map((item, index) => (
             <ResourceLink
               key={index}
@@ -49,7 +49,7 @@ export default function ResourcesPage() {
               avatar={item.avatar}
             />
           ))}
-        </div>
+        </ul>
       </section>
     </MainContainer>
   )

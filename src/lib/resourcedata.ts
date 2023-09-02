@@ -49,7 +49,7 @@ export const RESOURCE_DATA = [
     avatar: emilkowalski,
   },
   {
-    title: "Shadcn",
+    title: "shad/cn",
     description: "shadcn.com",
     date: "Jun. 2023",
     url: "https://shadcn.com/",
@@ -61,20 +61,6 @@ export const RESOURCE_DATA = [
     date: "Jun. 2023",
     url: "https://alexjpate.com/",
     avatar: alexjpate,
-  },
-  {
-    title: "Alexine Martina",
-    description: "alexinemartina.com",
-    date: "Jun. 2023",
-    url: "https://alexinemartina.com/",
-    avatar: alexinemartina,
-  },
-  {
-    title: "Jacob Leech",
-    description: "jacobleech.com",
-    date: "Jun. 2023",
-    url: "https://jacobleech.com/",
-    avatar: jacobleech,
   },
   {
     title: "Nanda Syahrasyad",

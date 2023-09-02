@@ -13,7 +13,7 @@ type Props = {
 }
 export default function ProjectBox({ imageURL, imageALT, title, description, caseLink }: Props) {
   return (
-    <div className="my-4 flex gap-4">
+    <article className="my-4 flex gap-4">
       <Link href={caseLink}>
         <Image
           src={imageURL}
@@ -37,6 +37,6 @@ export default function ProjectBox({ imageURL, imageALT, title, description, cas
           </div>
         </div>
       </div>
-    </div>
+    </article>
   )
 }
