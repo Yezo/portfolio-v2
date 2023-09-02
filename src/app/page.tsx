@@ -19,9 +19,9 @@ export default function Home() {
       <TitleH1>kv.</TitleH1>
       <section className="mb-12 mt-4">
         <Paragraph>
-          I'm a design-focused developer committed to crafting digital experiences through
+          I'm a design-focused fullstack developer committed to crafting digital experiences through
           creativity and strategic design. Through a user-centered lens, I help create visually
-          compelling interfaces that aim to enhance usability and drive positive interactions.
+          compelling interfaces that aim to enhance and drive positive interactions.
         </Paragraph>
         <Paragraph>
           I am actively seeking for new opportunities. If you're in search for a creative developer,

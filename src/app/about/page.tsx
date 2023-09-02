@@ -1,6 +1,5 @@
-import { FRONTEND_DATA, STYLING_DATA, BACKEND_DATA } from "@/lib/aboutdata"
+import { FRONTEND_DATA, STYLING_DATA, BACKEND_DATA, TOOLS_DATA, MAIN_STACK } from "@/lib/aboutdata"
 import dynamic from "next/dynamic"
-import Image from "next/image"
 
 const MainContainer = dynamic(() => import("@/components/Main/MainContainer"))
 const TitleH1 = dynamic(() => import("@/components/Typography/TitleH1"))
@@ -26,9 +25,9 @@ export default function AboutPage() {
       <TitleH1>About Me.</TitleH1>
 
       <Paragraph>
-        I'm a design-focused developer living in Canada, looking to join a team of talents. I have a
-        passionate interest in front-end positions that blend the worlds of creative design and web
-        development.
+        I'm a design-focused fullstack developer living in Canada, looking to join a team of
+        talents. I have a passionate interest in front-end positions that blend the worlds of
+        creative design and web development.
       </Paragraph>
 
       <Paragraph>
@@ -39,7 +38,7 @@ export default function AboutPage() {
 
       <Paragraph>
         Presently, my primary tech stack revolves around developing web applications with{" "}
-        <WordLink url="https://nextjs.org/">Next.js</WordLink> , which are then deployed on{" "}
+        <WordLink url="https://nextjs.org/">Next.js</WordLink>, which are then deployed on{" "}
         <WordLink url="https://vercel.com/">Vercel</WordLink>. For styling components, I enjoy a
         combination of <WordLink url="https://tailwindcss.com/">TailwindCSS</WordLink> for
         hand-crafted components and{" "}
@@ -78,7 +77,23 @@ export default function AboutPage() {
       </section>
 
       <section className="mt-20">
-        <TitleH2>Frontend Ecosystem.</TitleH2>
+        <TitleH2>My Main Stack.</TitleH2>
+        <div className="divide-y divide-[#d6d6d6] dark:divide-[#333333]">
+          {MAIN_STACK.map((item, index) => (
+            <ResourceLink
+              key={index}
+              title={item.title}
+              description={item.description}
+              date={item.date}
+              url={item.url}
+              avatar={item.avatar}
+            />
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-20">
+        <TitleH2>Frontend.</TitleH2>
         <div className="divide-y divide-[#d6d6d6] dark:divide-[#333333]">
           {FRONTEND_DATA.map((item, index) => (
             <ResourceLink
@@ -94,7 +109,7 @@ export default function AboutPage() {
       </section>
 
       <section className="mt-12">
-        <TitleH2>Backend & Tools.</TitleH2>
+        <TitleH2>Backend.</TitleH2>
         <div className="divide-y divide-[#d6d6d6] dark:divide-[#333333]">
           {BACKEND_DATA.map((item, index) => (
             <ResourceLink
@@ -113,6 +128,22 @@ export default function AboutPage() {
         <TitleH2>Styling.</TitleH2>
         <div className="divide-y divide-[#d6d6d6] dark:divide-[#333333]">
           {STYLING_DATA.map((item, index) => (
+            <ResourceLink
+              key={index}
+              title={item.title}
+              description={item.description}
+              date={item.date}
+              url={item.url}
+              avatar={item.avatar}
+            />
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-12">
+        <TitleH2>DevTools.</TitleH2>
+        <div className="divide-y divide-[#d6d6d6] dark:divide-[#333333]">
+          {TOOLS_DATA.map((item, index) => (
             <ResourceLink
               key={index}
               title={item.title}
