@@ -12,7 +12,7 @@ export default function WordLink({ children, url }: Props) {
       <Link
         href={url}
         target="_blank"
-        className="text-[0.95rem] font-medium leading-[1.6] tracking-tight underline underline-offset-4 transition-colors duration-300 ease-in-out [word-spacing:-.02em] dark:text-[#F3F4F6] hover:dark:text-[#adadad]"
+        className="font-medium leading-[1.6] text-zinc-900 transition-colors ease-in-out [word-spacing:-.02em]  hover:text-[#237bd3] focus-visible:text-sky-300 dark:text-slate-100  hover:dark:text-sky-300"
       >
         {children}
       </Link>

@@ -23,7 +23,7 @@ export default function WorksEndNavigation({
       {previousURL && (
         <Link
           href={previousURL}
-          className="flex w-full select-none items-center justify-between rounded border border-neutral-500 bg-black p-4 text-[0.8rem] font-light text-white transition-colors hover:bg-[#262626]"
+          className="flex w-full select-none items-center justify-between rounded border border-neutral-500 bg-black p-4 text-[0.8rem] font-light text-white transition-colors hover:bg-[#262626] dark:border-[#ffffff]/[.15] dark:hover:bg-[#262626]/[.30]"
         >
           <ArrowLeftIcon />
           <div className="flex gap-1">
@@ -35,7 +35,7 @@ export default function WorksEndNavigation({
       {nextURL && (
         <Link
           href={nextURL}
-          className="flex w-full select-none items-center justify-between rounded border border-neutral-500 bg-black p-4 text-[0.8rem] font-light text-white transition-colors hover:bg-[#262626]"
+          className="flex w-full select-none items-center justify-between rounded border border-neutral-500 bg-black p-4 text-[0.8rem] font-light text-white transition-colors hover:bg-[#262626] dark:border-[#ffffff]/[.15] dark:hover:bg-[#262626]/[.30]"
         >
           <div className="flex gap-1">
             <span className="font-medium">Next:</span>
@@ -48,7 +48,7 @@ export default function WorksEndNavigation({
       <Link
         href={demoURL}
         target="_blank"
-        className="col-span-2 flex select-none items-center justify-center rounded border border-neutral-500 bg-black p-4 font-medium uppercase tracking-[0.2em] text-white transition-colors hover:bg-[#262626]"
+        className="col-span-2 flex select-none items-center justify-center rounded border border-neutral-500 bg-black p-4 font-medium uppercase tracking-[0.2em] text-white transition-colors hover:bg-[#262626] dark:border-[#ffffff]/[.15] dark:hover:bg-[#262626]/[.30]"
       >
         <div className="flex items-center gap-2 text-[0.8rem]">
           {`Visit ${demoTitle}`} <ExternalLinkIcon size="20" />

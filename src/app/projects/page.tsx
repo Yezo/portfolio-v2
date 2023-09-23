@@ -9,7 +9,6 @@ import kv from "../../../public/kv.png"
 import dynamic from "next/dynamic"
 
 const MainContainer = dynamic(() => import("@/components/Main/MainContainer"))
-const TitleH1 = dynamic(() => import("@/components/Typography/TitleH1"))
 const ProjectBox = dynamic(() => import("@/components/Projects/ProjectBox"))
 
 export const metadata = {
@@ -20,7 +19,9 @@ export const metadata = {
 export default function ProjectsPage() {
   return (
     <MainContainer>
-      <TitleH1>{`Projects.`}</TitleH1>
+      <h1 className="mt-3 px-4 text-lg font-medium tracking-tight text-zinc-800 dark:text-slate-200 sm:text-2xl">
+        Projects
+      </h1>
 
       <section className="mt-6">
         <ProjectBox
