@@ -24,7 +24,7 @@ export default function Home() {
           <Avatar className="h-16 w-16">
             <AvatarImage src="https://github.com/yezo.png" />
             <AvatarFallback>
-              <Skeleton className="h-8 w-8 rounded-full" />
+              <Skeleton className="h-16 w-16 rounded-full" />
             </AvatarFallback>
           </Avatar>
           <h1 className="font-spectral text-4xl font-medium tracking-tighter text-zinc-800 dark:text-slate-200">
