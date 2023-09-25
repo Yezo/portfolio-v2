@@ -8,8 +8,6 @@ import erbs from "../../public/erbs.jpg"
 import tft from "../../public/tft.jpg"
 import lostark from "../../public/lostark.jpeg"
 import Link from "next/link"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Skeleton } from "@/components/ui/skeleton"
 import MainContainer from "@/components/Main/MainContainer"
 import ProjectBox from "@/components/Projects/ProjectBox"
 import HovercardText from "@/components/Typography/HovercardText"
@@ -20,17 +18,6 @@ export default function Home() {
   return (
     <MainContainer>
       <header className="flex flex-col px-4 pb-4">
-        <div className="flex items-center gap-4">
-          <Avatar className="h-16 w-16">
-            <AvatarImage src="https://github.com/yezo.png" />
-            <AvatarFallback>
-              <Skeleton className="h-16 w-16 rounded-full" />
-            </AvatarFallback>
-          </Avatar>
-          <h1 className="font-spectral text-4xl font-medium tracking-tighter text-zinc-800 dark:text-slate-200">
-            kv.
-          </h1>
-        </div>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-zinc-800 dark:text-slate-200 sm:text-xl">
           Design-focused — Fullstack Developer
         </h2>

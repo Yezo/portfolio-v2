@@ -2,9 +2,9 @@
 
 import { usePathname } from "next/navigation"
 import { ThemeToggle } from "@/components/Theme/theme-toggle"
-import Logo from "@/components/Typography/Logo"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Skeleton } from "@/components/ui/skeleton"
 import Link from "next/link"
-import { GithubIcon, LinkedinIcon } from "lucide-react"
 
 const navItems = {
   "/": {
@@ -28,8 +28,16 @@ export default function Navbar() {
     <>
       <aside className="px-4 pb-10 font-faustina text-zinc-800 dark:text-foreground md:w-[150px] md:flex-shrink-0">
         <div className="space-y-4 lg:sticky lg:top-20 lg:space-y-10">
-          <div className="flex flex-col md:flex-row ">
-            <Logo />
+          <div className="flex gap-4 md:flex-col ">
+            <Avatar className="h-16 w-16">
+              <AvatarImage src="https://github.com/yezo.png" />
+              <AvatarFallback>
+                <Skeleton className="h-16 w-16 rounded-full" />
+              </AvatarFallback>
+            </Avatar>
+            <h1 className="font-spectral text-4xl font-medium tracking-tighter text-zinc-800 dark:text-slate-200">
+              kv.
+            </h1>
           </div>
 
           <nav
