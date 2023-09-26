@@ -61,8 +61,8 @@ export default function KorePage() {
         demoTitle="Kore"
         previousURL="/projects/snippits"
         previousTitle="Snippits"
-        nextURL="/projects/trackr"
-        nextTitle="Trackr"
+        nextURL="/projects/nunko"
+        nextTitle="Nunko"
       ></WorksEndNavigation>
     </MainContainer>
   )

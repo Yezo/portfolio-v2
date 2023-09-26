@@ -1,5 +1,4 @@
 import React from "react"
-import dynamic from "next/dynamic"
 
 type Props = {
   title: string
@@ -13,7 +12,7 @@ export default function ExternalLinkContainer({ title, description, children }: 
       <div className="flex items-center gap-4">
         <div className="flex flex-col">
           <p className="flex items-center gap-2 font-medium dark:text-white">{title}</p>
-          <p className="hidden text-sm opacity-50 dark:text-[#a0a0a0] dark:opacity-90 sm:block">
+          <p className="hidden max-w-[375px] text-sm opacity-50 dark:text-[#a0a0a0] dark:opacity-90 sm:block">
             {description}
           </p>
         </div>

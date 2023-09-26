@@ -5,6 +5,7 @@ import trackr from "../../../public/trackr.png"
 import kore from "../../../public/kore.png"
 import riskthinking from "../../../public/riskthinking.png"
 import kv from "../../../public/kv.png"
+import nunko from "../../../public/nunko.png"
 
 import dynamic from "next/dynamic"
 
@@ -24,6 +25,13 @@ export default function ProjectsPage() {
       </h1>
 
       <section className="mt-6">
+        <ProjectBox
+          imageURL={nunko}
+          imageALT="Picture of Nunko's case study"
+          title="nunko."
+          description="Redesign of an outdated personal project - social and tracking platform for animanga enthusiasts"
+          caseLink="/projects/nunko"
+        />
         <ProjectBox
           imageURL={trackr}
           imageALT="Picture of Trackr's brand logo"
