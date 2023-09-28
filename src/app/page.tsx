@@ -71,8 +71,8 @@ export default function Home() {
           imageUrl="/nunko.png"
           imageAlt="Picture of Nunko's case study"
           imageTitle="nunko."
-          imageDescription="Comprehensive platform designed for anime and manga enthusiasts to discover new
-          titles, manage their progress, and engage in a social community"
+          imageDescription="Web app designed to help users discover new
+          anime/manga and manage their progress"
           externalUrl={siteConfig.links.nunko}
           data={siteConfig.stack.nunko}
         />
@@ -81,7 +81,7 @@ export default function Home() {
           imageUrl="/trackr.png"
           imageAlt="Picture of Trackr's case study"
           imageTitle="trackr."
-          imageDescription="Ditch the spreadsheets, manage and track your job applications"
+          imageDescription="Job application tracker that eliminates the need for old boring spreadsheets"
           externalUrl={siteConfig.links.trackr}
           data={siteConfig.stack.trackr}
         />
@@ -90,7 +90,7 @@ export default function Home() {
           imageUrl="/arkoko.png"
           imageAlt="Picture of Arkoko's case study"
           imageTitle="arkoko."
-          imageDescription="Helping gamers minimize daily micro-decisions through data-driven analytics"
+          imageDescription="Innovative tools and resources to help minimize player daily micro-decisions"
           externalUrl={siteConfig.links.arkoko}
           data={siteConfig.stack.arkoko}
         />
