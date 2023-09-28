@@ -19,15 +19,12 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        faustina: ["var(--font-faustina)"],
-        spectral: ["var(--font-spectral)"],
-        nunito: ["var(--font-nunito)"],
         inter: ["var(--font-inter)"],
       },
       backgroundImage: {
         "primary-gradient":
           "linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%)",
-        "page-gradient": "radial-gradient(ellipse 80% 50% at 50% -20%,#1f2937, transparent)",
+        "page-gradient": "radial-gradient(ellipse 80% 80% at 50% -20%,#1f2937, transparent)",
         "glass-gradient":
           "linear-gradient(rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.05) 100%)",
         "dark-glass-gradient": "linear-gradient(rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.05) 100%)",

@@ -1,87 +1,98 @@
-import arkoko from "../../public/arkoko.png"
-import trackr from "../../public/trackr.png"
-import osrs from "../../public/osrs.webp"
-import erbs from "../../public/erbs.jpg"
-import tft from "../../public/tft.jpg"
-import nunko from "../../public/nunko.png"
-import lostark from "../../public/lostark.jpeg"
+import { Paragraph } from "@/components/layout/paragraph"
+import { ProjectItem } from "@/components/project-item"
+import { RightArrowSVG } from "@/assets/icons"
+import { HoverCardItem } from "@/components/layout/hovercard"
+import { WordLink } from "@/components/layout/wordlink"
+import { Section } from "@/components/layout/section"
+import { siteConfig } from "@/config/site"
 import Link from "next/link"
-import MainContainer from "@/components/Main/MainContainer"
-import ProjectBox from "@/components/Projects/ProjectBox"
-import HovercardText from "@/components/Typography/HovercardText"
-import Paragraph from "@/components/Typography/Paragraph"
-import WordLink from "@/components/Typography/WordLink"
 
 export default function Home() {
   return (
-    <MainContainer>
-      <header className="flex flex-col px-4 pb-4">
-        <h2 className="mt-3 text-lg font-medium tracking-tight text-zinc-800 dark:text-slate-200 sm:text-xl">
-          Design-focused — Fullstack Developer
-        </h2>
-      </header>
-
-      <section className="mb-12 mt-4 px-4">
+    <>
+      <Section className="px-4">
         <Paragraph>
           Video games have played a significant role in shaping my life, as they are able to fully
-          <HovercardText imageURL={osrs} imageTitle="Oldschool Runescape">
-            immerse
-          </HovercardText>
-          their players in unforgettable experiences. It's my goal to recreate these
-          <HovercardText imageURL={lostark} imageTitle="Lost Ark">
-            captivating
-          </HovercardText>
-          moments and deliver an
-          <HovercardText imageURL={erbs} imageTitle="Eternal Return">
-            unforgettable
-          </HovercardText>
-          web experience. Through a user-centered lens, I help design and craft creative and
-          <HovercardText
-            imageURL={tft}
-            imageTitle="Teamfight Tactics"
-            imageSubtitle="(the only enjoyable riot game left)"
+          <HoverCardItem
+            imageUrl="/osrs.webp"
+            imageAlt="An image of Oldschool Runescape"
+            imageTitle="Oldschool Runescape"
           >
-            strategic
-          </HovercardText>
-          digital experiences aimed at positive interactivity.
+            immerse
+          </HoverCardItem>
+          their users in an unforgettable experience. It's my goal to recreate these
+          <HoverCardItem
+            imageUrl="/lostark.jpeg"
+            imageAlt="An image of Lost Ark"
+            imageTitle="Lost Ark"
+          >
+            captivating
+          </HoverCardItem>
+          moments and deliver an
+          <HoverCardItem
+            imageUrl="/erbs.jpg"
+            imageAlt="An image of Eternal Return"
+            imageTitle="Eternal Return"
+          >
+            exceptional
+          </HoverCardItem>
+          web experience for others.
         </Paragraph>
+
         <Paragraph>
-          To help build responsive interfaces, I've immersed myself within the Javascript ecosystem
-          with a strong focus on <WordLink url="https://nextjs.org/">Next.js</WordLink> and
-          <WordLink url="https://nextjs.org/">React</WordLink>. For styling, I enjoy a combination
-          of <WordLink url="https://tailwindcss.com/">Tailwind</WordLink> for hand-crafted elements
-          layered on top of using
-          <WordLink url="https://ui.shadcn.com/">shadcn/UI&apos;s </WordLink>
+          To help build responsive interfaces, I've put a strong focus on
+          <WordLink href="https://nextjs.org/" newTab={true}>
+            Next.js
+          </WordLink>
+          and
+          <WordLink href="https://nextjs.org/" newTab={true}>
+            React.
+          </WordLink>
+          For styling, I enjoy
+          <WordLink href="https://tailwindcss.com/" newTab={true}>
+            Tailwind
+          </WordLink>
+          for hand-crafted elements layered on top of
+          <WordLink href="https://ui.shadcn.com/" newTab={true}>
+            shadcn/UI&apos;s
+          </WordLink>
           accessible component library.
         </Paragraph>
+
         <Paragraph>
           I'm actively looking for a professional home where I can contribute my dedication and
-          skills. I thrive the most in front-end positions where creativity and code intersect. Feel
-          free to <WordLink url="https://nextjs.org/">reach out</WordLink> and say hello.
+          skills. Feel free to <WordLink href="mailto:kvo.codes@gmail.com">reach out</WordLink> and
+          say hello.
         </Paragraph>
-      </section>
+      </Section>
 
-      <section className="mt-6 space-y-4">
-        <ProjectBox
-          imageURL={nunko}
-          imageALT="Picture of Nunko's case study"
-          title="nunko."
-          description="Redesign of an outdated personal project - social and tracking platform for animanga enthusiasts"
-          caseLink="/projects/nunko"
+      <Section className="mt-6 space-y-4">
+        <ProjectItem
+          imageUrl="/nunko.png"
+          imageAlt="Picture of Nunko's case study"
+          imageTitle="nunko."
+          imageDescription="Comprehensive platform designed for anime and manga enthusiasts to discover new
+          titles, manage their progress, and engage in a social community"
+          externalUrl={siteConfig.links.nunko}
+          data={siteConfig.stack.nunko}
         />
-        <ProjectBox
-          imageURL={trackr}
-          imageALT="Picture of Trackr's case study"
-          title="trackr."
-          description="Ditch the spreadsheets, manage and track your job applications"
-          caseLink="/projects/trackr"
+
+        <ProjectItem
+          imageUrl="/trackr.png"
+          imageAlt="Picture of Trackr's case study"
+          imageTitle="trackr."
+          imageDescription="Ditch the spreadsheets, manage and track your job applications"
+          externalUrl={siteConfig.links.trackr}
+          data={siteConfig.stack.trackr}
         />
-        <ProjectBox
-          imageURL={arkoko}
-          imageALT="Picture of Arkoko's case study"
-          title="arkoko."
-          description="Helping gamers minimize daily micro-decisions through data-driven analytics"
-          caseLink="/projects/arkoko"
+
+        <ProjectItem
+          imageUrl="/arkoko.png"
+          imageAlt="Picture of Arkoko's case study"
+          imageTitle="arkoko."
+          imageDescription="Helping gamers minimize daily micro-decisions through data-driven analytics"
+          externalUrl={siteConfig.links.arkoko}
+          data={siteConfig.stack.arkoko}
         />
 
         <Link
@@ -89,23 +100,9 @@ export default function Home() {
           className="my-4 flex max-w-fit select-none items-center gap-2 rounded-full px-4 font-medium leading-5 text-slate-200 transition-colors hover:text-sky-300 "
         >
           View all projects
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className=""
-          >
-            <path d="M18 8L22 12L18 16" />
-            <path d="M2 12H22" />
-          </svg>
+          <RightArrowSVG />
         </Link>
-      </section>
-    </MainContainer>
+      </Section>
+    </>
   )
 }

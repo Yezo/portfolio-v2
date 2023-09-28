@@ -1,16 +1,8 @@
-import arkoko from "../../../public/arkoko.png"
-import aniflux from "../../../public/aniflux.png"
-import snippits from "../../../public/snippits.png"
-import trackr from "../../../public/trackr.png"
-import kore from "../../../public/kore.png"
-import riskthinking from "../../../public/riskthinking.png"
-import kv from "../../../public/kv.png"
-import nunko from "../../../public/nunko.png"
-
-import dynamic from "next/dynamic"
-
-const MainContainer = dynamic(() => import("@/components/Main/MainContainer"))
-const ProjectBox = dynamic(() => import("@/components/Projects/ProjectBox"))
+import { ProjectItem } from "@/components/project-item"
+import { siteConfig } from "@/config/site"
+import { Main } from "@/components/layout/main"
+import { H2 } from "@/components/layout/h2"
+import { Section } from "@/components/layout/section"
 
 export const metadata = {
   title: "Projects",
@@ -19,69 +11,76 @@ export const metadata = {
 
 export default function ProjectsPage() {
   return (
-    <MainContainer>
-      <h1 className="mt-3 px-4 text-lg font-medium tracking-tight text-zinc-800 dark:text-slate-200 sm:text-2xl">
+    <Main>
+      <H2 className="mt-3 px-4 text-lg font-medium tracking-tight text-slate-200 sm:text-2xl">
         Projects
-      </h1>
+      </H2>
 
-      <section className="mt-6">
-        <ProjectBox
-          imageURL={nunko}
-          imageALT="Picture of Nunko's case study"
-          title="nunko."
-          description="Redesign of an outdated personal project - social and tracking platform for animanga enthusiasts"
-          caseLink="/projects/nunko"
+      <Section className="mt-6">
+        <ProjectItem
+          imageUrl="/nunko.png"
+          imageAlt="Picture of Nunko's case study"
+          imageTitle="nunko."
+          imageDescription="Web app designed to help users discover new
+          anime/manga and manage their progress"
+          externalUrl={siteConfig.links.nunko}
+          data={siteConfig.stack.nunko}
         />
-        <ProjectBox
-          imageURL={trackr}
-          imageALT="Picture of Trackr's brand logo"
-          title="trackr."
-          description="Ditch the spreadsheets, manage and track your job applications"
-          caseLink="/projects/trackr"
+
+        <ProjectItem
+          imageUrl="/trackr.png"
+          imageAlt="Picture of Trackr's case study"
+          imageTitle="trackr."
+          imageDescription="Job application tracker that eliminates the need for old boring spreadsheets"
+          externalUrl={siteConfig.links.trackr}
+          data={siteConfig.stack.trackr}
         />
-        <ProjectBox
-          imageURL={arkoko}
-          imageALT="Picture of Arkoko's brand logo"
-          title="arkoko."
-          description="Helping gamers minimize daily micro-decisions through data-driven analysis"
-          caseLink="/projects/arkoko"
+
+        <ProjectItem
+          imageUrl="/arkoko.png"
+          imageAlt="Picture of Arkoko's case study"
+          imageTitle="arkoko."
+          imageDescription="Innovative tools and resources to help minimize player daily micro-decisions"
+          externalUrl={siteConfig.links.arkoko}
+          data={siteConfig.stack.arkoko}
         />
-        <ProjectBox
-          imageURL={aniflux}
-          imageALT="Picture of AniFlux's brand logo"
-          title="aniflux."
-          description="Exploring a modern re-design to the anime and manga database experience"
-          caseLink="/projects/aniflux"
+
+        <ProjectItem
+          imageUrl="/aniflux.png"
+          imageAlt="Picture of Aniflux's case study"
+          imageTitle="aniflux."
+          imageDescription="Exploring a modern re-design to the anime and manga database experience"
+          externalUrl={siteConfig.links.aniflux}
+          data={siteConfig.stack.aniflux}
         />
-        <ProjectBox
-          imageURL={riskthinking}
-          imageALT="Picture of inging's brand logo"
-          title="riskthinking."
-          description="Web application as a work sample for riskthinking.ai visualizing climate risk datasets"
-          caseLink="/projects/riskthinking"
+
+        <ProjectItem
+          imageUrl="/riskthinking.png"
+          imageAlt="Picture of riskthinking's case study"
+          imageTitle="riskthinking."
+          imageDescription="Work sample for riskthinking.ai that visualizes climate risk datasets in multiple form factors"
+          externalUrl={siteConfig.links.riskthinking}
+          data={siteConfig.stack.riskthinking}
         />
-        <ProjectBox
-          imageURL={kv}
-          imageALT="Picture of Kevin Vo's brand logo"
-          title="my portfolio."
-          description="A deep dive on a junior web developer's perspective to self-branding"
-          caseLink="/projects/portfolio"
+
+        <ProjectItem
+          imageUrl="/kv.png"
+          imageAlt="Picture of kv's case study"
+          imageTitle="kv."
+          imageDescription="A design-focused fullstack developer's personal portfolio"
+          externalUrl={siteConfig.links.main}
+          data={siteConfig.stack.main}
         />
-        <ProjectBox
-          imageURL={snippits}
-          imageALT="Picture of Snippit's brand logo"
-          title="snippits."
-          description="Code snippet repository built for programmers with the memory of a goldfish "
-          caseLink="/projects/snippits"
+
+        <ProjectItem
+          imageUrl="/kore.png"
+          imageAlt="Picture of kore's case study"
+          imageTitle="kore."
+          imageDescription="Minigame where players can start learning the Korean alphabet one by one"
+          externalUrl={siteConfig.links.kore}
+          data={siteConfig.stack.kore}
         />
-        <ProjectBox
-          imageURL={kore}
-          imageALT="Picture of Kore's brand logo"
-          title="kore."
-          description="Minigame where players can learn the Korean alphabet"
-          caseLink="/projects/kore"
-        />
-      </section>
-    </MainContainer>
+      </Section>
+    </Main>
   )
 }
