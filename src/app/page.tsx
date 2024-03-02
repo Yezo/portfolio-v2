@@ -12,6 +12,11 @@ export default function Home() {
     <>
       <Section className="px-4">
         <Paragraph>
+          Hi there, most people around me call me Kev. I'm a design-focused frontend developer from
+          Barrie who enjoys dipping his toes into full stack development. Currently, I'm interested
+          in learning more about the development and uses of design systems.
+        </Paragraph>
+        {/* <Paragraph>
           Video games have played a significant role in shaping my life, as they are able to fully
           <HoverCardItem
             imageUrl="/osrs.webp"
@@ -37,18 +42,17 @@ export default function Home() {
             exceptional
           </HoverCardItem>
           web experience for others.
-        </Paragraph>
-
+        </Paragraph> */}
         <Paragraph>
-          To help build responsive interfaces, I've put a strong focus on
+          I've put a strong focus on the Javascript ecosystem where I use
           <WordLink href="https://nextjs.org/" newTab={true}>
             Next.js
           </WordLink>
           and
           <WordLink href="https://nextjs.org/" newTab={true}>
-            React.
+            React
           </WordLink>
-          For styling, I enjoy
+          to help build responsive interfaces. For styling, I enjoy
           <WordLink href="https://tailwindcss.com/" newTab={true}>
             Tailwind
           </WordLink>
@@ -57,6 +61,14 @@ export default function Home() {
             shadcn/UI&apos;s
           </WordLink>
           accessible component library.
+          <WordLink href="https://www.mongodb.com/" newTab={true}>
+            MongoDB
+          </WordLink>
+          has been my main database of choice for a large portion of my projects, however, I've also
+          recently discovered the joys of using{" "}
+          <WordLink href="https://www.postgresql.org/" newTab={true}>
+            PostgreSQL.
+          </WordLink>
         </Paragraph>
 
         <Paragraph>
@@ -67,6 +79,15 @@ export default function Home() {
       </Section>
 
       <Section className="mt-6 space-y-4">
+        <ProjectItem
+          imageUrl="/selfbox.png"
+          imageAlt="Picture of Selfbox's case study"
+          imageTitle="selfbox."
+          imageDescription="New take on a link-in-bio platform for content creators, professionals, and hobbyists "
+          externalUrl={siteConfig.links.selfbox}
+          data={siteConfig.stack.selfbox}
+        />
+
         <ProjectItem
           imageUrl="/nunko.png"
           imageAlt="Picture of Nunko's case study"
@@ -84,15 +105,6 @@ export default function Home() {
           imageDescription="Job application tracker that eliminates the need for old boring spreadsheets"
           externalUrl={siteConfig.links.trackr}
           data={siteConfig.stack.trackr}
-        />
-
-        <ProjectItem
-          imageUrl="/arkoko.png"
-          imageAlt="Picture of Arkoko's case study"
-          imageTitle="arkoko."
-          imageDescription="Innovative tools and resources to help minimize player daily micro-decisions"
-          externalUrl={siteConfig.links.arkoko}
-          data={siteConfig.stack.arkoko}
         />
 
         <Link

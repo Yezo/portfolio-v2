@@ -8,6 +8,7 @@ export type SiteConfig = {
 
 export type LinksType = {
   main: string
+  selfbox: string
   nunko: string
   trackr: string
   arkoko: string
@@ -18,6 +19,7 @@ export type LinksType = {
 
 export type StackType = {
   main: string[]
+  selfbox: string[]
   nunko: string[]
   trackr: string[]
   arkoko: string[]

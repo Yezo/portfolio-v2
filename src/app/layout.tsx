@@ -1,4 +1,4 @@
-import { inter } from "@/assets/fonts"
+import { bricolage, inter } from "@/assets/fonts"
 import { Analytics } from "@vercel/analytics/react"
 import { Main } from "@/components/layout/main"
 import { Body } from "@/components/layout/body"
@@ -28,7 +28,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} `}>
+    <html lang="en" className={`${inter.variable} ${bricolage.variable} `}>
       <Body>
         <Sidebar />
         <Main>{children}</Main>

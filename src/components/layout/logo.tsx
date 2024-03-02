@@ -13,27 +13,23 @@ export const Logo = ({ className }: LogoProps) => {
   return (
     <div className={cn("flex items-center gap-4 md:flex-col md:items-start", className)}>
       <Link href="/">
-        <Avatar className={`${imgHeight} ${imgWidth}`}>
+        <Avatar className={`${imgHeight} ${imgWidth} rounded-md`}>
           <AvatarImage src="https://github.com/yezo.png" />
           <AvatarFallback>
-            <Skeleton className={`${imgHeight} ${imgWidth} rounded-full`} />
+            <Skeleton className={`${imgHeight} ${imgWidth} rounded-md`} />
           </AvatarFallback>
         </Avatar>
       </Link>
 
       <div className="space-y-0.5">
-        <H1 className="font-inter text-sm font-bold tracking-tight text-slate-200">
+        <H1 className="font-inter text-lg font-medium tracking-tight text-slate-200">
           <Link
             href="/"
-            className="text-slate-100 transition-colors  hover:text-sky-300 focus-visible:text-sky-300"
+            className="font-bricolage text-slate-100  transition-colors hover:text-sky-300 focus-visible:text-sky-300"
           >
             Kevin Vo
           </Link>
         </H1>
-
-        <H2 className="font-inter text-[0.8rem] tracking-tight text-[#babdc5]">
-          <Link href="/">Fullstack Developer</Link>
-        </H2>
       </div>
     </div>
   )

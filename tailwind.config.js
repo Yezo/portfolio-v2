@@ -20,6 +20,7 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ["var(--font-inter)"],
+        bricolage: ["var(--font-bricolage)"],
       },
       backgroundImage: {
         "primary-gradient":
@@ -35,6 +36,8 @@ module.exports = {
           text: "#d1d5db",
         },
         "transparent-white": "rgba(255, 255, 255, 0.03)",
+        main: "#131416",
+        sub: "#9ea0b0",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

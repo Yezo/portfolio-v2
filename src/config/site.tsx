@@ -5,6 +5,7 @@ export const siteConfig: SiteConfig = {
   description: "design-focused fullstack developer • open to opportunities",
   links: {
     main: "https://kevinvo.me",
+    selfbox: "https://selfbox.vercel.app",
     nunko: "https://nunko-amber.vercel.app/",
     trackr: "https://trackr-v2.vercel.app/",
     arkoko: "https://arkoko.vercel.app/",
@@ -14,6 +15,7 @@ export const siteConfig: SiteConfig = {
   },
   githubs: {
     main: "https://github.com/Yezo",
+    selfbox: "https://github.com/Yezo/selfbox",
     nunko: "https://github.com/Yezo/nunko",
     trackr: "https://github.com/Yezo/trackr-v2",
     arkoko: "https://github.com/Yezo/arkoko",
@@ -23,6 +25,7 @@ export const siteConfig: SiteConfig = {
   },
   stack: {
     main: ["Next.js", "TypeScript", "Tailwind"],
+    selfbox: ["Next.js", "TypeScript", "Tailwind", "PostgreSQL", "NextAuth", "Drizzle"],
     nunko: ["Next.js", "TypeScript", "Tailwind", "MongoDB", "NextAuth", "Zod"],
     trackr: ["Next.js", "TypeScript", "Tailwind", "MongoDB", "NextAuth", "Recharts"],
     arkoko: ["React", "TypeScript", "Tailwind", "Node.js", "Express", "MongoDB"],

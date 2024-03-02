@@ -10,10 +10,6 @@ export const navConfig: NavConfig = {
     name: "projects",
     icon: <ProjectSVG />,
   },
-  // "/thoughts": {
-  //   name: "thoughts",
-  //   icon: <ThoughtsSVG />,
-  // },
   "/resume.pdf": {
     name: "resume",
     icon: <ResumeSVG />,

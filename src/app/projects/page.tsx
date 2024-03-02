@@ -18,6 +18,15 @@ export default function ProjectsPage() {
 
       <Section className="mt-6">
         <ProjectItem
+          imageUrl="/selfbox.png"
+          imageAlt="Picture of Selfbox's case study"
+          imageTitle="selfbox."
+          imageDescription="New take on a link-in-bio platform for content creators, professionals, and hobbyists "
+          externalUrl={siteConfig.links.selfbox}
+          data={siteConfig.stack.selfbox}
+        />
+
+        <ProjectItem
           imageUrl="/nunko.png"
           imageAlt="Picture of Nunko's case study"
           imageTitle="nunko."
