@@ -13,7 +13,7 @@ export default function Home() {
         <Paragraph>
           I'm a design-focused frontend developer from Barrie who enjoys dipping his toes into full
           stack development. My comfort zone lies where development meets design and I am always
-          refining my skillset to craft a memorable digital experience for others.
+          refining my skillset to help craft a memorable digital experience for others.
         </Paragraph>
         <Paragraph>
           I've put a strong focus on the Javascript ecosystem where I use
