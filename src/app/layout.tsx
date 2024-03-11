@@ -2,7 +2,9 @@ import { bricolage, inter } from "@/assets/fonts"
 import { Analytics } from "@vercel/analytics/react"
 import { Main } from "@/components/layout/main"
 import { Body } from "@/components/layout/body"
-import { Sidebar } from "@/components/sidebar"
+import { Navbar } from "@/components/ui/navbar"
+import { Footer } from "@/components/ui/footer"
+import { Toaster } from "@/components/ui/sonner"
 import "@/styles/globals.css"
 
 export const metadata = {
@@ -30,9 +32,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable} ${bricolage.variable} `}>
       <Body>
-        <Sidebar />
+        <Navbar />
         <Main>{children}</Main>
         <Analytics />
+        <Toaster />
+        <Footer />
       </Body>
     </html>
   )

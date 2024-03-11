@@ -12,11 +12,7 @@ export const metadata = {
 export default function ProjectsPage() {
   return (
     <Main>
-      <H2 className="mt-3 px-4 text-lg font-medium tracking-tight text-slate-200 sm:text-2xl">
-        Projects
-      </H2>
-
-      <Section className="mt-6">
+      <Section>
         <ProjectItem
           imageUrl="/selfbox.png"
           imageAlt="Picture of Selfbox's case study"

@@ -5,7 +5,7 @@ export const Body = ({ className, children }: BodyProps) => {
   return (
     <body
       className={cn(
-        "my-20 flex max-w-4xl flex-col bg-main font-inter antialiased selection:bg-sky-400/10 selection:text-sky-300 sm:mx-8 md:mx-16 md:flex-row lg:mx-auto",
+        "mx-auto my-4 max-w-[550px] bg-main font-inter text-sub antialiased selection:bg-sky-400/10 selection:text-sky-300",
         className
       )}
     >

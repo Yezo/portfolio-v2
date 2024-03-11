@@ -17,7 +17,7 @@ export const ProjectItem = ({
     <article>
       <Link
         href={externalUrl}
-        className="group relative flex cursor-pointer flex-col items-center gap-4 border border-transparent px-4 py-6 transition-all duration-500 hover:rounded-md hover:border-transparent-white hover:bg-glass-gradient min-[515px]:flex-row "
+        className="group relative flex cursor-pointer flex-col items-center gap-4 border border-transparent py-6 transition-all duration-500 hover:rounded-md hover:border-transparent-white hover:bg-glass-gradient min-[515px]:flex-row sm:px-4"
         target="_blank"
       >
         <div>
@@ -31,16 +31,16 @@ export const ProjectItem = ({
         </div>
         <div className="basis-3/5">
           <div className="flex flex-col gap-2 ">
-            <H3 className="flex items-center gap-2 font-medium text-slate-200 transition-colors group-hover:text-sky-300">
+            <H3 className="flex items-center gap-2 font-medium text-slate-100 transition-colors group-hover:text-sky-300">
               {imageTitle} <ExternalArrowSVG />
             </H3>
-            <Paragraph className="text-sm leading-loose [&:not(:first-child)]:mt-2">
+            <Paragraph className="text-[0.8rem] leading-loose [&:not(:first-child)]:mt-2">
               {imageDescription}
             </Paragraph>
             <div className="mt-2 flex flex-wrap gap-2">
               {data.map((item) => (
                 <div
-                  className="flex items-center rounded-full bg-sky-400/10 px-3 py-1 text-[0.7rem] font-medium leading-5 text-sky-300"
+                  className="flex items-center rounded-full  bg-sky-400/10 px-2 text-[0.65rem]  leading-5 text-sky-300"
                   key={item}
                 >
                   {item}

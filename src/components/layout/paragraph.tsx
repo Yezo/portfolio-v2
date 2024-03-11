@@ -5,7 +5,7 @@ export const Paragraph = ({ className, children }: ParagraphProps) => {
   return (
     <p
       className={cn(
-        "text-[0.95rem] leading-relaxed text-sub [word-spacing:-.02em] [&:not(:first-child)]:mt-4",
+        "text-sm leading-relaxed text-sub [word-spacing:-.02em] [&:not(:first-child)]:mt-4",
         className
       )}
     >
