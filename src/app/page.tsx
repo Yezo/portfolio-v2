@@ -28,7 +28,7 @@ export default function Home() {
           whose comfort zone lies where creativity meets development — dedicated to crafting refined
           and memorable digital experiences for others to enjoy.
         </Paragraph>
-        <div>This is my branch</div>
+        <div>This is my branch and this is an additional test edit</div>
       </Section>
 
       <Section className="mt-12 space-y-4">
