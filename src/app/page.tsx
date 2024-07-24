@@ -28,12 +28,6 @@ export default function Home() {
           whose comfort zone lies where creativity meets development — dedicated to crafting refined
           and memorable digital experiences for others to enjoy.
         </Paragraph>
-
-        <Paragraph>
-          I'm actively looking for a professional home where I can contribute my dedication and
-          skills to. Feel free to <WordLink href="mailto:kvo.codes@gmail.com">reach out</WordLink>
-          and say hello.
-        </Paragraph>
       </Section>
 
       <Section className="mt-12 space-y-4">
