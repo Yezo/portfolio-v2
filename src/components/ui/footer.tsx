@@ -43,11 +43,11 @@ export const Footer = ({ className }: FooterProps) => {
         <span>Barrie — {currentTime}</span>
 
         <Link
-          href="/resume.pdf"
+          href="mailto:kvo.codes@gmail.com"
           target="_blank"
           className="transition-colors duration-300 hover:text-slate-100"
         >
-          resume
+          contact
         </Link>
       </footer>
     </>

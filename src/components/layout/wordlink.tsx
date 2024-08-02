@@ -7,7 +7,7 @@ export const WordLink = ({ className, children, href, newTab }: WordLinkProps) =
     <Link
       href={href}
       className={cn(
-        "font-medium leading-[1.6] text-slate-100 transition-all duration-300  [word-spacing:-.02em] hover:text-sky-300",
+        "font-bricolage font-medium leading-[1.6] text-slate-100 transition-all  duration-300 [word-spacing:-.02em] hover:text-sky-300",
         className
       )}
       target={newTab ? "_blank" : "_self"}

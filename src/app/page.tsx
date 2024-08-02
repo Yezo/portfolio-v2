@@ -13,31 +13,32 @@ import { cn } from "@/lib/utils"
 export default function Home() {
   return (
     <>
-      <div className="mb-4 flex items-center gap-4">
-        <Logo />
-
-        <H1 className="font-bricolage text-lg tracking-tight text-slate-100">kevin vo.</H1>
-      </div>
-
       <Section>
         <Paragraph>
-          A design-oriented
-          <WordLink href="/about" newTab={false}>
-            frontend developer
-          </WordLink>
-          whose comfort zone lies where creativity meets development — dedicated to crafting refined
-          and memorable digital experiences for others to enjoy.
+          Hello, I'm Kevin — a design-oriented fullstack developer focused on creating web
+          interfaces imbued with a lifelong refinement between functionality and aesthetic.
         </Paragraph>
 
         <Paragraph>
-          I'm actively looking for a professional home where I can contribute my dedication and
-          skills to. Feel free to <WordLink href="mailto:kvo.codes@gmail.com">reach out</WordLink>
-          and say hello.
+          My comfort zone lies where creativity meets development — dedicated to crafting refined
+          and memorable digital experiences for others to enjoy. I'm currently working at
+          <WordLink href="https://enginedigital.com/" newTab={true}>
+            Engine Digital
+          </WordLink>
+          where I collaborate with multidisciplinary teams to design and build polished interfaces
+          for global brands.
+        </Paragraph>
+        <Paragraph>
+          In my spare time, you'll find me exploring design systems, catching up on manga, or
+          helping cleanse
+          <WordLink href="https://oldschool.runescape.com/" newTab={true}>
+            Glienor
+          </WordLink>
+          of all things evil.
         </Paragraph>
       </Section>
 
       <Section className="mt-12 space-y-4">
-        <H2>Selected projects</H2>
         <ProjectItem
           imageUrl="/selfbox.png"
           imageAlt="Picture of Selfbox's case study"
