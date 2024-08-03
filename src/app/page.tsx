@@ -15,8 +15,12 @@ export default function Home() {
     <>
       <Section>
         <Paragraph>
-          Hello, I'm Kevin — a design-oriented fullstack developer focused on creating web
-          interfaces imbued with a lifelong refinement between functionality and aesthetic.
+          Hello, I'm Kevin — a design-oriented fullstack developer who is focused on blurring the
+          line between aesthetics and performance. I specialize in solving problems with
+          <WordLink href="https://nextjs.org/Next.js" newTab={true}>
+            Next.js
+          </WordLink>{" "}
+          and many other moving parts from the Javascript ecosystem.
         </Paragraph>
 
         <Paragraph>
